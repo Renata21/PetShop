@@ -21,7 +21,7 @@ namespace WindowsFormsApp1
             CountBirds();
             Finance();
         }
-        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Downloads\Pet-Shop-Management-System-Using-C-.Net-and-SQL-Server-master\Pet-Shop-Management-System-Using-C-.Net-and-SQL-Server-master\PetShop\WindowsFormsApp1\BaseDeDatos\PetShopDb.mdf;Integrated Security=True;Connect Timeout=30");
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\PetShopDb.mdf;Integrated Security=True;Connect Timeout=30");
 
         private void CountDogs()
         {
