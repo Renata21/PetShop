@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Data.SqlClient;
 using System.Windows.Forms;
 
 namespace WindowsFormsApp1
@@ -16,7 +10,9 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
-
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Downloads\Pet-Shop-Management-System-Using-C-.Net-and-SQL-Server-master\Pet-Shop-Management-System-Using-C-.Net-and-SQL-Server-master\PetShop\WindowsFormsApp1\BaseDeDatos\PetShopDb.mdf;Integrated Security=True;Connect Timeout=30");
+        SqlCommand cmd;
+        SqlDataReader dr;
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             System.Windows.Forms.Application.Exit();
@@ -30,12 +26,39 @@ namespace WindowsFormsApp1
 
         private void Loginbtn_Click(object sender, EventArgs e)
         {
-            if (Nametxt.Text == "admin" && Passwordtxt.Text == "admin")
+            try
             {
-                Home obj = new Home();
-                obj.Show();
-                this.Hide();
+                string user = Nametxt.Text;
+                string pass = Passwordtxt.Text;
+
+                
+                con.Open();
+                cmd = new SqlCommand();
+                cmd.Connection = con;
+                cmd.CommandText = "SELECT* FROM EmployeeTbl where EmpName = '" + user + "' AND EmpPass = '" + pass + "'";
+                dr = cmd.ExecuteReader();
+
+                if (dr.Read())
+                {                 
+                    Home obj = new Home();
+                    obj.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Invalid Login please check username and password");
+                }
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show("There's been a problem ==>" + ex.Message);
+            }
+            finally
+            {           
+                con.Close();
+            }
+
+
         }
     }
 }
