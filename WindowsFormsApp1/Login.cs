@@ -9,8 +9,10 @@ namespace WindowsFormsApp1
         public Login()
         {
             InitializeComponent();
+            
         }
-        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Downloads\Pet-Shop-Management-System-Using-C-.Net-and-SQL-Server-master\Pet-Shop-Management-System-Using-C-.Net-and-SQL-Server-master\PetShop\WindowsFormsApp1\BaseDeDatos\PetShopDb.mdf;Integrated Security=True;Connect Timeout=30");
+        
+       SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\PetShopDb.mdf;Integrated Security=True;Connect Timeout=30");
         SqlCommand cmd;
         SqlDataReader dr;
         private void pictureBox2_Click(object sender, EventArgs e)
@@ -31,7 +33,7 @@ namespace WindowsFormsApp1
                 string user = Nametxt.Text;
                 string pass = Passwordtxt.Text;
 
-                
+                //ceva
                 con.Open();
                 cmd = new SqlCommand();
                 cmd.Connection = con;
