@@ -20,7 +20,7 @@ namespace WindowsFormsApp1
         int starP = 0;
         private void timer1_Tick(object sender, EventArgs e)
         {
-            starP += 1;
+            starP += 50;
             MyProgress.Value = starP;
             lblPorcentaje.Text = starP + "%";
             if (MyProgress.Value == 100)
