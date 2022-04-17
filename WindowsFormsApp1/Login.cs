@@ -12,8 +12,9 @@ namespace WindowsFormsApp1
             
         }
         
-       SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\PetShopDb.mdf;Integrated Security=True;Connect Timeout=30");
+       SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\PetShopDb.mdf;Integrated Security=True;Asynchronous Processing=True;User Instance=False;Context Connection=False");
         SqlCommand cmd;
+        
         SqlDataReader dr;
         private void pictureBox2_Click(object sender, EventArgs e)
         {
