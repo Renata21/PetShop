@@ -38,11 +38,12 @@
             this.pictureBox_cost = new System.Windows.Forms.PictureBox();
             this.bunifuElipse_cost = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuElipse_form = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.guna2CircleButton_exit = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.pictureBox_exit = new System.Windows.Forms.PictureBox();
             this.panel_emp.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_emp)).BeginInit();
             this.panel_cost.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_cost)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_exit)).BeginInit();
             this.SuspendLayout();
             // 
             // label_emp
@@ -138,39 +139,28 @@
             this.bunifuElipse_form.ElipseRadius = 40;
             this.bunifuElipse_form.TargetControl = this;
             // 
-            // guna2CircleButton_exit
+            // pictureBox_exit
             // 
-            this.guna2CircleButton_exit.CheckedState.Parent = this.guna2CircleButton_exit;
-            this.guna2CircleButton_exit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2CircleButton_exit.CustomImages.Parent = this.guna2CircleButton_exit;
-            this.guna2CircleButton_exit.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2CircleButton_exit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2CircleButton_exit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2CircleButton_exit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2CircleButton_exit.DisabledState.Parent = this.guna2CircleButton_exit;
-            this.guna2CircleButton_exit.FillColor = System.Drawing.Color.MediumVioletRed;
-            this.guna2CircleButton_exit.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2CircleButton_exit.ForeColor = System.Drawing.Color.White;
-            this.guna2CircleButton_exit.HoverState.Parent = this.guna2CircleButton_exit;
-            this.guna2CircleButton_exit.Location = new System.Drawing.Point(727, 12);
-            this.guna2CircleButton_exit.Name = "guna2CircleButton_exit";
-            this.guna2CircleButton_exit.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CircleButton_exit.ShadowDecoration.Parent = this.guna2CircleButton_exit;
-            this.guna2CircleButton_exit.Size = new System.Drawing.Size(46, 41);
-            this.guna2CircleButton_exit.TabIndex = 36;
-            this.guna2CircleButton_exit.Text = "X";
-            this.guna2CircleButton_exit.Click += new System.EventHandler(this.guna2CircleButton_exit_Click);
+            this.pictureBox_exit.Image = global::WindowsFormsApp1.Properties.Resources.marca_x;
+            this.pictureBox_exit.Location = new System.Drawing.Point(730, 12);
+            this.pictureBox_exit.Name = "pictureBox_exit";
+            this.pictureBox_exit.Size = new System.Drawing.Size(47, 41);
+            this.pictureBox_exit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox_exit.TabIndex = 37;
+            this.pictureBox_exit.TabStop = false;
+            this.pictureBox_exit.Click += new System.EventHandler(this.exit_Click);
             // 
             // Choose_user
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.guna2CircleButton_exit);
+            this.Controls.Add(this.pictureBox_exit);
             this.Controls.Add(this.panel_cost);
             this.Controls.Add(this.panel_emp);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Choose_user";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Choose_user";
             this.panel_emp.ResumeLayout(false);
             this.panel_emp.PerformLayout();
@@ -178,6 +168,7 @@
             this.panel_cost.ResumeLayout(false);
             this.panel_cost.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_cost)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_exit)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -192,6 +183,6 @@
         private System.Windows.Forms.PictureBox pictureBox_cost;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse_cost;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse_form;
-        private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton_exit;
+        private System.Windows.Forms.PictureBox pictureBox_exit;
     }
 }

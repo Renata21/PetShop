@@ -109,6 +109,12 @@
     <Compile Include="Employees.Designer.cs">
       <DependentUpon>Employees.cs</DependentUpon>
     </Compile>
+    <Compile Include="Home_Cust.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home_Cust.Designer.cs">
+      <DependentUpon>Home_Cust.cs</DependentUpon>
+    </Compile>
     <Compile Include="Home_Emp.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -152,6 +158,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Employees.resx">
       <DependentUpon>Employees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home_Cust.resx">
+      <DependentUpon>Home_Cust.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Home_Emp.resx">
       <DependentUpon>Home_Emp.cs</DependentUpon>

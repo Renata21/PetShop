@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace WindowsFormsApp1
@@ -41,7 +34,7 @@ namespace WindowsFormsApp1
         private void panel_emp_MouseHover(object sender, EventArgs e)
         {
             panel_emp.BackColor = System.Drawing.Color.Orchid;
-            
+
         }
 
         private void panel_emp_MouseLeave(object sender, EventArgs e)
@@ -80,7 +73,9 @@ namespace WindowsFormsApp1
             panel_cost.BackColor = System.Drawing.Color.MediumVioletRed;
         }
 
-        private void guna2CircleButton_exit_Click(object sender, EventArgs e)
+       
+
+        private void exit_Click(object sender, EventArgs e)
         {
             System.Windows.Forms.Application.Exit();
         }

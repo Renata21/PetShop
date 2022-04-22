@@ -47,8 +47,8 @@ namespace WindowsFormsApp1
                 if (dr.Read())
                 {
                     
-                    Home_Emp obj = new Home_Emp();
-                    ((Home_Emp)obj).label_emp_name.Text = user;
+                    Home_Cust obj = new Home_Cust();
+                    ((Home_Cust)obj).label_emp_name.Text = user;
                     obj.Show();
                     this.Hide();
                 }
