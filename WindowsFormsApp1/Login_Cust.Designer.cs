@@ -89,7 +89,7 @@ namespace WindowsFormsApp1
             this.LblPet.ForeColor = System.Drawing.Color.Black;
             this.LblPet.Location = new System.Drawing.Point(102, 22);
             this.LblPet.Name = "LblPet";
-            this.LblPet.Size = new System.Drawing.Size(102, 28);
+            this.LblPet.Size = new System.Drawing.Size(128, 36);
             this.LblPet.TabIndex = 2;
             this.LblPet.Text = "Pet Shop";
             // 
@@ -102,7 +102,7 @@ namespace WindowsFormsApp1
             // 
             this.Nametxt.Location = new System.Drawing.Point(55, 204);
             this.Nametxt.Name = "Nametxt";
-            this.Nametxt.Size = new System.Drawing.Size(188, 32);
+            this.Nametxt.Size = new System.Drawing.Size(188, 38);
             this.Nametxt.TabIndex = 1;
             // 
             // label1
@@ -112,7 +112,7 @@ namespace WindowsFormsApp1
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(51, 173);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(107, 26);
+            this.label1.Size = new System.Drawing.Size(138, 33);
             this.label1.TabIndex = 4;
             this.label1.Text = "User Name";
             // 
@@ -123,7 +123,7 @@ namespace WindowsFormsApp1
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(51, 238);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(94, 26);
+            this.label2.Size = new System.Drawing.Size(121, 33);
             this.label2.TabIndex = 6;
             this.label2.Text = "Password";
             // 
@@ -132,7 +132,7 @@ namespace WindowsFormsApp1
             this.Passwordtxt.Location = new System.Drawing.Point(55, 267);
             this.Passwordtxt.Name = "Passwordtxt";
             this.Passwordtxt.PasswordChar = '.';
-            this.Passwordtxt.Size = new System.Drawing.Size(188, 32);
+            this.Passwordtxt.Size = new System.Drawing.Size(188, 38);
             this.Passwordtxt.TabIndex = 5;
             // 
             // Loginbtn
@@ -168,7 +168,7 @@ namespace WindowsFormsApp1
             this.btlReset.ForeColor = System.Drawing.Color.Black;
             this.btlReset.Location = new System.Drawing.Point(115, 394);
             this.btlReset.Name = "btlReset";
-            this.btlReset.Size = new System.Drawing.Size(59, 26);
+            this.btlReset.Size = new System.Drawing.Size(76, 33);
             this.btlReset.TabIndex = 8;
             this.btlReset.Text = "Reset";
             this.btlReset.Click += new System.EventHandler(this.btlReset_Click);
@@ -189,13 +189,13 @@ namespace WindowsFormsApp1
             this.label4.ForeColor = System.Drawing.Color.MediumVioletRed;
             this.label4.Location = new System.Drawing.Point(115, 120);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(70, 26);
+            this.label4.Size = new System.Drawing.Size(90, 33);
             this.label4.TabIndex = 10;
             this.label4.Text = "Signin";
             // 
-            // Login
+            // Login_Cust
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(310, 458);
             this.Controls.Add(this.label4);
@@ -210,7 +210,7 @@ namespace WindowsFormsApp1
             this.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(6);
-            this.Name = "Login";
+            this.Name = "Login_Cust";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.panel1.ResumeLayout(false);
