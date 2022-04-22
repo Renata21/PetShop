@@ -248,7 +248,7 @@ namespace WindowsFormsApp1
 
         private void label6_Click(object sender, EventArgs e)
         {
-            Login obj = new Login();
+            Choose_user obj = new Choose_user();
             obj.Show();
             this.Hide();
         }

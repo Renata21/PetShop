@@ -91,6 +91,12 @@
     <Compile Include="Billings.Designer.cs">
       <DependentUpon>Billings.cs</DependentUpon>
     </Compile>
+    <Compile Include="Choose_user.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Choose_user.Designer.cs">
+      <DependentUpon>Choose_user.cs</DependentUpon>
+    </Compile>
     <Compile Include="Customers.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,11 +115,17 @@
     <Compile Include="Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
-    <Compile Include="Login.cs">
+    <Compile Include="Login_Cust.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Login.Designer.cs">
-      <DependentUpon>Login.cs</DependentUpon>
+    <Compile Include="Login_Cust.Designer.cs">
+      <DependentUpon>Login_Cust.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login_Emp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login_Emp.Designer.cs">
+      <DependentUpon>Login_Emp.cs</DependentUpon>
     </Compile>
     <Compile Include="Products.cs">
       <SubType>Form</SubType>
@@ -132,6 +144,9 @@
     <EmbeddedResource Include="Billings.resx">
       <DependentUpon>Billings.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Choose_user.resx">
+      <DependentUpon>Choose_user.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Customers.resx">
       <DependentUpon>Customers.cs</DependentUpon>
     </EmbeddedResource>
@@ -141,8 +156,11 @@
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Login.resx">
-      <DependentUpon>Login.cs</DependentUpon>
+    <EmbeddedResource Include="Login_Cust.resx">
+      <DependentUpon>Login_Cust.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login_Emp.resx">
+      <DependentUpon>Login_Emp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Products.resx">
       <DependentUpon>Products.cs</DependentUpon>

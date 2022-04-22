@@ -26,7 +26,7 @@ namespace WindowsFormsApp1
             if (MyProgress.Value == 100)
             {
                 MyProgress.Value = 0;
-                Login obj = new Login();
+                Choose_user obj = new Choose_user();
                 obj.Show();
                 this.Hide();
                 timer1.Stop();
