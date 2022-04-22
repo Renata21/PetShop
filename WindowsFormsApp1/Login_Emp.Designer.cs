@@ -232,7 +232,7 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox Passwordtxt;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox Nametxt;
+        public System.Windows.Forms.TextBox Nametxt;
         private System.Windows.Forms.Label btlReset;
         private Bunifu.Framework.UI.BunifuThinButton2 Loginbtn;
         private System.Windows.Forms.Label label4;

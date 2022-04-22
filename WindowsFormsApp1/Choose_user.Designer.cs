@@ -31,18 +31,18 @@
             this.components = new System.ComponentModel.Container();
             this.label_emp = new System.Windows.Forms.Label();
             this.panel_emp = new System.Windows.Forms.Panel();
+            this.pictureBox_emp = new System.Windows.Forms.PictureBox();
             this.bunifuElipse_emp = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panel_cost = new System.Windows.Forms.Panel();
             this.label_cost = new System.Windows.Forms.Label();
+            this.pictureBox_cost = new System.Windows.Forms.PictureBox();
             this.bunifuElipse_cost = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuElipse_form = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.pictureBox_cost = new System.Windows.Forms.PictureBox();
-            this.pictureBox_emp = new System.Windows.Forms.PictureBox();
             this.guna2CircleButton_exit = new Guna.UI2.WinForms.Guna2CircleButton();
             this.panel_emp.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_emp)).BeginInit();
             this.panel_cost.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_cost)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_emp)).BeginInit();
             this.SuspendLayout();
             // 
             // label_emp
@@ -72,6 +72,18 @@
             this.panel_emp.MouseLeave += new System.EventHandler(this.panel_emp_MouseLeave);
             this.panel_emp.MouseHover += new System.EventHandler(this.panel_emp_MouseHover);
             // 
+            // pictureBox_emp
+            // 
+            this.pictureBox_emp.Image = global::WindowsFormsApp1.Properties.Resources.employee;
+            this.pictureBox_emp.Location = new System.Drawing.Point(81, 26);
+            this.pictureBox_emp.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox_emp.Name = "pictureBox_emp";
+            this.pictureBox_emp.Size = new System.Drawing.Size(77, 65);
+            this.pictureBox_emp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox_emp.TabIndex = 20;
+            this.pictureBox_emp.TabStop = false;
+            this.pictureBox_emp.Click += new System.EventHandler(this.pictureBox_emp_Click);
+            // 
             // bunifuElipse_emp
             // 
             this.bunifuElipse_emp.ElipseRadius = 50;
@@ -82,6 +94,7 @@
             this.panel_cost.BackColor = System.Drawing.Color.MediumVioletRed;
             this.panel_cost.Controls.Add(this.label_cost);
             this.panel_cost.Controls.Add(this.pictureBox_cost);
+            this.panel_cost.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panel_cost.Location = new System.Drawing.Point(428, 140);
             this.panel_cost.Margin = new System.Windows.Forms.Padding(4);
             this.panel_cost.Name = "panel_cost";
@@ -103,16 +116,6 @@
             this.label_cost.Text = "Customers";
             this.label_cost.Click += new System.EventHandler(this.label_cost_Click);
             // 
-            // bunifuElipse_cost
-            // 
-            this.bunifuElipse_cost.ElipseRadius = 50;
-            this.bunifuElipse_cost.TargetControl = this.panel_cost;
-            // 
-            // bunifuElipse_form
-            // 
-            this.bunifuElipse_form.ElipseRadius = 40;
-            this.bunifuElipse_form.TargetControl = this;
-            // 
             // pictureBox_cost
             // 
             this.pictureBox_cost.Image = global::WindowsFormsApp1.Properties.Resources.customer;
@@ -125,21 +128,20 @@
             this.pictureBox_cost.TabStop = false;
             this.pictureBox_cost.Click += new System.EventHandler(this.pictureBox_cost_Click);
             // 
-            // pictureBox_emp
+            // bunifuElipse_cost
             // 
-            this.pictureBox_emp.Image = global::WindowsFormsApp1.Properties.Resources.employee;
-            this.pictureBox_emp.Location = new System.Drawing.Point(81, 26);
-            this.pictureBox_emp.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox_emp.Name = "pictureBox_emp";
-            this.pictureBox_emp.Size = new System.Drawing.Size(77, 65);
-            this.pictureBox_emp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox_emp.TabIndex = 20;
-            this.pictureBox_emp.TabStop = false;
-            this.pictureBox_emp.Click += new System.EventHandler(this.pictureBox_emp_Click);
+            this.bunifuElipse_cost.ElipseRadius = 50;
+            this.bunifuElipse_cost.TargetControl = this.panel_cost;
+            // 
+            // bunifuElipse_form
+            // 
+            this.bunifuElipse_form.ElipseRadius = 40;
+            this.bunifuElipse_form.TargetControl = this;
             // 
             // guna2CircleButton_exit
             // 
             this.guna2CircleButton_exit.CheckedState.Parent = this.guna2CircleButton_exit;
+            this.guna2CircleButton_exit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2CircleButton_exit.CustomImages.Parent = this.guna2CircleButton_exit;
             this.guna2CircleButton_exit.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.guna2CircleButton_exit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -172,10 +174,10 @@
             this.Text = "Choose_user";
             this.panel_emp.ResumeLayout(false);
             this.panel_emp.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_emp)).EndInit();
             this.panel_cost.ResumeLayout(false);
             this.panel_cost.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_cost)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_emp)).EndInit();
             this.ResumeLayout(false);
 
         }

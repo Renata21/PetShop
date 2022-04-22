@@ -43,7 +43,7 @@ namespace WindowsFormsApp1
 
                 if (dr.Read())
                 {                 
-                    Home obj = new Home();
+                    Home_Emp obj = new Home_Emp();
                     obj.Show();
                     this.Hide();
                 }

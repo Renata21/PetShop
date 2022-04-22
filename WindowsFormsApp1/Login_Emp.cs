@@ -4,17 +4,19 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
+   
     public partial class Login_Emp : Form
-    {
+    { 
+       
         public Login_Emp()
         {
             InitializeComponent();
-            
+
         }
-        
-       SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\PetShopDb.mdf;Integrated Security=True;Asynchronous Processing=True;User Instance=False;Context Connection=False");
+
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\PetShopDb.mdf;Integrated Security=True;Asynchronous Processing=True;User Instance=False;Context Connection=False");
         SqlCommand cmd;
-        
+
         SqlDataReader dr;
         private void pictureBox2_Click(object sender, EventArgs e)
         {
@@ -27,6 +29,7 @@ namespace WindowsFormsApp1
             Passwordtxt.Text = "";
         }
 
+        
         private void Loginbtn_Click(object sender, EventArgs e)
         {
             try
@@ -42,8 +45,10 @@ namespace WindowsFormsApp1
                 dr = cmd.ExecuteReader();
 
                 if (dr.Read())
-                {                 
-                    Home obj = new Home();
+                {
+                    
+                    Home_Emp obj = new Home_Emp();
+                    ((Home_Emp)obj).label_emp_name.Text = user;
                     obj.Show();
                     this.Hide();
                 }
@@ -57,11 +62,14 @@ namespace WindowsFormsApp1
                 MessageBox.Show("There's been a problem ==>" + ex.Message);
             }
             finally
-            {           
+            {
+
                 con.Close();
             }
 
 
         }
+
+
     }
 }

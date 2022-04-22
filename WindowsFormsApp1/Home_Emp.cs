@@ -1,19 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class Home : Form
+    public partial class Home_Emp : Form
     {
-        public Home()
+
+        public Home_Emp()
         {
             InitializeComponent();
             CountDogs();
@@ -21,15 +16,16 @@ namespace WindowsFormsApp1
             CountBirds();
             Finance();
         }
+
         SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\PetShopDb.mdf;Integrated Security=True;Connect Timeout=30");
 
         private void CountDogs()
         {
-            string cat = "Dog";
+            string dog = "Dog";
             try
             {
                 con.Open();
-                SqlDataAdapter sda = new SqlDataAdapter("select count(*) from ProductTbl where PrCat = '" + cat + "'", con);
+                SqlDataAdapter sda = new SqlDataAdapter("select count(*) from ProductTbl where PrCat = '" + dog + "'", con);
                 DataTable dt = new DataTable();
                 sda.Fill(dt);
                 DogsLbl.Text = dt.Rows[0][0].ToString();

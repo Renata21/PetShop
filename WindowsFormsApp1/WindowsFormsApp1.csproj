@@ -109,11 +109,11 @@
     <Compile Include="Employees.Designer.cs">
       <DependentUpon>Employees.cs</DependentUpon>
     </Compile>
-    <Compile Include="Home.cs">
+    <Compile Include="Home_Emp.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Home.Designer.cs">
-      <DependentUpon>Home.cs</DependentUpon>
+    <Compile Include="Home_Emp.Designer.cs">
+      <DependentUpon>Home_Emp.cs</DependentUpon>
     </Compile>
     <Compile Include="Login_Cust.cs">
       <SubType>Form</SubType>
@@ -153,8 +153,8 @@
     <EmbeddedResource Include="Employees.resx">
       <DependentUpon>Employees.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Home.resx">
-      <DependentUpon>Home.cs</DependentUpon>
+    <EmbeddedResource Include="Home_Emp.resx">
+      <DependentUpon>Home_Emp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login_Cust.resx">
       <DependentUpon>Login_Cust.cs</DependentUpon>
