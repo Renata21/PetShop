@@ -36,7 +36,7 @@ namespace WindowsFormsApp1
             this.MyProgress = new Bunifu.Framework.UI.BunifuProgressBar();
             this.lblPorcentaje = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.timer = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,21 +56,21 @@ namespace WindowsFormsApp1
             // 
             // LblPet
             // 
-            this.LblPet.AutoSize = true;
             this.LblPet.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblPet.ForeColor = System.Drawing.Color.Linen;
-            this.LblPet.Location = new System.Drawing.Point(146, 36);
+            this.LblPet.Location = new System.Drawing.Point(31, 30);
             this.LblPet.Name = "LblPet";
-            this.LblPet.Size = new System.Drawing.Size(308, 28);
+            this.LblPet.Size = new System.Drawing.Size(537, 80);
             this.LblPet.TabIndex = 1;
-            this.LblPet.Text = "Pet Shop Managment System";
+            this.LblPet.Text = "Administrarea Magazinului de Animale \"Pet House\"";
+            this.LblPet.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // MyProgress
             // 
             this.MyProgress.BackColor = System.Drawing.Color.Silver;
             this.MyProgress.BorderRadius = 10;
             this.MyProgress.Location = new System.Drawing.Point(151, 314);
-            this.MyProgress.Margin = new System.Windows.Forms.Padding(4);
+            this.MyProgress.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MyProgress.MaximumValue = 100;
             this.MyProgress.Name = "MyProgress";
             this.MyProgress.ProgressColor = System.Drawing.Color.Teal;
@@ -85,7 +85,7 @@ namespace WindowsFormsApp1
             this.lblPorcentaje.ForeColor = System.Drawing.Color.Linen;
             this.lblPorcentaje.Location = new System.Drawing.Point(282, 152);
             this.lblPorcentaje.Name = "lblPorcentaje";
-            this.lblPorcentaje.Size = new System.Drawing.Size(50, 25);
+            this.lblPorcentaje.Size = new System.Drawing.Size(62, 32);
             this.lblPorcentaje.TabIndex = 3;
             this.lblPorcentaje.Text = "%%";
             // 
@@ -96,17 +96,17 @@ namespace WindowsFormsApp1
             this.label2.ForeColor = System.Drawing.Color.Linen;
             this.label2.Location = new System.Drawing.Point(146, 282);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(166, 25);
+            this.label2.Size = new System.Drawing.Size(141, 32);
             this.label2.TabIndex = 4;
-            this.label2.Text = "Loading Modules";
+            this.label2.Text = "Încărcare...";
             // 
-            // timer1
+            // timer
             // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            this.timer.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Splash
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MediumVioletRed;
             this.ClientSize = new System.Drawing.Size(594, 345);
@@ -135,7 +135,7 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblPorcentaje;
         private Bunifu.Framework.UI.BunifuProgressBar MyProgress;
-        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Timer timer;
     }
 }
 

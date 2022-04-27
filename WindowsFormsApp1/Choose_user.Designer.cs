@@ -50,12 +50,12 @@
             // 
             this.label_emp.AutoSize = true;
             this.label_emp.Font = new System.Drawing.Font("Cambria", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_emp.Location = new System.Drawing.Point(47, 95);
+            this.label_emp.Location = new System.Drawing.Point(57, 95);
             this.label_emp.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_emp.Name = "label_emp";
-            this.label_emp.Size = new System.Drawing.Size(142, 32);
+            this.label_emp.Size = new System.Drawing.Size(118, 32);
             this.label_emp.TabIndex = 21;
-            this.label_emp.Text = "Employees";
+            this.label_emp.Text = "Angajati";
             this.label_emp.Click += new System.EventHandler(this.label_emp_Click);
             // 
             // panel_emp
@@ -109,12 +109,13 @@
             // 
             this.label_cost.AutoSize = true;
             this.label_cost.Font = new System.Drawing.Font("Cambria", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_cost.Location = new System.Drawing.Point(46, 96);
+            this.label_cost.Location = new System.Drawing.Point(72, 96);
             this.label_cost.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_cost.Name = "label_cost";
-            this.label_cost.Size = new System.Drawing.Size(142, 32);
+            this.label_cost.Size = new System.Drawing.Size(92, 32);
             this.label_cost.TabIndex = 21;
-            this.label_cost.Text = "Customers";
+            this.label_cost.Text = "Clienti";
+            this.label_cost.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label_cost.Click += new System.EventHandler(this.label_cost_Click);
             // 
             // pictureBox_cost

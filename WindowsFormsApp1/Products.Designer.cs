@@ -39,7 +39,7 @@ namespace WindowsFormsApp1
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.ProductName = new System.Windows.Forms.TextBox();
+            this.ProductName_tb = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
@@ -164,12 +164,12 @@ namespace WindowsFormsApp1
             // 
             // ProductName
             // 
-            this.ProductName.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ProductName.Location = new System.Drawing.Point(21, 86);
-            this.ProductName.Margin = new System.Windows.Forms.Padding(4);
-            this.ProductName.Name = "ProductName";
-            this.ProductName.Size = new System.Drawing.Size(249, 38);
-            this.ProductName.TabIndex = 23;
+            this.ProductName_tb.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ProductName_tb.Location = new System.Drawing.Point(21, 86);
+            this.ProductName_tb.Margin = new System.Windows.Forms.Padding(4);
+            this.ProductName_tb.Name = "ProductName";
+            this.ProductName_tb.Size = new System.Drawing.Size(249, 38);
+            this.ProductName_tb.TabIndex = 23;
             // 
             // label8
             // 
@@ -243,7 +243,7 @@ namespace WindowsFormsApp1
             this.panel3.Controls.Add(this.label10);
             this.panel3.Controls.Add(this.ProductQuantity);
             this.panel3.Controls.Add(this.label9);
-            this.panel3.Controls.Add(this.ProductName);
+            this.panel3.Controls.Add(this.ProductName_tb);
             this.panel3.Controls.Add(this.label8);
             this.panel3.Controls.Add(this.pictureBox8);
             this.panel3.Location = new System.Drawing.Point(20, 25);
@@ -611,7 +611,7 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox ProductQuantity;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox ProductName;
+        private System.Windows.Forms.TextBox ProductName_tb;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.PictureBox pictureBox8;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse2;

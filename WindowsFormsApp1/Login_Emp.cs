@@ -4,14 +4,13 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-   
+
     public partial class Login_Emp : Form
-    { 
-       
+    {
+
         public Login_Emp()
         {
             InitializeComponent();
-
         }
 
         SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\PetShopDb.mdf;Integrated Security=True;Asynchronous Processing=True;User Instance=False;Context Connection=False");
@@ -23,13 +22,6 @@ namespace WindowsFormsApp1
             System.Windows.Forms.Application.Exit();
         }
 
-        private void btlReset_Click(object sender, EventArgs e)
-        {
-            Nametxt.Text = "";
-            Passwordtxt.Text = "";
-        }
-
-        
         private void Loginbtn_Click(object sender, EventArgs e)
         {
             try
@@ -37,7 +29,6 @@ namespace WindowsFormsApp1
                 string user = Nametxt.Text;
                 string pass = Passwordtxt.Text;
 
-                //ceva
                 con.Open();
                 cmd = new SqlCommand();
                 cmd.Connection = con;
@@ -46,30 +37,27 @@ namespace WindowsFormsApp1
 
                 if (dr.Read())
                 {
-                    
                     Home_Cust obj = new Home_Cust();
                     ((Home_Cust)obj).label_emp_name.Text = user;
+
                     obj.Show();
                     this.Hide();
                 }
                 else
                 {
-                    MessageBox.Show("Invalid Login please check username and password");
+                    MessageBox.Show("Logare invalidă! Verificați dacă datele sunt introduse corect și încercați din nou");
+                    Nametxt.Text = "";
+                    Passwordtxt.Text = "";
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("There's been a problem ==>" + ex.Message);
+                MessageBox.Show("A apărut o excepție ==>" + ex.Message);
             }
             finally
             {
-
                 con.Close();
             }
-
-
         }
-
-
     }
 }

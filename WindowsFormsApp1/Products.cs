@@ -19,6 +19,7 @@ namespace WindowsFormsApp1
             DisplayCustomers();
             Clear();
         }
+
         SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\PetShopDb.mdf;Integrated Security=True;Connect Timeout=30");
         int key = 0;
         //listaremos los empleados una vez agreguemos uno y cuando se inicie el formulario
@@ -35,7 +36,6 @@ namespace WindowsFormsApp1
                 sda.Fill(ds);
                 ProductDGV.DataSource = ds.Tables[0];
                 con.Close();
-
             }
             catch (Exception ex)
             {
@@ -48,14 +48,14 @@ namespace WindowsFormsApp1
         }
         private void Clear()
         {
-            ProductName.Text = "";
+            ProductName_tb.Text = "";
             ProductoPrice.Text = "";
             ProductQuantity.Text = "";
             cboProductCategory.SelectedIndex = 0;
         }
         private void Savebtn_Click(object sender, EventArgs e)
         {
-            if (ProductName.Text == "")
+            if (ProductName_tb.Text == "")
             {
                 MessageBox.Show("Please Add a Name");
                 return;
@@ -70,7 +70,7 @@ namespace WindowsFormsApp1
                 MessageBox.Show("Please Add a Quantity");
                 return;
             }
-            else if (ProductName.Text != "" && ProductoPrice.Text != "" && ProductQuantity.Text != "")
+            else if (ProductName_tb.Text != "" && ProductoPrice.Text != "" && ProductQuantity.Text != "")
             {
                 try
                 {
@@ -78,12 +78,12 @@ namespace WindowsFormsApp1
                     con.Open();
                     SqlCommand cmd = new SqlCommand("insert into ProductTbl (PrName,PrCat,PrQty,PrPrice) values(@PN,@PC,@PQ,@PP)", con);
                     //asignamos los valores a la sentencia para evitar la concatenacion por seguridad   
-                    cmd.Parameters.AddWithValue("@PN", ProductName.Text);
+                    cmd.Parameters.AddWithValue("@PN", ProductName_tb.Text);
                     cmd.Parameters.AddWithValue("@PC", cboProductCategory.SelectedItem.ToString());
                     cmd.Parameters.AddWithValue("@PQ", ProductQuantity.Text);
                     cmd.Parameters.AddWithValue("@PP", ProductoPrice.Text);
                     cmd.ExecuteNonQuery();
-                    MessageBox.Show("Product : " + ProductName.Text + " Added");
+                    MessageBox.Show("Product : " + ProductName_tb.Text + " Added");
                     con.Close();
                     DisplayCustomers();
                     Clear();
@@ -103,7 +103,7 @@ namespace WindowsFormsApp1
         private void ProductDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             key = Convert.ToInt32(ProductDGV.SelectedRows[0].Cells[0].Value.ToString());
-            ProductName.Text = ProductDGV.SelectedRows[0].Cells[1].Value.ToString();
+            ProductName_tb.Text = ProductDGV.SelectedRows[0].Cells[1].Value.ToString();
             cboProductCategory.Text = ProductDGV.SelectedRows[0].Cells[2].Value.ToString();
             ProductQuantity.Text = ProductDGV.SelectedRows[0].Cells[3].Value.ToString();
             ProductoPrice.Text = ProductDGV.SelectedRows[0].Cells[4].Value.ToString();
@@ -145,7 +145,7 @@ namespace WindowsFormsApp1
 
         private void Editbtn_Click(object sender, EventArgs e)
         {
-            if (ProductName.Text == "")
+            if (ProductName_tb.Text == "")
             {
                 MessageBox.Show("Please Add a Name");
                 return;
@@ -160,7 +160,7 @@ namespace WindowsFormsApp1
                 MessageBox.Show("Please Add a Quantity");
                 return;
             }
-            else if (ProductName.Text != "" && ProductoPrice.Text != "" && ProductQuantity.Text != "")
+            else if (ProductName_tb.Text != "" && ProductoPrice.Text != "" && ProductQuantity.Text != "")
             {
                 try
                 {
@@ -173,7 +173,7 @@ namespace WindowsFormsApp1
                                                     " PrPrice = @PP " +
                                                     " where PrId = @PKey ", con);
                     //asignamos los valores a la sentencia para evitar la concatenacion por seguridad   
-                    cmd.Parameters.AddWithValue("@PN", ProductName.Text);
+                    cmd.Parameters.AddWithValue("@PN", ProductName_tb.Text);
                     cmd.Parameters.AddWithValue("@PC", cboProductCategory.SelectedItem.ToString());
                     cmd.Parameters.AddWithValue("@PQ", ProductQuantity.Text);
                     cmd.Parameters.AddWithValue("@PP", ProductoPrice.Text);

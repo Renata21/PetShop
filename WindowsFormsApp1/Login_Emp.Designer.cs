@@ -41,7 +41,6 @@ namespace WindowsFormsApp1
             this.label2 = new System.Windows.Forms.Label();
             this.Passwordtxt = new System.Windows.Forms.TextBox();
             this.Loginbtn = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btlReset = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
@@ -87,11 +86,11 @@ namespace WindowsFormsApp1
             this.LblPet.AutoSize = true;
             this.LblPet.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblPet.ForeColor = System.Drawing.Color.Black;
-            this.LblPet.Location = new System.Drawing.Point(102, 22);
+            this.LblPet.Location = new System.Drawing.Point(83, 14);
             this.LblPet.Name = "LblPet";
-            this.LblPet.Size = new System.Drawing.Size(102, 28);
+            this.LblPet.Size = new System.Drawing.Size(145, 36);
             this.LblPet.TabIndex = 2;
-            this.LblPet.Text = "Pet Shop";
+            this.LblPet.Text = "Pet House";
             // 
             // bunifuElipse1
             // 
@@ -102,7 +101,7 @@ namespace WindowsFormsApp1
             // 
             this.Nametxt.Location = new System.Drawing.Point(55, 204);
             this.Nametxt.Name = "Nametxt";
-            this.Nametxt.Size = new System.Drawing.Size(188, 32);
+            this.Nametxt.Size = new System.Drawing.Size(188, 38);
             this.Nametxt.TabIndex = 1;
             // 
             // label1
@@ -112,9 +111,9 @@ namespace WindowsFormsApp1
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(51, 173);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(107, 26);
+            this.label1.Size = new System.Drawing.Size(218, 33);
             this.label1.TabIndex = 4;
-            this.label1.Text = "User Name";
+            this.label1.Text = "Nume de utilizator";
             // 
             // label2
             // 
@@ -123,16 +122,16 @@ namespace WindowsFormsApp1
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(51, 238);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(94, 26);
+            this.label2.Size = new System.Drawing.Size(85, 33);
             this.label2.TabIndex = 6;
-            this.label2.Text = "Password";
+            this.label2.Text = "Parola";
             // 
             // Passwordtxt
             // 
             this.Passwordtxt.Location = new System.Drawing.Point(55, 267);
             this.Passwordtxt.Name = "Passwordtxt";
-            this.Passwordtxt.PasswordChar = '.';
-            this.Passwordtxt.Size = new System.Drawing.Size(188, 32);
+            this.Passwordtxt.PasswordChar = '*';
+            this.Passwordtxt.Size = new System.Drawing.Size(188, 38);
             this.Passwordtxt.TabIndex = 5;
             // 
             // Loginbtn
@@ -144,7 +143,7 @@ namespace WindowsFormsApp1
             this.Loginbtn.ActiveLineColor = System.Drawing.Color.SeaGreen;
             this.Loginbtn.BackColor = System.Drawing.SystemColors.Control;
             this.Loginbtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Loginbtn.BackgroundImage")));
-            this.Loginbtn.ButtonText = "Login";
+            this.Loginbtn.ButtonText = "Logare";
             this.Loginbtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Loginbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Loginbtn.ForeColor = System.Drawing.Color.SeaGreen;
@@ -161,23 +160,11 @@ namespace WindowsFormsApp1
             this.Loginbtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Loginbtn.Click += new System.EventHandler(this.Loginbtn_Click);
             // 
-            // btlReset
-            // 
-            this.btlReset.AutoSize = true;
-            this.btlReset.Font = new System.Drawing.Font("Corbel", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btlReset.ForeColor = System.Drawing.Color.Black;
-            this.btlReset.Location = new System.Drawing.Point(115, 394);
-            this.btlReset.Name = "btlReset";
-            this.btlReset.Size = new System.Drawing.Size(59, 26);
-            this.btlReset.TabIndex = 8;
-            this.btlReset.Text = "Reset";
-            this.btlReset.Click += new System.EventHandler(this.btlReset_Click);
-            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.MediumVioletRed;
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 440);
+            this.panel2.Location = new System.Drawing.Point(0, 412);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(310, 18);
             this.panel2.TabIndex = 9;
@@ -187,20 +174,19 @@ namespace WindowsFormsApp1
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Corbel", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.MediumVioletRed;
-            this.label4.Location = new System.Drawing.Point(115, 120);
+            this.label4.Location = new System.Drawing.Point(101, 120);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(70, 26);
+            this.label4.Size = new System.Drawing.Size(97, 33);
             this.label4.TabIndex = 10;
-            this.label4.Text = "Signin";
+            this.label4.Text = "Logare";
             // 
-            // Login
+            // Login_Emp
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(310, 458);
+            this.ClientSize = new System.Drawing.Size(310, 430);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.btlReset);
             this.Controls.Add(this.Loginbtn);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.Passwordtxt);
@@ -210,7 +196,7 @@ namespace WindowsFormsApp1
             this.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(6);
-            this.Name = "Login";
+            this.Name = "Login_Emp";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.panel1.ResumeLayout(false);
@@ -233,7 +219,6 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.TextBox Passwordtxt;
         private System.Windows.Forms.Label label1;
         public System.Windows.Forms.TextBox Nametxt;
-        private System.Windows.Forms.Label btlReset;
         private Bunifu.Framework.UI.BunifuThinButton2 Loginbtn;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel2;
