@@ -62,6 +62,7 @@ namespace WindowsFormsApp1
             // 
             // pictureBox2
             // 
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Image = global::WindowsFormsApp1.Properties.Resources.marca_x;
             this.pictureBox2.Location = new System.Drawing.Point(265, 12);
             this.pictureBox2.Name = "pictureBox2";
