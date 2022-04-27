@@ -84,20 +84,21 @@ namespace WindowsFormsApp1
             // 
             this.btnDelete.ActiveBorderThickness = 1;
             this.btnDelete.ActiveCornerRadius = 20;
-            this.btnDelete.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.btnDelete.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(93)))), ((int)(((byte)(93)))));
             this.btnDelete.ActiveForecolor = System.Drawing.Color.White;
-            this.btnDelete.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.btnDelete.BackColor = System.Drawing.Color.White;
+            this.btnDelete.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(93)))), ((int)(((byte)(93)))));
+            this.btnDelete.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
+            this.btnDelete.BackColor = System.Drawing.Color.Transparent;
             this.btnDelete.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnDelete.BackgroundImage")));
             this.btnDelete.ButtonText = "Delete";
             this.btnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnDelete.ForeColor = System.Drawing.Color.White;
             this.btnDelete.IdleBorderThickness = 1;
             this.btnDelete.IdleCornerRadius = 20;
-            this.btnDelete.IdleFillColor = System.Drawing.Color.MediumVioletRed;
-            this.btnDelete.IdleForecolor = System.Drawing.Color.Black;
-            this.btnDelete.IdleLineColor = System.Drawing.Color.MediumVioletRed;
+            this.btnDelete.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnDelete.IdleForecolor = System.Drawing.Color.White;
+            this.btnDelete.IdleLineColor = System.Drawing.SystemColors.Menu;
             this.btnDelete.Location = new System.Drawing.Point(808, 203);
             this.btnDelete.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.btnDelete.Name = "btnDelete";
@@ -110,20 +111,21 @@ namespace WindowsFormsApp1
             // 
             this.btnEdit.ActiveBorderThickness = 1;
             this.btnEdit.ActiveCornerRadius = 20;
-            this.btnEdit.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.btnEdit.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(93)))), ((int)(((byte)(93)))));
             this.btnEdit.ActiveForecolor = System.Drawing.Color.White;
-            this.btnEdit.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.btnEdit.BackColor = System.Drawing.Color.White;
+            this.btnEdit.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(93)))), ((int)(((byte)(93)))));
+            this.btnEdit.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
+            this.btnEdit.BackColor = System.Drawing.Color.Transparent;
             this.btnEdit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEdit.BackgroundImage")));
             this.btnEdit.ButtonText = "Edit";
             this.btnEdit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEdit.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnEdit.ForeColor = System.Drawing.Color.White;
             this.btnEdit.IdleBorderThickness = 1;
             this.btnEdit.IdleCornerRadius = 20;
-            this.btnEdit.IdleFillColor = System.Drawing.Color.MediumVioletRed;
-            this.btnEdit.IdleForecolor = System.Drawing.Color.Black;
-            this.btnEdit.IdleLineColor = System.Drawing.Color.MediumVioletRed;
+            this.btnEdit.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnEdit.IdleForecolor = System.Drawing.Color.White;
+            this.btnEdit.IdleLineColor = System.Drawing.SystemColors.Menu;
             this.btnEdit.Location = new System.Drawing.Point(544, 203);
             this.btnEdit.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.btnEdit.Name = "btnEdit";
@@ -136,10 +138,10 @@ namespace WindowsFormsApp1
             // 
             this.btnSave.ActiveBorderThickness = 1;
             this.btnSave.ActiveCornerRadius = 20;
-            this.btnSave.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.btnSave.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(93)))), ((int)(((byte)(93)))));
             this.btnSave.ActiveForecolor = System.Drawing.Color.White;
             this.btnSave.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.btnSave.BackColor = System.Drawing.Color.White;
+            this.btnSave.BackColor = System.Drawing.Color.Transparent;
             this.btnSave.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSave.BackgroundImage")));
             this.btnSave.ButtonText = "Save";
             this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -147,9 +149,9 @@ namespace WindowsFormsApp1
             this.btnSave.ForeColor = System.Drawing.Color.SeaGreen;
             this.btnSave.IdleBorderThickness = 1;
             this.btnSave.IdleCornerRadius = 20;
-            this.btnSave.IdleFillColor = System.Drawing.Color.MediumVioletRed;
-            this.btnSave.IdleForecolor = System.Drawing.Color.Black;
-            this.btnSave.IdleLineColor = System.Drawing.Color.MediumVioletRed;
+            this.btnSave.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnSave.IdleForecolor = System.Drawing.Color.White;
+            this.btnSave.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnSave.Location = new System.Drawing.Point(280, 203);
             this.btnSave.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.btnSave.Name = "btnSave";
@@ -162,7 +164,7 @@ namespace WindowsFormsApp1
             // 
             this.pictureBox4.Image = global::WindowsFormsApp1.Properties.Resources.customer;
             this.pictureBox4.Location = new System.Drawing.Point(17, 0);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(68, 41);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -178,7 +180,9 @@ namespace WindowsFormsApp1
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Cambria", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(91, 4);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
@@ -188,11 +192,11 @@ namespace WindowsFormsApp1
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.Orchid;
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.panel4.Controls.Add(this.label3);
             this.panel4.Controls.Add(this.pictureBox4);
             this.panel4.Location = new System.Drawing.Point(16, 464);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(312, 41);
             this.panel4.TabIndex = 34;
@@ -201,7 +205,7 @@ namespace WindowsFormsApp1
             // 
             this.pictureBox3.Image = global::WindowsFormsApp1.Properties.Resources.employee;
             this.pictureBox3.Location = new System.Drawing.Point(33, 384);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(68, 54);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -217,7 +221,7 @@ namespace WindowsFormsApp1
             // 
             this.pictureBox1.Image = global::WindowsFormsApp1.Properties.Resources.home;
             this.pictureBox1.Location = new System.Drawing.Point(33, 234);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(68, 57);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -228,7 +232,7 @@ namespace WindowsFormsApp1
             // 
             this.pictureBox7.Image = global::WindowsFormsApp1.Properties.Resources.employee_1_;
             this.pictureBox7.Location = new System.Drawing.Point(33, 92);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(68, 54);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -239,7 +243,7 @@ namespace WindowsFormsApp1
             // 
             this.pictureBox6.Image = global::WindowsFormsApp1.Properties.Resources.logout;
             this.pictureBox6.Location = new System.Drawing.Point(33, 639);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(68, 73);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -250,7 +254,7 @@ namespace WindowsFormsApp1
             // 
             this.pictureBox5.Image = global::WindowsFormsApp1.Properties.Resources.bill;
             this.pictureBox5.Location = new System.Drawing.Point(33, 532);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(68, 54);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -266,7 +270,7 @@ namespace WindowsFormsApp1
             // 
             this.pictureBox2.Image = global::WindowsFormsApp1.Properties.Resources.box;
             this.pictureBox2.Location = new System.Drawing.Point(33, 311);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(68, 54);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -355,7 +359,7 @@ namespace WindowsFormsApp1
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.BackColor = System.Drawing.Color.Transparent;
             this.panel3.Controls.Add(this.btnDelete);
             this.panel3.Controls.Add(this.btnEdit);
             this.panel3.Controls.Add(this.btnSave);
@@ -368,7 +372,7 @@ namespace WindowsFormsApp1
             this.panel3.Controls.Add(this.label8);
             this.panel3.Controls.Add(this.pictureBox8);
             this.panel3.Location = new System.Drawing.Point(20, 25);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1349, 272);
             this.panel3.TabIndex = 0;
@@ -377,7 +381,7 @@ namespace WindowsFormsApp1
             // 
             this.CustomerPhone.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CustomerPhone.Location = new System.Drawing.Point(795, 86);
-            this.CustomerPhone.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CustomerPhone.Margin = new System.Windows.Forms.Padding(4);
             this.CustomerPhone.Name = "CustomerPhone";
             this.CustomerPhone.Size = new System.Drawing.Size(249, 38);
             this.CustomerPhone.TabIndex = 27;
@@ -398,7 +402,7 @@ namespace WindowsFormsApp1
             // 
             this.CustomerAddress.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CustomerAddress.Location = new System.Drawing.Point(537, 86);
-            this.CustomerAddress.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CustomerAddress.Margin = new System.Windows.Forms.Padding(4);
             this.CustomerAddress.Multiline = true;
             this.CustomerAddress.Name = "CustomerAddress";
             this.CustomerAddress.Size = new System.Drawing.Size(249, 101);
@@ -420,7 +424,7 @@ namespace WindowsFormsApp1
             // 
             this.CustomerName.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CustomerName.Location = new System.Drawing.Point(279, 86);
-            this.CustomerName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CustomerName.Margin = new System.Windows.Forms.Padding(4);
             this.CustomerName.Name = "CustomerName";
             this.CustomerName.Size = new System.Drawing.Size(249, 38);
             this.CustomerName.TabIndex = 23;
@@ -440,7 +444,7 @@ namespace WindowsFormsApp1
             // 
             this.pictureBox8.Image = global::WindowsFormsApp1.Properties.Resources.pet_food;
             this.pictureBox8.Location = new System.Drawing.Point(1199, 30);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(123, 103);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -454,12 +458,12 @@ namespace WindowsFormsApp1
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.LightCyan;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(235)))), ((int)(((byte)(221)))));
             this.panel1.Controls.Add(this.CustomerDGV);
             this.panel1.Controls.Add(this.label11);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Location = new System.Drawing.Point(336, 37);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1387, 674);
             this.panel1.TabIndex = 32;
@@ -474,7 +478,7 @@ namespace WindowsFormsApp1
             this.CustomerDGV.BackgroundColor = System.Drawing.Color.White;
             this.CustomerDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.CustomerDGV.Location = new System.Drawing.Point(20, 335);
-            this.CustomerDGV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CustomerDGV.Margin = new System.Windows.Forms.Padding(4);
             this.CustomerDGV.MultiSelect = false;
             this.CustomerDGV.Name = "CustomerDGV";
             this.CustomerDGV.ReadOnly = true;
@@ -512,7 +516,7 @@ namespace WindowsFormsApp1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.MediumVioletRed;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(182)))), ((int)(((byte)(164)))));
             this.ClientSize = new System.Drawing.Size(1739, 750);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.pictureBox3);
@@ -529,7 +533,7 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Customers";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Customers";

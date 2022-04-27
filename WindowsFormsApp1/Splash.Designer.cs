@@ -56,24 +56,25 @@ namespace WindowsFormsApp1
             // 
             // LblPet
             // 
-            this.LblPet.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblPet.ForeColor = System.Drawing.Color.Linen;
-            this.LblPet.Location = new System.Drawing.Point(31, 30);
+            this.LblPet.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblPet.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.LblPet.Location = new System.Drawing.Point(69, 30);
             this.LblPet.Name = "LblPet";
-            this.LblPet.Size = new System.Drawing.Size(537, 80);
+            this.LblPet.Size = new System.Drawing.Size(464, 80);
             this.LblPet.TabIndex = 1;
             this.LblPet.Text = "Administrarea Magazinului de Animale \"Pet House\"";
             this.LblPet.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // MyProgress
             // 
-            this.MyProgress.BackColor = System.Drawing.Color.Silver;
+            this.MyProgress.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(235)))), ((int)(((byte)(221)))));
             this.MyProgress.BorderRadius = 10;
-            this.MyProgress.Location = new System.Drawing.Point(151, 314);
+            this.MyProgress.ForeColor = System.Drawing.SystemColors.Window;
+            this.MyProgress.Location = new System.Drawing.Point(151, 289);
             this.MyProgress.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MyProgress.MaximumValue = 100;
             this.MyProgress.Name = "MyProgress";
-            this.MyProgress.ProgressColor = System.Drawing.Color.Teal;
+            this.MyProgress.ProgressColor = System.Drawing.Color.DarkRed;
             this.MyProgress.Size = new System.Drawing.Size(430, 18);
             this.MyProgress.TabIndex = 2;
             this.MyProgress.Value = 0;
@@ -81,11 +82,11 @@ namespace WindowsFormsApp1
             // lblPorcentaje
             // 
             this.lblPorcentaje.AutoSize = true;
-            this.lblPorcentaje.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPorcentaje.ForeColor = System.Drawing.Color.Linen;
-            this.lblPorcentaje.Location = new System.Drawing.Point(282, 152);
+            this.lblPorcentaje.Font = new System.Drawing.Font("Cambria", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPorcentaje.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblPorcentaje.Location = new System.Drawing.Point(272, 152);
             this.lblPorcentaje.Name = "lblPorcentaje";
-            this.lblPorcentaje.Size = new System.Drawing.Size(62, 32);
+            this.lblPorcentaje.Size = new System.Drawing.Size(108, 52);
             this.lblPorcentaje.TabIndex = 3;
             this.lblPorcentaje.Text = "%%";
             // 
@@ -93,8 +94,8 @@ namespace WindowsFormsApp1
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Linen;
-            this.label2.Location = new System.Drawing.Point(146, 282);
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.label2.Location = new System.Drawing.Point(146, 257);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(141, 32);
             this.label2.TabIndex = 4;
@@ -108,7 +109,7 @@ namespace WindowsFormsApp1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.MediumVioletRed;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(182)))), ((int)(((byte)(164)))));
             this.ClientSize = new System.Drawing.Size(594, 345);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblPorcentaje);
