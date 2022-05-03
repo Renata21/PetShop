@@ -50,7 +50,7 @@ namespace WindowsFormsApp1
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.MediumVioletRed;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(182)))), ((int)(((byte)(164)))));
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.LblPet);
@@ -121,7 +121,7 @@ namespace WindowsFormsApp1
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Corbel", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(51, 238);
+            this.label2.Location = new System.Drawing.Point(51, 252);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(85, 33);
             this.label2.TabIndex = 6;
@@ -129,7 +129,7 @@ namespace WindowsFormsApp1
             // 
             // Passwordtxt
             // 
-            this.Passwordtxt.Location = new System.Drawing.Point(55, 267);
+            this.Passwordtxt.Location = new System.Drawing.Point(55, 288);
             this.Passwordtxt.Name = "Passwordtxt";
             this.Passwordtxt.PasswordChar = '*';
             this.Passwordtxt.Size = new System.Drawing.Size(188, 38);
@@ -142,7 +142,7 @@ namespace WindowsFormsApp1
             this.Loginbtn.ActiveFillColor = System.Drawing.Color.SeaGreen;
             this.Loginbtn.ActiveForecolor = System.Drawing.Color.White;
             this.Loginbtn.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.Loginbtn.BackColor = System.Drawing.SystemColors.Control;
+            this.Loginbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(235)))), ((int)(((byte)(221)))));
             this.Loginbtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Loginbtn.BackgroundImage")));
             this.Loginbtn.ButtonText = "Logare";
             this.Loginbtn.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -150,9 +150,9 @@ namespace WindowsFormsApp1
             this.Loginbtn.ForeColor = System.Drawing.Color.SeaGreen;
             this.Loginbtn.IdleBorderThickness = 1;
             this.Loginbtn.IdleCornerRadius = 20;
-            this.Loginbtn.IdleFillColor = System.Drawing.Color.MediumVioletRed;
-            this.Loginbtn.IdleForecolor = System.Drawing.Color.Black;
-            this.Loginbtn.IdleLineColor = System.Drawing.Color.MediumVioletRed;
+            this.Loginbtn.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Loginbtn.IdleForecolor = System.Drawing.Color.Transparent;
+            this.Loginbtn.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.Loginbtn.Location = new System.Drawing.Point(56, 348);
             this.Loginbtn.Margin = new System.Windows.Forms.Padding(5);
             this.Loginbtn.Name = "Loginbtn";
@@ -163,7 +163,7 @@ namespace WindowsFormsApp1
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.MediumVioletRed;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(182)))), ((int)(((byte)(164)))));
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 412);
             this.panel2.Name = "panel2";
@@ -174,7 +174,7 @@ namespace WindowsFormsApp1
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Corbel", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.MediumVioletRed;
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.label4.Location = new System.Drawing.Point(101, 120);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(97, 33);
@@ -185,6 +185,7 @@ namespace WindowsFormsApp1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(235)))), ((int)(((byte)(221)))));
             this.ClientSize = new System.Drawing.Size(310, 430);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.panel2);

@@ -252,6 +252,11 @@ namespace WindowsFormsApp1
             this.Hide();
         }
 
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
         private void label12_Click(object sender, EventArgs e)
         {
             Employees obj = new Employees();

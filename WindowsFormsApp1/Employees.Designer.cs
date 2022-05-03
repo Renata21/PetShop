@@ -170,14 +170,14 @@ namespace WindowsFormsApp1
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.LightCyan;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(235)))), ((int)(((byte)(221)))));
             this.panel1.Controls.Add(this.EmployeeDGV);
             this.panel1.Controls.Add(this.label11);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Location = new System.Drawing.Point(336, 15);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1387, 674);
+            this.panel1.Size = new System.Drawing.Size(1111, 674);
             this.panel1.TabIndex = 16;
             // 
             // EmployeeDGV
@@ -196,7 +196,7 @@ namespace WindowsFormsApp1
             this.EmployeeDGV.ReadOnly = true;
             this.EmployeeDGV.RowHeadersWidth = 51;
             this.EmployeeDGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.EmployeeDGV.Size = new System.Drawing.Size(1349, 319);
+            this.EmployeeDGV.Size = new System.Drawing.Size(1074, 319);
             this.EmployeeDGV.TabIndex = 36;
             this.EmployeeDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.EmployeeDGV_CellContentClick);
             // 
@@ -204,7 +204,7 @@ namespace WindowsFormsApp1
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Cambria", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(539, 300);
+            this.label11.Location = new System.Drawing.Point(488, 301);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(180, 32);
@@ -213,7 +213,7 @@ namespace WindowsFormsApp1
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(235)))), ((int)(((byte)(221)))));
             this.panel3.Controls.Add(this.btnDelete);
             this.panel3.Controls.Add(this.btnEdit);
             this.panel3.Controls.Add(this.btnSave);
@@ -241,7 +241,7 @@ namespace WindowsFormsApp1
             this.btnDelete.ActiveFillColor = System.Drawing.Color.SeaGreen;
             this.btnDelete.ActiveForecolor = System.Drawing.Color.White;
             this.btnDelete.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.btnDelete.BackColor = System.Drawing.Color.White;
+            this.btnDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(235)))), ((int)(((byte)(221)))));
             this.btnDelete.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnDelete.BackgroundImage")));
             this.btnDelete.ButtonText = "Delete";
             this.btnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -249,9 +249,9 @@ namespace WindowsFormsApp1
             this.btnDelete.ForeColor = System.Drawing.Color.SeaGreen;
             this.btnDelete.IdleBorderThickness = 1;
             this.btnDelete.IdleCornerRadius = 20;
-            this.btnDelete.IdleFillColor = System.Drawing.Color.MediumVioletRed;
-            this.btnDelete.IdleForecolor = System.Drawing.Color.Black;
-            this.btnDelete.IdleLineColor = System.Drawing.Color.MediumVioletRed;
+            this.btnDelete.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnDelete.IdleForecolor = System.Drawing.Color.Transparent;
+            this.btnDelete.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnDelete.Location = new System.Drawing.Point(808, 203);
             this.btnDelete.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.btnDelete.Name = "btnDelete";
@@ -267,7 +267,7 @@ namespace WindowsFormsApp1
             this.btnEdit.ActiveFillColor = System.Drawing.Color.SeaGreen;
             this.btnEdit.ActiveForecolor = System.Drawing.Color.White;
             this.btnEdit.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.btnEdit.BackColor = System.Drawing.Color.White;
+            this.btnEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(235)))), ((int)(((byte)(221)))));
             this.btnEdit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEdit.BackgroundImage")));
             this.btnEdit.ButtonText = "Edit";
             this.btnEdit.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -275,9 +275,9 @@ namespace WindowsFormsApp1
             this.btnEdit.ForeColor = System.Drawing.Color.SeaGreen;
             this.btnEdit.IdleBorderThickness = 1;
             this.btnEdit.IdleCornerRadius = 20;
-            this.btnEdit.IdleFillColor = System.Drawing.Color.MediumVioletRed;
-            this.btnEdit.IdleForecolor = System.Drawing.Color.Black;
-            this.btnEdit.IdleLineColor = System.Drawing.Color.MediumVioletRed;
+            this.btnEdit.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnEdit.IdleForecolor = System.Drawing.Color.Transparent;
+            this.btnEdit.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnEdit.Location = new System.Drawing.Point(544, 203);
             this.btnEdit.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.btnEdit.Name = "btnEdit";
@@ -293,7 +293,7 @@ namespace WindowsFormsApp1
             this.btnSave.ActiveFillColor = System.Drawing.Color.SeaGreen;
             this.btnSave.ActiveForecolor = System.Drawing.Color.White;
             this.btnSave.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.btnSave.BackColor = System.Drawing.Color.White;
+            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(235)))), ((int)(((byte)(221)))));
             this.btnSave.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSave.BackgroundImage")));
             this.btnSave.ButtonText = "Save";
             this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -301,9 +301,9 @@ namespace WindowsFormsApp1
             this.btnSave.ForeColor = System.Drawing.Color.SeaGreen;
             this.btnSave.IdleBorderThickness = 1;
             this.btnSave.IdleCornerRadius = 20;
-            this.btnSave.IdleFillColor = System.Drawing.Color.MediumVioletRed;
-            this.btnSave.IdleForecolor = System.Drawing.Color.Black;
-            this.btnSave.IdleLineColor = System.Drawing.Color.MediumVioletRed;
+            this.btnSave.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnSave.IdleForecolor = System.Drawing.Color.Transparent;
+            this.btnSave.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnSave.Location = new System.Drawing.Point(280, 203);
             this.btnSave.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.btnSave.Name = "btnSave";
@@ -317,7 +317,7 @@ namespace WindowsFormsApp1
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Corbel", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.Color.Black;
-            this.label18.Location = new System.Drawing.Point(539, 146);
+            this.label18.Location = new System.Drawing.Point(554, 146);
             this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(160, 33);
@@ -326,12 +326,12 @@ namespace WindowsFormsApp1
             // 
             // cboDateOfBirth
             // 
-            this.cboDateOfBirth.BackColor = System.Drawing.Color.MediumVioletRed;
+            this.cboDateOfBirth.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.cboDateOfBirth.BorderRadius = 0;
             this.cboDateOfBirth.ForeColor = System.Drawing.Color.White;
             this.cboDateOfBirth.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.cboDateOfBirth.FormatCustom = null;
-            this.cboDateOfBirth.Location = new System.Drawing.Point(712, 138);
+            this.cboDateOfBirth.Location = new System.Drawing.Point(723, 146);
             this.cboDateOfBirth.Margin = new System.Windows.Forms.Padding(5);
             this.cboDateOfBirth.Name = "cboDateOfBirth";
             this.cboDateOfBirth.Size = new System.Drawing.Size(333, 44);
@@ -444,6 +444,7 @@ namespace WindowsFormsApp1
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Cambria", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Transparent;
             this.label3.Location = new System.Drawing.Point(91, 4);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
@@ -458,7 +459,7 @@ namespace WindowsFormsApp1
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.Orchid;
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.panel4.Controls.Add(this.label3);
             this.panel4.Controls.Add(this.pictureBox3);
             this.panel4.Location = new System.Drawing.Point(16, 362);
@@ -553,8 +554,8 @@ namespace WindowsFormsApp1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.MediumVioletRed;
-            this.ClientSize = new System.Drawing.Size(1739, 704);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(182)))), ((int)(((byte)(164)))));
+            this.ClientSize = new System.Drawing.Size(1543, 750);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel4);

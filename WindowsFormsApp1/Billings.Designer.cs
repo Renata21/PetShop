@@ -44,8 +44,6 @@ namespace WindowsFormsApp1
             this.label12 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.bunifuElipse4 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panel4 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -60,7 +58,6 @@ namespace WindowsFormsApp1
             this.ProductPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Total = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TotalLbl = new System.Windows.Forms.Label();
             this.Printbtn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.label16 = new System.Windows.Forms.Label();
             this.TransactionsDGV = new System.Windows.Forms.DataGridView();
@@ -72,7 +69,6 @@ namespace WindowsFormsApp1
             this.label10 = new System.Windows.Forms.Label();
             this.PrNameTb = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.ProductsDGV = new System.Windows.Forms.DataGridView();
             this.label11 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -85,6 +81,9 @@ namespace WindowsFormsApp1
             this.label13 = new System.Windows.Forms.Label();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.bunifuElipse4 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.TotalLbl = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -97,7 +96,6 @@ namespace WindowsFormsApp1
             ((System.ComponentModel.ISupportInitialize)(this.BillDGV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TransactionsDGV)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ProductsDGV)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -120,9 +118,9 @@ namespace WindowsFormsApp1
             this.CustIdCb.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CustIdCb.FormattingEnabled = true;
             this.CustIdCb.Location = new System.Drawing.Point(23, 92);
-            this.CustIdCb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CustIdCb.Margin = new System.Windows.Forms.Padding(4);
             this.CustIdCb.Name = "CustIdCb";
-            this.CustIdCb.Size = new System.Drawing.Size(239, 39);
+            this.CustIdCb.Size = new System.Drawing.Size(151, 39);
             this.CustIdCb.TabIndex = 35;
             this.CustIdCb.SelectionChangeCommitted += new System.EventHandler(this.CustIdCb_SelectionChangeCommitted);
             // 
@@ -141,9 +139,9 @@ namespace WindowsFormsApp1
             this.Deletebtn.ForeColor = System.Drawing.Color.SeaGreen;
             this.Deletebtn.IdleBorderThickness = 1;
             this.Deletebtn.IdleCornerRadius = 20;
-            this.Deletebtn.IdleFillColor = System.Drawing.Color.MediumVioletRed;
-            this.Deletebtn.IdleForecolor = System.Drawing.Color.Black;
-            this.Deletebtn.IdleLineColor = System.Drawing.Color.MediumVioletRed;
+            this.Deletebtn.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Deletebtn.IdleForecolor = System.Drawing.Color.Transparent;
+            this.Deletebtn.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.Deletebtn.Location = new System.Drawing.Point(312, 133);
             this.Deletebtn.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.Deletebtn.Name = "Deletebtn";
@@ -167,9 +165,9 @@ namespace WindowsFormsApp1
             this.Savebtn.ForeColor = System.Drawing.Color.SeaGreen;
             this.Savebtn.IdleBorderThickness = 1;
             this.Savebtn.IdleCornerRadius = 20;
-            this.Savebtn.IdleFillColor = System.Drawing.Color.MediumVioletRed;
-            this.Savebtn.IdleForecolor = System.Drawing.Color.Black;
-            this.Savebtn.IdleLineColor = System.Drawing.Color.MediumVioletRed;
+            this.Savebtn.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Savebtn.IdleForecolor = System.Drawing.Color.Transparent;
+            this.Savebtn.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.Savebtn.Location = new System.Drawing.Point(45, 133);
             this.Savebtn.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.Savebtn.Name = "Savebtn";
@@ -195,7 +193,7 @@ namespace WindowsFormsApp1
             // 
             this.pictureBox4.Image = global::WindowsFormsApp1.Properties.Resources.customer;
             this.pictureBox4.Location = new System.Drawing.Point(33, 455);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(68, 54);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -206,7 +204,7 @@ namespace WindowsFormsApp1
             // 
             this.pictureBox1.Image = global::WindowsFormsApp1.Properties.Resources.home;
             this.pictureBox1.Location = new System.Drawing.Point(33, 234);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(68, 57);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -217,7 +215,7 @@ namespace WindowsFormsApp1
             // 
             this.pictureBox7.Image = global::WindowsFormsApp1.Properties.Resources.employee_1_;
             this.pictureBox7.Location = new System.Drawing.Point(33, 92);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(68, 54);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -228,7 +226,7 @@ namespace WindowsFormsApp1
             // 
             this.pictureBox5.Image = global::WindowsFormsApp1.Properties.Resources.bill;
             this.pictureBox5.Location = new System.Drawing.Point(17, 0);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(68, 41);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -239,7 +237,7 @@ namespace WindowsFormsApp1
             // 
             this.pictureBox3.Image = global::WindowsFormsApp1.Properties.Resources.employee;
             this.pictureBox3.Location = new System.Drawing.Point(33, 384);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(68, 54);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -285,23 +283,13 @@ namespace WindowsFormsApp1
             this.label6.Text = "LogOut";
             this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
-            // bunifuElipse1
-            // 
-            this.bunifuElipse1.ElipseRadius = 40;
-            this.bunifuElipse1.TargetControl = this;
-            // 
-            // bunifuElipse4
-            // 
-            this.bunifuElipse4.ElipseRadius = 35;
-            this.bunifuElipse4.TargetControl = this.panel4;
-            // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.Orchid;
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.panel4.Controls.Add(this.label3);
             this.panel4.Controls.Add(this.pictureBox5);
             this.panel4.Location = new System.Drawing.Point(16, 530);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(312, 41);
             this.panel4.TabIndex = 65;
@@ -310,6 +298,7 @@ namespace WindowsFormsApp1
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Cambria", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Transparent;
             this.label3.Location = new System.Drawing.Point(91, 4);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
@@ -321,7 +310,7 @@ namespace WindowsFormsApp1
             // 
             this.pictureBox2.Image = global::WindowsFormsApp1.Properties.Resources.box;
             this.pictureBox2.Location = new System.Drawing.Point(33, 309);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(68, 57);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -349,7 +338,7 @@ namespace WindowsFormsApp1
             // 
             this.pictureBox6.Image = global::WindowsFormsApp1.Properties.Resources.logout;
             this.pictureBox6.Location = new System.Drawing.Point(33, 639);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(68, 73);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -358,10 +347,10 @@ namespace WindowsFormsApp1
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.LightCyan;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(235)))), ((int)(((byte)(221)))));
+            this.panel1.Controls.Add(this.TotalLbl);
             this.panel1.Controls.Add(this.label17);
             this.panel1.Controls.Add(this.BillDGV);
-            this.panel1.Controls.Add(this.TotalLbl);
             this.panel1.Controls.Add(this.Printbtn);
             this.panel1.Controls.Add(this.label16);
             this.panel1.Controls.Add(this.TransactionsDGV);
@@ -370,16 +359,17 @@ namespace WindowsFormsApp1
             this.panel1.Controls.Add(this.label11);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Location = new System.Drawing.Point(336, 37);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1387, 674);
+            this.panel1.Size = new System.Drawing.Size(1194, 674);
             this.panel1.TabIndex = 64;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label17
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Cambria", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(229, 442);
+            this.label17.Location = new System.Drawing.Point(258, 426);
             this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(122, 32);
@@ -401,14 +391,14 @@ namespace WindowsFormsApp1
             this.ProductPrice,
             this.Quantity,
             this.Total});
-            this.BillDGV.Location = new System.Drawing.Point(728, 59);
-            this.BillDGV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BillDGV.Location = new System.Drawing.Point(647, 55);
+            this.BillDGV.Margin = new System.Windows.Forms.Padding(4);
             this.BillDGV.MultiSelect = false;
             this.BillDGV.Name = "BillDGV";
             this.BillDGV.ReadOnly = true;
             this.BillDGV.RowHeadersWidth = 51;
             this.BillDGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.BillDGV.Size = new System.Drawing.Size(633, 295);
+            this.BillDGV.Size = new System.Drawing.Size(531, 295);
             this.BillDGV.TabIndex = 41;
             // 
             // Id
@@ -446,18 +436,6 @@ namespace WindowsFormsApp1
             this.Total.Name = "Total";
             this.Total.ReadOnly = true;
             // 
-            // TotalLbl
-            // 
-            this.TotalLbl.AutoSize = true;
-            this.TotalLbl.Font = new System.Drawing.Font("Corbel", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TotalLbl.ForeColor = System.Drawing.Color.Black;
-            this.TotalLbl.Location = new System.Drawing.Point(983, 358);
-            this.TotalLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.TotalLbl.Name = "TotalLbl";
-            this.TotalLbl.Size = new System.Drawing.Size(29, 33);
-            this.TotalLbl.TabIndex = 37;
-            this.TotalLbl.Text = "$";
-            // 
             // Printbtn
             // 
             this.Printbtn.ActiveBorderThickness = 1;
@@ -465,7 +443,7 @@ namespace WindowsFormsApp1
             this.Printbtn.ActiveFillColor = System.Drawing.Color.SeaGreen;
             this.Printbtn.ActiveForecolor = System.Drawing.Color.White;
             this.Printbtn.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.Printbtn.BackColor = System.Drawing.Color.LightCyan;
+            this.Printbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(235)))), ((int)(((byte)(221)))));
             this.Printbtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Printbtn.BackgroundImage")));
             this.Printbtn.ButtonText = "Print";
             this.Printbtn.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -473,10 +451,10 @@ namespace WindowsFormsApp1
             this.Printbtn.ForeColor = System.Drawing.Color.SeaGreen;
             this.Printbtn.IdleBorderThickness = 1;
             this.Printbtn.IdleCornerRadius = 20;
-            this.Printbtn.IdleFillColor = System.Drawing.Color.MediumVioletRed;
-            this.Printbtn.IdleForecolor = System.Drawing.Color.Black;
-            this.Printbtn.IdleLineColor = System.Drawing.Color.MediumVioletRed;
-            this.Printbtn.Location = new System.Drawing.Point(728, 351);
+            this.Printbtn.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Printbtn.IdleForecolor = System.Drawing.Color.Transparent;
+            this.Printbtn.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Printbtn.Location = new System.Drawing.Point(768, 351);
             this.Printbtn.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.Printbtn.Name = "Printbtn";
             this.Printbtn.Size = new System.Drawing.Size(244, 50);
@@ -488,7 +466,7 @@ namespace WindowsFormsApp1
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Cambria", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(937, 407);
+            this.label16.Location = new System.Drawing.Point(829, 407);
             this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(172, 32);
@@ -504,14 +482,14 @@ namespace WindowsFormsApp1
             this.TransactionsDGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.TransactionsDGV.BackgroundColor = System.Drawing.Color.White;
             this.TransactionsDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.TransactionsDGV.Location = new System.Drawing.Point(728, 442);
-            this.TransactionsDGV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TransactionsDGV.Location = new System.Drawing.Point(647, 443);
+            this.TransactionsDGV.Margin = new System.Windows.Forms.Padding(4);
             this.TransactionsDGV.MultiSelect = false;
             this.TransactionsDGV.Name = "TransactionsDGV";
             this.TransactionsDGV.ReadOnly = true;
             this.TransactionsDGV.RowHeadersWidth = 51;
             this.TransactionsDGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.TransactionsDGV.Size = new System.Drawing.Size(633, 214);
+            this.TransactionsDGV.Size = new System.Drawing.Size(531, 214);
             this.TransactionsDGV.TabIndex = 39;
             // 
             // panel2
@@ -526,11 +504,10 @@ namespace WindowsFormsApp1
             this.panel2.Controls.Add(this.PrNameTb);
             this.panel2.Controls.Add(this.Savebtn);
             this.panel2.Controls.Add(this.label14);
-            this.panel2.Controls.Add(this.pictureBox9);
-            this.panel2.Location = new System.Drawing.Point(20, 235);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Location = new System.Drawing.Point(20, 210);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(633, 203);
+            this.panel2.Size = new System.Drawing.Size(594, 203);
             this.panel2.TabIndex = 37;
             // 
             // label15
@@ -549,7 +526,7 @@ namespace WindowsFormsApp1
             // 
             this.QtyTb.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.QtyTb.Location = new System.Drawing.Point(396, 84);
-            this.QtyTb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.QtyTb.Margin = new System.Windows.Forms.Padding(4);
             this.QtyTb.Name = "QtyTb";
             this.QtyTb.Size = new System.Drawing.Size(179, 38);
             this.QtyTb.TabIndex = 27;
@@ -570,7 +547,7 @@ namespace WindowsFormsApp1
             // 
             this.PrPriceTb.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PrPriceTb.Location = new System.Drawing.Point(209, 84);
-            this.PrPriceTb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PrPriceTb.Margin = new System.Windows.Forms.Padding(4);
             this.PrPriceTb.Name = "PrPriceTb";
             this.PrPriceTb.Size = new System.Drawing.Size(179, 38);
             this.PrPriceTb.TabIndex = 25;
@@ -591,7 +568,7 @@ namespace WindowsFormsApp1
             // 
             this.PrNameTb.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PrNameTb.Location = new System.Drawing.Point(23, 84);
-            this.PrNameTb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PrNameTb.Margin = new System.Windows.Forms.Padding(4);
             this.PrNameTb.Name = "PrNameTb";
             this.PrNameTb.Size = new System.Drawing.Size(179, 38);
             this.PrNameTb.TabIndex = 23;
@@ -607,17 +584,6 @@ namespace WindowsFormsApp1
             this.label14.TabIndex = 22;
             this.label14.Text = "Product";
             // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Image = global::WindowsFormsApp1.Properties.Resources.pet_food;
-            this.pictureBox9.Location = new System.Drawing.Point(544, 11);
-            this.pictureBox9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(77, 69);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox9.TabIndex = 16;
-            this.pictureBox9.TabStop = false;
-            // 
             // ProductsDGV
             // 
             this.ProductsDGV.AllowUserToAddRows = false;
@@ -627,14 +593,14 @@ namespace WindowsFormsApp1
             this.ProductsDGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.ProductsDGV.BackgroundColor = System.Drawing.Color.White;
             this.ProductsDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.ProductsDGV.Location = new System.Drawing.Point(20, 476);
-            this.ProductsDGV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ProductsDGV.Location = new System.Drawing.Point(20, 462);
+            this.ProductsDGV.Margin = new System.Windows.Forms.Padding(4);
             this.ProductsDGV.MultiSelect = false;
             this.ProductsDGV.Name = "ProductsDGV";
             this.ProductsDGV.ReadOnly = true;
             this.ProductsDGV.RowHeadersWidth = 51;
             this.ProductsDGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.ProductsDGV.Size = new System.Drawing.Size(633, 180);
+            this.ProductsDGV.Size = new System.Drawing.Size(612, 180);
             this.ProductsDGV.TabIndex = 38;
             this.ProductsDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ProductsDGV_CellContentClick);
             // 
@@ -642,7 +608,7 @@ namespace WindowsFormsApp1
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Cambria", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(941, 25);
+            this.label11.Location = new System.Drawing.Point(843, 19);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(169, 32);
@@ -659,9 +625,9 @@ namespace WindowsFormsApp1
             this.panel3.Controls.Add(this.label8);
             this.panel3.Controls.Add(this.pictureBox8);
             this.panel3.Location = new System.Drawing.Point(20, 25);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(633, 203);
+            this.panel3.Size = new System.Drawing.Size(556, 160);
             this.panel3.TabIndex = 0;
             // 
             // label9
@@ -669,7 +635,7 @@ namespace WindowsFormsApp1
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Corbel", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(273, 42);
+            this.label9.Location = new System.Drawing.Point(238, 48);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(82, 33);
@@ -679,10 +645,10 @@ namespace WindowsFormsApp1
             // custNameTb
             // 
             this.custNameTb.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.custNameTb.Location = new System.Drawing.Point(280, 92);
-            this.custNameTb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.custNameTb.Location = new System.Drawing.Point(244, 93);
+            this.custNameTb.Margin = new System.Windows.Forms.Padding(4);
             this.custNameTb.Name = "custNameTb";
-            this.custNameTb.Size = new System.Drawing.Size(249, 38);
+            this.custNameTb.Size = new System.Drawing.Size(185, 38);
             this.custNameTb.TabIndex = 23;
             // 
             // label8
@@ -699,8 +665,8 @@ namespace WindowsFormsApp1
             // pictureBox8
             // 
             this.pictureBox8.Image = global::WindowsFormsApp1.Properties.Resources.pet_food;
-            this.pictureBox8.Location = new System.Drawing.Point(544, 11);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox8.Location = new System.Drawing.Point(475, 12);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(77, 69);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -744,12 +710,32 @@ namespace WindowsFormsApp1
             this.printPreviewDialog1.Name = "printPreviewDialog1";
             this.printPreviewDialog1.Visible = false;
             // 
+            // bunifuElipse1
+            // 
+            this.bunifuElipse1.ElipseRadius = 40;
+            this.bunifuElipse1.TargetControl = this;
+            // 
+            // bunifuElipse4
+            // 
+            this.bunifuElipse4.ElipseRadius = 35;
+            this.bunifuElipse4.TargetControl = this.panel4;
+            // 
+            // TotalLbl
+            // 
+            this.TotalLbl.AutoSize = true;
+            this.TotalLbl.Font = new System.Drawing.Font("Corbel", 15.75F);
+            this.TotalLbl.Location = new System.Drawing.Point(1040, 360);
+            this.TotalLbl.Name = "TotalLbl";
+            this.TotalLbl.Size = new System.Drawing.Size(29, 33);
+            this.TotalLbl.TabIndex = 43;
+            this.TotalLbl.Text = "$";
+            // 
             // Billings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.MediumVioletRed;
-            this.ClientSize = new System.Drawing.Size(1739, 750);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(182)))), ((int)(((byte)(164)))));
+            this.ClientSize = new System.Drawing.Size(1543, 750);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label4);
@@ -765,7 +751,7 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Billings";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Billings";
@@ -784,7 +770,6 @@ namespace WindowsFormsApp1
             ((System.ComponentModel.ISupportInitialize)(this.TransactionsDGV)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ProductsDGV)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
@@ -809,7 +794,6 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label6;
-        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Panel panel4;
@@ -823,7 +807,6 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.TextBox custNameTb;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.PictureBox pictureBox8;
-        private Bunifu.Framework.UI.BunifuElipse bunifuElipse4;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse2;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse3;
@@ -836,10 +819,8 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox PrNameTb;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.DataGridView TransactionsDGV;
-        private System.Windows.Forms.Label TotalLbl;
         private Bunifu.Framework.UI.BunifuThinButton2 Printbtn;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.DataGridView BillDGV;
@@ -850,5 +831,8 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.DataGridViewTextBoxColumn ProductPrice;
         private System.Windows.Forms.DataGridViewTextBoxColumn Quantity;
         private System.Windows.Forms.DataGridViewTextBoxColumn Total;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse4;
+        private System.Windows.Forms.Label TotalLbl;
     }
 }

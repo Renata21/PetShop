@@ -97,7 +97,7 @@ namespace WindowsFormsApp1
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.LightCyan;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(235)))), ((int)(((byte)(221)))));
             this.panel1.Controls.Add(this.gunaCircleProgressBar2);
             this.panel1.Controls.Add(this.panel6);
             this.panel1.Controls.Add(this.panel5);
@@ -107,7 +107,7 @@ namespace WindowsFormsApp1
             this.panel1.Location = new System.Drawing.Point(336, 15);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1387, 720);
+            this.panel1.Size = new System.Drawing.Size(1191, 720);
             this.panel1.TabIndex = 0;
             // 
             // gunaCircleProgressBar2
@@ -116,7 +116,7 @@ namespace WindowsFormsApp1
             this.gunaCircleProgressBar2.BaseColor = System.Drawing.Color.White;
             this.gunaCircleProgressBar2.Controls.Add(this.label15);
             this.gunaCircleProgressBar2.Controls.Add(this.lblFinance);
-            this.gunaCircleProgressBar2.IdleColor = System.Drawing.Color.MediumVioletRed;
+            this.gunaCircleProgressBar2.IdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.gunaCircleProgressBar2.IdleOffset = 20;
             this.gunaCircleProgressBar2.Image = null;
             this.gunaCircleProgressBar2.ImageSize = new System.Drawing.Size(52, 52);
@@ -153,20 +153,21 @@ namespace WindowsFormsApp1
             // 
             // panel6
             // 
-            this.panel6.BackColor = System.Drawing.Color.MediumVioletRed;
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.panel6.Controls.Add(this.BirdLbl);
             this.panel6.Controls.Add(this.label14);
             this.panel6.Controls.Add(this.pictureBox11);
             this.panel6.Location = new System.Drawing.Point(716, 304);
             this.panel6.Margin = new System.Windows.Forms.Padding(4);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(513, 116);
+            this.panel6.Size = new System.Drawing.Size(460, 116);
             this.panel6.TabIndex = 6;
             // 
             // BirdLbl
             // 
             this.BirdLbl.AutoSize = true;
             this.BirdLbl.Font = new System.Drawing.Font("Cambria", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BirdLbl.ForeColor = System.Drawing.Color.Transparent;
             this.BirdLbl.Location = new System.Drawing.Point(308, 47);
             this.BirdLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.BirdLbl.Name = "BirdLbl";
@@ -178,6 +179,7 @@ namespace WindowsFormsApp1
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Cambria", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.Transparent;
             this.label14.Location = new System.Drawing.Point(217, 47);
             this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
@@ -198,20 +200,21 @@ namespace WindowsFormsApp1
             // 
             // panel5
             // 
-            this.panel5.BackColor = System.Drawing.Color.MediumVioletRed;
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.panel5.Controls.Add(this.LblCat);
             this.panel5.Controls.Add(this.label13);
             this.panel5.Controls.Add(this.pictureBox10);
             this.panel5.Location = new System.Drawing.Point(167, 452);
             this.panel5.Margin = new System.Windows.Forms.Padding(4);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(513, 116);
+            this.panel5.Size = new System.Drawing.Size(456, 116);
             this.panel5.TabIndex = 5;
             // 
             // LblCat
             // 
             this.LblCat.AutoSize = true;
             this.LblCat.Font = new System.Drawing.Font("Cambria", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblCat.ForeColor = System.Drawing.Color.Transparent;
             this.LblCat.Location = new System.Drawing.Point(299, 47);
             this.LblCat.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblCat.Name = "LblCat";
@@ -223,6 +226,7 @@ namespace WindowsFormsApp1
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Cambria", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.Transparent;
             this.label13.Location = new System.Drawing.Point(217, 47);
             this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
@@ -243,20 +247,21 @@ namespace WindowsFormsApp1
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.MediumVioletRed;
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.panel4.Controls.Add(this.DogsLbl);
             this.panel4.Controls.Add(this.label12);
             this.panel4.Controls.Add(this.pictureBox9);
             this.panel4.Location = new System.Drawing.Point(163, 305);
             this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(513, 116);
+            this.panel4.Size = new System.Drawing.Size(460, 116);
             this.panel4.TabIndex = 4;
             // 
             // DogsLbl
             // 
             this.DogsLbl.AutoSize = true;
             this.DogsLbl.Font = new System.Drawing.Font("Cambria", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DogsLbl.ForeColor = System.Drawing.Color.Transparent;
             this.DogsLbl.Location = new System.Drawing.Point(303, 46);
             this.DogsLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.DogsLbl.Name = "DogsLbl";
@@ -268,6 +273,7 @@ namespace WindowsFormsApp1
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Cambria", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.Transparent;
             this.label12.Location = new System.Drawing.Point(217, 47);
             this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
@@ -307,7 +313,7 @@ namespace WindowsFormsApp1
             this.panel3.Location = new System.Drawing.Point(20, 25);
             this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1349, 165);
+            this.panel3.Size = new System.Drawing.Size(1033, 165);
             this.panel3.TabIndex = 0;
             // 
             // label10
@@ -346,7 +352,7 @@ namespace WindowsFormsApp1
             // pictureBox8
             // 
             this.pictureBox8.Image = global::WindowsFormsApp1.Properties.Resources.pet_food;
-            this.pictureBox8.Location = new System.Drawing.Point(1199, 30);
+            this.pictureBox8.Location = new System.Drawing.Point(889, 30);
             this.pictureBox8.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(123, 103);
@@ -361,7 +367,7 @@ namespace WindowsFormsApp1
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.Orchid;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Location = new System.Drawing.Point(16, 180);
@@ -374,6 +380,7 @@ namespace WindowsFormsApp1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Cambria", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Transparent;
             this.label1.Location = new System.Drawing.Point(95, 4);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
@@ -543,8 +550,8 @@ namespace WindowsFormsApp1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.MediumVioletRed;
-            this.ClientSize = new System.Drawing.Size(1739, 750);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(182)))), ((int)(((byte)(164)))));
+            this.ClientSize = new System.Drawing.Size(1543, 750);
             this.Controls.Add(this.label_emp_name);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.label6);

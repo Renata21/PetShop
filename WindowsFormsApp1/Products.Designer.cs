@@ -52,7 +52,6 @@ namespace WindowsFormsApp1
             this.Editbtn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.Savebtn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.label16 = new System.Windows.Forms.Label();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -73,7 +72,6 @@ namespace WindowsFormsApp1
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ProductDGV)).BeginInit();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -90,10 +88,10 @@ namespace WindowsFormsApp1
             // ProductoPrice
             // 
             this.ProductoPrice.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ProductoPrice.Location = new System.Drawing.Point(939, 86);
+            this.ProductoPrice.Location = new System.Drawing.Point(839, 87);
             this.ProductoPrice.Margin = new System.Windows.Forms.Padding(4);
             this.ProductoPrice.Name = "ProductoPrice";
-            this.ProductoPrice.Size = new System.Drawing.Size(249, 38);
+            this.ProductoPrice.Size = new System.Drawing.Size(147, 38);
             this.ProductoPrice.TabIndex = 27;
             // 
             // label10
@@ -101,7 +99,7 @@ namespace WindowsFormsApp1
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Corbel", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(676, 48);
+            this.label10.Location = new System.Drawing.Point(658, 51);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(113, 33);
@@ -111,15 +109,15 @@ namespace WindowsFormsApp1
             // ProductQuantity
             // 
             this.ProductQuantity.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ProductQuantity.Location = new System.Drawing.Point(681, 86);
+            this.ProductQuantity.Location = new System.Drawing.Point(664, 85);
             this.ProductQuantity.Margin = new System.Windows.Forms.Padding(4);
             this.ProductQuantity.Name = "ProductQuantity";
-            this.ProductQuantity.Size = new System.Drawing.Size(249, 38);
+            this.ProductQuantity.Size = new System.Drawing.Size(129, 38);
             this.ProductQuantity.TabIndex = 25;
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.Orchid;
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.panel4.Controls.Add(this.label3);
             this.panel4.Controls.Add(this.pictureBox2);
             this.panel4.Location = new System.Drawing.Point(16, 316);
@@ -132,6 +130,7 @@ namespace WindowsFormsApp1
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Cambria", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Transparent;
             this.label3.Location = new System.Drawing.Point(91, 4);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
@@ -155,20 +154,20 @@ namespace WindowsFormsApp1
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Corbel", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(16, 48);
+            this.label9.Location = new System.Drawing.Point(87, 51);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(82, 33);
             this.label9.TabIndex = 24;
             this.label9.Text = "Name";
             // 
-            // ProductName
+            // ProductName_tb
             // 
             this.ProductName_tb.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ProductName_tb.Location = new System.Drawing.Point(21, 86);
+            this.ProductName_tb.Location = new System.Drawing.Point(93, 83);
             this.ProductName_tb.Margin = new System.Windows.Forms.Padding(4);
-            this.ProductName_tb.Name = "ProductName";
-            this.ProductName_tb.Size = new System.Drawing.Size(249, 38);
+            this.ProductName_tb.Name = "ProductName_tb";
+            this.ProductName_tb.Size = new System.Drawing.Size(239, 38);
             this.ProductName_tb.TabIndex = 23;
             // 
             // label8
@@ -189,14 +188,14 @@ namespace WindowsFormsApp1
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.LightCyan;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(235)))), ((int)(((byte)(221)))));
             this.panel1.Controls.Add(this.ProductDGV);
             this.panel1.Controls.Add(this.label11);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Location = new System.Drawing.Point(336, 37);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1387, 674);
+            this.panel1.Size = new System.Drawing.Size(1178, 674);
             this.panel1.TabIndex = 48;
             // 
             // ProductDGV
@@ -215,7 +214,7 @@ namespace WindowsFormsApp1
             this.ProductDGV.ReadOnly = true;
             this.ProductDGV.RowHeadersWidth = 51;
             this.ProductDGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.ProductDGV.Size = new System.Drawing.Size(1349, 398);
+            this.ProductDGV.Size = new System.Drawing.Size(1124, 398);
             this.ProductDGV.TabIndex = 38;
             this.ProductDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ProductDGV_CellContentClick);
             // 
@@ -223,7 +222,7 @@ namespace WindowsFormsApp1
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Cambria", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(596, 224);
+            this.label11.Location = new System.Drawing.Point(550, 225);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(172, 32);
@@ -245,11 +244,10 @@ namespace WindowsFormsApp1
             this.panel3.Controls.Add(this.label9);
             this.panel3.Controls.Add(this.ProductName_tb);
             this.panel3.Controls.Add(this.label8);
-            this.panel3.Controls.Add(this.pictureBox8);
             this.panel3.Location = new System.Drawing.Point(20, 25);
             this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1349, 196);
+            this.panel3.Size = new System.Drawing.Size(1124, 196);
             this.panel3.TabIndex = 0;
             // 
             // label2
@@ -257,7 +255,7 @@ namespace WindowsFormsApp1
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Corbel", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(325, 48);
+            this.label2.Location = new System.Drawing.Point(365, 46);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(116, 33);
@@ -273,10 +271,10 @@ namespace WindowsFormsApp1
             "Dog ",
             "Bird",
             "Food"});
-            this.cboProductCategory.Location = new System.Drawing.Point(280, 85);
+            this.cboProductCategory.Location = new System.Drawing.Point(371, 83);
             this.cboProductCategory.Margin = new System.Windows.Forms.Padding(4);
             this.cboProductCategory.Name = "cboProductCategory";
-            this.cboProductCategory.Size = new System.Drawing.Size(392, 39);
+            this.cboProductCategory.Size = new System.Drawing.Size(242, 39);
             this.cboProductCategory.TabIndex = 35;
             // 
             // Deletebtn
@@ -294,10 +292,10 @@ namespace WindowsFormsApp1
             this.Deletebtn.ForeColor = System.Drawing.Color.SeaGreen;
             this.Deletebtn.IdleBorderThickness = 1;
             this.Deletebtn.IdleCornerRadius = 20;
-            this.Deletebtn.IdleFillColor = System.Drawing.Color.MediumVioletRed;
-            this.Deletebtn.IdleForecolor = System.Drawing.Color.Black;
-            this.Deletebtn.IdleLineColor = System.Drawing.Color.MediumVioletRed;
-            this.Deletebtn.Location = new System.Drawing.Point(823, 135);
+            this.Deletebtn.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Deletebtn.IdleForecolor = System.Drawing.Color.Transparent;
+            this.Deletebtn.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Deletebtn.Location = new System.Drawing.Point(796, 135);
             this.Deletebtn.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.Deletebtn.Name = "Deletebtn";
             this.Deletebtn.Size = new System.Drawing.Size(251, 50);
@@ -320,10 +318,10 @@ namespace WindowsFormsApp1
             this.Editbtn.ForeColor = System.Drawing.Color.SeaGreen;
             this.Editbtn.IdleBorderThickness = 1;
             this.Editbtn.IdleCornerRadius = 20;
-            this.Editbtn.IdleFillColor = System.Drawing.Color.MediumVioletRed;
-            this.Editbtn.IdleForecolor = System.Drawing.Color.Black;
-            this.Editbtn.IdleLineColor = System.Drawing.Color.MediumVioletRed;
-            this.Editbtn.Location = new System.Drawing.Point(559, 135);
+            this.Editbtn.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Editbtn.IdleForecolor = System.Drawing.Color.Transparent;
+            this.Editbtn.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Editbtn.Location = new System.Drawing.Point(463, 133);
             this.Editbtn.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.Editbtn.Name = "Editbtn";
             this.Editbtn.Size = new System.Drawing.Size(251, 50);
@@ -346,10 +344,10 @@ namespace WindowsFormsApp1
             this.Savebtn.ForeColor = System.Drawing.Color.SeaGreen;
             this.Savebtn.IdleBorderThickness = 1;
             this.Savebtn.IdleCornerRadius = 20;
-            this.Savebtn.IdleFillColor = System.Drawing.Color.MediumVioletRed;
-            this.Savebtn.IdleForecolor = System.Drawing.Color.Black;
-            this.Savebtn.IdleLineColor = System.Drawing.Color.MediumVioletRed;
-            this.Savebtn.Location = new System.Drawing.Point(295, 135);
+            this.Savebtn.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Savebtn.IdleForecolor = System.Drawing.Color.Transparent;
+            this.Savebtn.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Savebtn.Location = new System.Drawing.Point(104, 135);
             this.Savebtn.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.Savebtn.Name = "Savebtn";
             this.Savebtn.Size = new System.Drawing.Size(251, 50);
@@ -362,23 +360,12 @@ namespace WindowsFormsApp1
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Corbel", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.Black;
-            this.label16.Location = new System.Drawing.Point(933, 48);
+            this.label16.Location = new System.Drawing.Point(833, 48);
             this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(70, 33);
             this.label16.TabIndex = 28;
             this.label16.Text = "Price";
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Image = global::WindowsFormsApp1.Properties.Resources.pet_food;
-            this.pictureBox8.Location = new System.Drawing.Point(1199, 30);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(123, 103);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox8.TabIndex = 16;
-            this.pictureBox8.TabStop = false;
             // 
             // label12
             // 
@@ -542,8 +529,8 @@ namespace WindowsFormsApp1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.MediumVioletRed;
-            this.ClientSize = new System.Drawing.Size(1739, 750);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(182)))), ((int)(((byte)(164)))));
+            this.ClientSize = new System.Drawing.Size(1543, 750);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox1);
@@ -571,7 +558,6 @@ namespace WindowsFormsApp1
             ((System.ComponentModel.ISupportInitialize)(this.ProductDGV)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
@@ -613,7 +599,6 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox ProductName_tb;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.PictureBox pictureBox8;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse2;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse4;

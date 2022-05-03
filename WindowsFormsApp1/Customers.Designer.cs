@@ -99,7 +99,7 @@ namespace WindowsFormsApp1
             this.btnDelete.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnDelete.IdleForecolor = System.Drawing.Color.White;
             this.btnDelete.IdleLineColor = System.Drawing.SystemColors.Menu;
-            this.btnDelete.Location = new System.Drawing.Point(808, 203);
+            this.btnDelete.Location = new System.Drawing.Point(784, 203);
             this.btnDelete.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(251, 50);
@@ -126,7 +126,7 @@ namespace WindowsFormsApp1
             this.btnEdit.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnEdit.IdleForecolor = System.Drawing.Color.White;
             this.btnEdit.IdleLineColor = System.Drawing.SystemColors.Menu;
-            this.btnEdit.Location = new System.Drawing.Point(544, 203);
+            this.btnEdit.Location = new System.Drawing.Point(483, 203);
             this.btnEdit.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(251, 50);
@@ -152,7 +152,7 @@ namespace WindowsFormsApp1
             this.btnSave.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnSave.IdleForecolor = System.Drawing.Color.White;
             this.btnSave.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnSave.Location = new System.Drawing.Point(280, 203);
+            this.btnSave.Location = new System.Drawing.Point(138, 203);
             this.btnSave.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(251, 50);
@@ -282,7 +282,7 @@ namespace WindowsFormsApp1
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Corbel", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.Black;
-            this.label16.Location = new System.Drawing.Point(789, 48);
+            this.label16.Location = new System.Drawing.Point(727, 51);
             this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(85, 33);
@@ -374,13 +374,13 @@ namespace WindowsFormsApp1
             this.panel3.Location = new System.Drawing.Point(20, 25);
             this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1349, 272);
+            this.panel3.Size = new System.Drawing.Size(1142, 272);
             this.panel3.TabIndex = 0;
             // 
             // CustomerPhone
             // 
             this.CustomerPhone.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CustomerPhone.Location = new System.Drawing.Point(795, 86);
+            this.CustomerPhone.Location = new System.Drawing.Point(733, 92);
             this.CustomerPhone.Margin = new System.Windows.Forms.Padding(4);
             this.CustomerPhone.Name = "CustomerPhone";
             this.CustomerPhone.Size = new System.Drawing.Size(249, 38);
@@ -391,7 +391,7 @@ namespace WindowsFormsApp1
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Corbel", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(532, 48);
+            this.label10.Location = new System.Drawing.Point(425, 51);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(104, 33);
@@ -401,7 +401,7 @@ namespace WindowsFormsApp1
             // CustomerAddress
             // 
             this.CustomerAddress.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CustomerAddress.Location = new System.Drawing.Point(537, 86);
+            this.CustomerAddress.Location = new System.Drawing.Point(431, 92);
             this.CustomerAddress.Margin = new System.Windows.Forms.Padding(4);
             this.CustomerAddress.Multiline = true;
             this.CustomerAddress.Name = "CustomerAddress";
@@ -413,7 +413,7 @@ namespace WindowsFormsApp1
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Corbel", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(273, 48);
+            this.label9.Location = new System.Drawing.Point(134, 55);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(82, 33);
@@ -423,7 +423,7 @@ namespace WindowsFormsApp1
             // CustomerName
             // 
             this.CustomerName.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CustomerName.Location = new System.Drawing.Point(279, 86);
+            this.CustomerName.Location = new System.Drawing.Point(140, 92);
             this.CustomerName.Margin = new System.Windows.Forms.Padding(4);
             this.CustomerName.Name = "CustomerName";
             this.CustomerName.Size = new System.Drawing.Size(249, 38);
@@ -433,7 +433,7 @@ namespace WindowsFormsApp1
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Cambria", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(16, 17);
+            this.label8.Location = new System.Drawing.Point(4, 19);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(288, 32);
@@ -443,7 +443,7 @@ namespace WindowsFormsApp1
             // pictureBox8
             // 
             this.pictureBox8.Image = global::WindowsFormsApp1.Properties.Resources.pet_food;
-            this.pictureBox8.Location = new System.Drawing.Point(1199, 30);
+            this.pictureBox8.Location = new System.Drawing.Point(1003, 19);
             this.pictureBox8.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(123, 103);
@@ -465,7 +465,7 @@ namespace WindowsFormsApp1
             this.panel1.Location = new System.Drawing.Point(336, 37);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1387, 674);
+            this.panel1.Size = new System.Drawing.Size(1191, 674);
             this.panel1.TabIndex = 32;
             // 
             // CustomerDGV
@@ -477,14 +477,14 @@ namespace WindowsFormsApp1
             this.CustomerDGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.CustomerDGV.BackgroundColor = System.Drawing.Color.White;
             this.CustomerDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.CustomerDGV.Location = new System.Drawing.Point(20, 335);
+            this.CustomerDGV.Location = new System.Drawing.Point(20, 338);
             this.CustomerDGV.Margin = new System.Windows.Forms.Padding(4);
             this.CustomerDGV.MultiSelect = false;
             this.CustomerDGV.Name = "CustomerDGV";
             this.CustomerDGV.ReadOnly = true;
             this.CustomerDGV.RowHeadersWidth = 51;
             this.CustomerDGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.CustomerDGV.Size = new System.Drawing.Size(1349, 319);
+            this.CustomerDGV.Size = new System.Drawing.Size(1142, 319);
             this.CustomerDGV.TabIndex = 37;
             this.CustomerDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.CustomerDGV_CellContentClick);
             // 
@@ -492,7 +492,7 @@ namespace WindowsFormsApp1
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Cambria", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(539, 300);
+            this.label11.Location = new System.Drawing.Point(486, 301);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(192, 32);
@@ -517,7 +517,7 @@ namespace WindowsFormsApp1
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(182)))), ((int)(((byte)(164)))));
-            this.ClientSize = new System.Drawing.Size(1739, 750);
+            this.ClientSize = new System.Drawing.Size(1543, 750);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.panel4);

@@ -30,6 +30,7 @@ namespace WindowsFormsApp1
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            Bunifu.Framework.UI.BunifuThinButton2 Loginbtn;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login_Cust));
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -40,10 +41,10 @@ namespace WindowsFormsApp1
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.Passwordtxt = new System.Windows.Forms.TextBox();
-            this.Loginbtn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.Register_btn = new System.Windows.Forms.Label();
+            Loginbtn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -51,7 +52,7 @@ namespace WindowsFormsApp1
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.MediumVioletRed;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(182)))), ((int)(((byte)(164)))));
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.LblPet);
@@ -88,7 +89,7 @@ namespace WindowsFormsApp1
             this.LblPet.AutoSize = true;
             this.LblPet.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblPet.ForeColor = System.Drawing.Color.Black;
-            this.LblPet.Location = new System.Drawing.Point(92, 14);
+            this.LblPet.Location = new System.Drawing.Point(82, 14);
             this.LblPet.Name = "LblPet";
             this.LblPet.Size = new System.Drawing.Size(145, 36);
             this.LblPet.TabIndex = 2;
@@ -101,7 +102,7 @@ namespace WindowsFormsApp1
             // 
             // Nametxt
             // 
-            this.Nametxt.Location = new System.Drawing.Point(55, 204);
+            this.Nametxt.Location = new System.Drawing.Point(57, 209);
             this.Nametxt.Name = "Nametxt";
             this.Nametxt.Size = new System.Drawing.Size(188, 38);
             this.Nametxt.TabIndex = 1;
@@ -122,7 +123,7 @@ namespace WindowsFormsApp1
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Corbel", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(51, 238);
+            this.label2.Location = new System.Drawing.Point(51, 253);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(85, 33);
             this.label2.TabIndex = 6;
@@ -130,7 +131,7 @@ namespace WindowsFormsApp1
             // 
             // Passwordtxt
             // 
-            this.Passwordtxt.Location = new System.Drawing.Point(55, 267);
+            this.Passwordtxt.Location = new System.Drawing.Point(57, 289);
             this.Passwordtxt.Name = "Passwordtxt";
             this.Passwordtxt.PasswordChar = '*';
             this.Passwordtxt.Size = new System.Drawing.Size(188, 38);
@@ -138,33 +139,33 @@ namespace WindowsFormsApp1
             // 
             // Loginbtn
             // 
-            this.Loginbtn.ActiveBorderThickness = 1;
-            this.Loginbtn.ActiveCornerRadius = 20;
-            this.Loginbtn.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.Loginbtn.ActiveForecolor = System.Drawing.Color.White;
-            this.Loginbtn.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.Loginbtn.BackColor = System.Drawing.SystemColors.Control;
-            this.Loginbtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Loginbtn.BackgroundImage")));
-            this.Loginbtn.ButtonText = "Logare";
-            this.Loginbtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Loginbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Loginbtn.ForeColor = System.Drawing.Color.SeaGreen;
-            this.Loginbtn.IdleBorderThickness = 1;
-            this.Loginbtn.IdleCornerRadius = 20;
-            this.Loginbtn.IdleFillColor = System.Drawing.Color.MediumVioletRed;
-            this.Loginbtn.IdleForecolor = System.Drawing.Color.Black;
-            this.Loginbtn.IdleLineColor = System.Drawing.Color.MediumVioletRed;
-            this.Loginbtn.Location = new System.Drawing.Point(55, 324);
-            this.Loginbtn.Margin = new System.Windows.Forms.Padding(5);
-            this.Loginbtn.Name = "Loginbtn";
-            this.Loginbtn.Size = new System.Drawing.Size(188, 41);
-            this.Loginbtn.TabIndex = 7;
-            this.Loginbtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Loginbtn.Click += new System.EventHandler(this.Loginbtn_Click);
+            Loginbtn.ActiveBorderThickness = 1;
+            Loginbtn.ActiveCornerRadius = 20;
+            Loginbtn.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            Loginbtn.ActiveForecolor = System.Drawing.Color.White;
+            Loginbtn.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            Loginbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(235)))), ((int)(((byte)(221)))));
+            Loginbtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Loginbtn.BackgroundImage")));
+            Loginbtn.ButtonText = "Logare";
+            Loginbtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            Loginbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            Loginbtn.ForeColor = System.Drawing.Color.SeaGreen;
+            Loginbtn.IdleBorderThickness = 1;
+            Loginbtn.IdleCornerRadius = 20;
+            Loginbtn.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            Loginbtn.IdleForecolor = System.Drawing.Color.Transparent;
+            Loginbtn.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            Loginbtn.Location = new System.Drawing.Point(57, 335);
+            Loginbtn.Margin = new System.Windows.Forms.Padding(5);
+            Loginbtn.Name = "Loginbtn";
+            Loginbtn.Size = new System.Drawing.Size(188, 41);
+            Loginbtn.TabIndex = 7;
+            Loginbtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            Loginbtn.Click += new System.EventHandler(this.Loginbtn_Click);
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.MediumVioletRed;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(182)))), ((int)(((byte)(164)))));
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 412);
             this.panel2.Name = "panel2";
@@ -175,7 +176,7 @@ namespace WindowsFormsApp1
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Corbel", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.MediumVioletRed;
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.label4.Location = new System.Drawing.Point(104, 120);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(97, 33);
@@ -188,7 +189,7 @@ namespace WindowsFormsApp1
             this.Register_btn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Register_btn.Font = new System.Drawing.Font("Corbel", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Register_btn.ForeColor = System.Drawing.Color.Black;
-            this.Register_btn.Location = new System.Drawing.Point(93, 370);
+            this.Register_btn.Location = new System.Drawing.Point(93, 381);
             this.Register_btn.Name = "Register_btn";
             this.Register_btn.Size = new System.Drawing.Size(121, 28);
             this.Register_btn.TabIndex = 11;
@@ -201,11 +202,12 @@ namespace WindowsFormsApp1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(235)))), ((int)(((byte)(221)))));
             this.ClientSize = new System.Drawing.Size(310, 430);
             this.Controls.Add(this.Register_btn);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.Loginbtn);
+            this.Controls.Add(Loginbtn);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.Passwordtxt);
             this.Controls.Add(this.label1);
@@ -237,7 +239,6 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.TextBox Passwordtxt;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox Nametxt;
-        private Bunifu.Framework.UI.BunifuThinButton2 Loginbtn;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label Register_btn;
