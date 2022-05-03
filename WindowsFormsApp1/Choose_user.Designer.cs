@@ -142,7 +142,7 @@
             // 
             // pictureBox_exit
             // 
-            this.pictureBox_exit.Image = global::WindowsFormsApp1.Properties.Resources.marca_x;
+            this.pictureBox_exit.Image = global::WindowsFormsApp1.Properties.Resources.marca_x_white;
             this.pictureBox_exit.Location = new System.Drawing.Point(730, 12);
             this.pictureBox_exit.Name = "pictureBox_exit";
             this.pictureBox_exit.Size = new System.Drawing.Size(47, 41);
