@@ -85,28 +85,10 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>58F5s+JOvkZ/r8EphQ6djVXNIyvjrWb3haMCG8EobYo=</dsig:DigestValue>
+        <dsig:DigestValue>CFoDAILD0ANdU3W2DpGat/iPApt/Wj82Odv2l5dqLY8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="PetShopDb.mdf" size="8388608" writeableType="applicationData">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>OBuzp8Xp7G6KQMwd0yaP+5D/B68TXNnsWwvLz+Uzidk=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="PetShopDb_log.ldf" size="8388608" writeableType="applicationData">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>O3dTxEwDF/kiFxtX1GHjyUHnxaxrNn2fS/Uuar4fEx4=</dsig:DigestValue>
-    </hash>
-  </file>
   <file name="WindowsFormsApp1.exe.config" size="580">
     <hash>
       <dsig:Transforms>

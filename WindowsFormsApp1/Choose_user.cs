@@ -65,12 +65,12 @@ namespace WindowsFormsApp1
 
         private void panel_cost_MouseHover(object sender, EventArgs e)
         {
-            panel_cost.BackColor = System.Drawing.Color.Orchid;
+            panel_cost.BackColor = System.Drawing.Color.FromArgb(164, 93, 93);
         }
 
         private void panel_cost_MouseLeave(object sender, EventArgs e)
         {
-            panel_cost.BackColor = System.Drawing.Color.MediumVioletRed;
+            panel_cost.BackColor = System.Drawing.Color.FromArgb(216, 182, 164);
         }
 
        
