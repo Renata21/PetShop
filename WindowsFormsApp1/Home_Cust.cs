@@ -37,7 +37,7 @@ namespace WindowsFormsApp1
             }
             finally
             {
-                //cerramos la cadena independientemente si la sentencia se ejecuta d emanera exitosa o no
+                
                 con.Close();
             }
         }
@@ -59,7 +59,7 @@ namespace WindowsFormsApp1
             }
             finally
             {
-                //cerramos la cadena independientemente si la sentencia se ejecuta d emanera exitosa o no
+               
                 con.Close();
             }
         }
@@ -81,7 +81,7 @@ namespace WindowsFormsApp1
             }
             finally
             {
-                //cerramos la cadena independientemente si la sentencia se ejecuta d emanera exitosa o no
+                
                 con.Close();
             }
         }
@@ -102,7 +102,7 @@ namespace WindowsFormsApp1
             }
             finally
             {
-                //cerramos la cadena independientemente si la sentencia se ejecuta d emanera exitosa o no
+                
                 con.Close();
             }
         }

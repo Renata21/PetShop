@@ -30,7 +30,7 @@ namespace WindowsFormsApp1
                 con.Open();
                 cmd = new SqlCommand();
                 cmd.Connection = con;
-                cmd.CommandText = "SELECT* FROM EmployeeTbl where EmpName = '" + user + "' AND EmpPass = '" + pass + "'";
+                cmd.CommandText = "SELECT* FROM CustomerTbl where CustName = '" + user + "' AND CustPass = '" + pass + "'";
                 dr = cmd.ExecuteReader();
 
                 if (dr.Read())

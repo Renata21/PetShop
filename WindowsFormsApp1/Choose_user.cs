@@ -79,5 +79,10 @@ namespace WindowsFormsApp1
         {
             System.Windows.Forms.Application.Exit();
         }
+
+        private void Choose_user_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

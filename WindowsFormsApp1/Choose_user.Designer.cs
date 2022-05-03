@@ -60,7 +60,7 @@
             // 
             // panel_emp
             // 
-            this.panel_emp.BackColor = System.Drawing.Color.MediumVioletRed;
+            this.panel_emp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(182)))), ((int)(((byte)(164)))));
             this.panel_emp.Controls.Add(this.label_emp);
             this.panel_emp.Controls.Add(this.pictureBox_emp);
             this.panel_emp.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -92,7 +92,7 @@
             // 
             // panel_cost
             // 
-            this.panel_cost.BackColor = System.Drawing.Color.MediumVioletRed;
+            this.panel_cost.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(182)))), ((int)(((byte)(164)))));
             this.panel_cost.Controls.Add(this.label_cost);
             this.panel_cost.Controls.Add(this.pictureBox_cost);
             this.panel_cost.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -155,6 +155,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.pictureBox_exit);
             this.Controls.Add(this.panel_cost);
@@ -163,6 +164,7 @@
             this.Name = "Choose_user";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Choose_user";
+            this.Load += new System.EventHandler(this.Choose_user_Load);
             this.panel_emp.ResumeLayout(false);
             this.panel_emp.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_emp)).EndInit();
