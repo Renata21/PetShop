@@ -274,7 +274,7 @@ namespace WindowsFormsApp1
 
         private void label1_Click(object sender, EventArgs e)
         {
-            Home_Cust obj = new Home_Cust();
+            Home_Emp obj = new Home_Emp();
             obj.Show();
             this.Hide();
         }

@@ -15,7 +15,6 @@ namespace WindowsFormsApp1
             CountDogs();
             CountCats();
             CountBirds();
-            Finance();
         }
 
         SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\PetShopDb.mdf;Integrated Security=True;Connect Timeout=30");
@@ -86,52 +85,19 @@ namespace WindowsFormsApp1
                 con.Close();
             }
         }
-        private void Finance()
-        {
-            try
-            {
-                con.Open();
-                SqlDataAdapter sda = new SqlDataAdapter("select sum(Amt) from BillTbl", con);
-                DataTable dt = new DataTable();
-                sda.Fill(dt);
-                lblFinance.Text = dt.Rows[0][0].ToString();
-                con.Close();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("There's been a problem ==>" + ex.Message);
-            }
-            finally
-            {
-                
-                con.Close();
-            }
-        }
-
+       
         private void label2_Click(object sender, EventArgs e)
         {
-            Products obj = new Products();
+            ProductsCustomer obj = new ProductsCustomer();
             obj.Show();
             this.Hide();
         }
 
-        private void label3_Click(object sender, EventArgs e)
-        {
-            Employees obj = new Employees();
-            obj.Show();
-            this.Hide();
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-            Customers obj = new Customers();
-            obj.Show();
-            this.Hide();
-        }
+  
 
         private void label5_Click(object sender, EventArgs e)
         {
-            Billings obj = new Billings();
+            BillingsCustomer obj = new BillingsCustomer();
             obj.Show();
             this.Hide();
         }

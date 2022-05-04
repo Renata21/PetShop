@@ -85,6 +85,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BillingsCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BillingsCustomer.Designer.cs">
+      <DependentUpon>BillingsCustomer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Billings.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,6 +144,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>PetShopDbDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="ProductsCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductsCustomer.Designer.cs">
+      <DependentUpon>ProductsCustomer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Products.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -153,6 +165,9 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="temp.cs" />
+    <EmbeddedResource Include="BillingsCustomer.resx">
+      <DependentUpon>BillingsCustomer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Billings.resx">
       <DependentUpon>Billings.cs</DependentUpon>
     </EmbeddedResource>
@@ -176,6 +191,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Login_Emp.resx">
       <DependentUpon>Login_Emp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductsCustomer.resx">
+      <DependentUpon>ProductsCustomer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Products.resx">
       <DependentUpon>Products.cs</DependentUpon>
