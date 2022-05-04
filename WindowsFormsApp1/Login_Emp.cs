@@ -10,7 +10,9 @@ namespace WindowsFormsApp1
 
         public Login_Emp()
         {
+
             InitializeComponent();
+            
         }
 
         SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\PetShopDb.mdf;Integrated Security=True;Asynchronous Processing=True;User Instance=False;Context Connection=False");
@@ -37,16 +39,14 @@ namespace WindowsFormsApp1
 
                 if (dr.Read())
                 {
-                    Home_Cust obj = new Home_Cust();
-                    ((Home_Cust)obj).label_emp_name.Text = user;
-
-                    obj.Show();
+                    Home_Emp obj = new Home_Emp();
+                                        obj.Show();
                     this.Hide();
                 }
                 else
                 {
                     MessageBox.Show("Logare invalidă! Verificați dacă datele sunt introduse corect și încercați din nou");
-                    Nametxt.Text = "";
+                   Nametxt.Text = "";
                     Passwordtxt.Text = "";
                 }
             }
@@ -58,6 +58,11 @@ namespace WindowsFormsApp1
             {
                 con.Close();
             }
+        }
+
+        private void Nametxt_TextChanged(object sender, EventArgs e)
+        {
+            temp.angajat = Nametxt.Text;
         }
     }
 }

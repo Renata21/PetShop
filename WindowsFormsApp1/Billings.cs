@@ -16,6 +16,7 @@ namespace WindowsFormsApp1
         public Billings()
         {
             InitializeComponent();
+            label7.Text = temp.angajat;
             DisplayProduct();
             GetCustomers();
         }

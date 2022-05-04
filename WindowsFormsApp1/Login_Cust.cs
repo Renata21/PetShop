@@ -9,6 +9,7 @@ namespace WindowsFormsApp1
         public Login_Cust()
         {
             InitializeComponent();
+           
         }
 
         SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\PetShopDb.mdf;Integrated Security=True;Asynchronous Processing=True;User Instance=False;Context Connection=False");
@@ -70,6 +71,11 @@ namespace WindowsFormsApp1
         private void Register_btn_MouseLeave(object sender, EventArgs e)
         {
             Register_btn.ForeColor = System.Drawing.Color.Black;
+        }
+
+        private void Nametxt_TextChanged(object sender, EventArgs e)
+        {
+            temp.client = Nametxt.Text;
         }
     }
 }

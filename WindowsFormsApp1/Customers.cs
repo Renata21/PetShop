@@ -16,6 +16,7 @@ namespace WindowsFormsApp1
         public Customers()
         {
             InitializeComponent();
+            label7.Text = temp.angajat;
             DisplayCustomers();
         }
         SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\PetShopDb.mdf;Integrated Security=True;Connect Timeout=30");

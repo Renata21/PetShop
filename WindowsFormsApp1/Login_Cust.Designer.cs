@@ -50,6 +50,32 @@ namespace WindowsFormsApp1
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
+            // Loginbtn
+            // 
+            Loginbtn.ActiveBorderThickness = 1;
+            Loginbtn.ActiveCornerRadius = 20;
+            Loginbtn.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            Loginbtn.ActiveForecolor = System.Drawing.Color.White;
+            Loginbtn.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            Loginbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(235)))), ((int)(((byte)(221)))));
+            Loginbtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Loginbtn.BackgroundImage")));
+            Loginbtn.ButtonText = "Logare";
+            Loginbtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            Loginbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            Loginbtn.ForeColor = System.Drawing.Color.SeaGreen;
+            Loginbtn.IdleBorderThickness = 1;
+            Loginbtn.IdleCornerRadius = 20;
+            Loginbtn.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            Loginbtn.IdleForecolor = System.Drawing.Color.Transparent;
+            Loginbtn.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            Loginbtn.Location = new System.Drawing.Point(57, 335);
+            Loginbtn.Margin = new System.Windows.Forms.Padding(5);
+            Loginbtn.Name = "Loginbtn";
+            Loginbtn.Size = new System.Drawing.Size(188, 41);
+            Loginbtn.TabIndex = 7;
+            Loginbtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            Loginbtn.Click += new System.EventHandler(this.Loginbtn_Click);
+            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(182)))), ((int)(((byte)(164)))));
@@ -106,6 +132,7 @@ namespace WindowsFormsApp1
             this.Nametxt.Name = "Nametxt";
             this.Nametxt.Size = new System.Drawing.Size(188, 38);
             this.Nametxt.TabIndex = 1;
+            this.Nametxt.TextChanged += new System.EventHandler(this.Nametxt_TextChanged);
             // 
             // label1
             // 
@@ -136,32 +163,6 @@ namespace WindowsFormsApp1
             this.Passwordtxt.PasswordChar = '*';
             this.Passwordtxt.Size = new System.Drawing.Size(188, 38);
             this.Passwordtxt.TabIndex = 5;
-            // 
-            // Loginbtn
-            // 
-            Loginbtn.ActiveBorderThickness = 1;
-            Loginbtn.ActiveCornerRadius = 20;
-            Loginbtn.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            Loginbtn.ActiveForecolor = System.Drawing.Color.White;
-            Loginbtn.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            Loginbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(235)))), ((int)(((byte)(221)))));
-            Loginbtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Loginbtn.BackgroundImage")));
-            Loginbtn.ButtonText = "Logare";
-            Loginbtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            Loginbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            Loginbtn.ForeColor = System.Drawing.Color.SeaGreen;
-            Loginbtn.IdleBorderThickness = 1;
-            Loginbtn.IdleCornerRadius = 20;
-            Loginbtn.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            Loginbtn.IdleForecolor = System.Drawing.Color.Transparent;
-            Loginbtn.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            Loginbtn.Location = new System.Drawing.Point(57, 335);
-            Loginbtn.Margin = new System.Windows.Forms.Padding(5);
-            Loginbtn.Name = "Loginbtn";
-            Loginbtn.Size = new System.Drawing.Size(188, 41);
-            Loginbtn.TabIndex = 7;
-            Loginbtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            Loginbtn.Click += new System.EventHandler(this.Loginbtn_Click);
             // 
             // panel2
             // 

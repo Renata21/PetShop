@@ -104,6 +104,7 @@ namespace WindowsFormsApp1
             this.Nametxt.Name = "Nametxt";
             this.Nametxt.Size = new System.Drawing.Size(188, 38);
             this.Nametxt.TabIndex = 1;
+            this.Nametxt.TextChanged += new System.EventHandler(this.Nametxt_TextChanged);
             // 
             // label1
             // 

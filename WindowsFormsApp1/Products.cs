@@ -16,6 +16,7 @@ namespace WindowsFormsApp1
         public Products()
         {
             InitializeComponent();
+            label7.Text = temp.angajat;
             DisplayCustomers();
             Clear();
         }
@@ -230,6 +231,11 @@ namespace WindowsFormsApp1
             Choose_user obj = new Choose_user();
             obj.Show();
             this.Hide();
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

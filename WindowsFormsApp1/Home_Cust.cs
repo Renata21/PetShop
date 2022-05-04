@@ -11,6 +11,7 @@ namespace WindowsFormsApp1
         public Home_Cust()
         {
             InitializeComponent();
+            label7.Text = temp.client;
             CountDogs();
             CountCats();
             CountBirds();
@@ -141,5 +142,7 @@ namespace WindowsFormsApp1
             obj.Show();
             this.Hide();
         }
+
+     
     }
 }

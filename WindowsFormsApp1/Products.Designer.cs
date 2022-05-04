@@ -445,6 +445,7 @@ namespace WindowsFormsApp1
             this.label7.Size = new System.Drawing.Size(142, 32);
             this.label7.TabIndex = 57;
             this.label7.Text = "Emp Name";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label4
             // 

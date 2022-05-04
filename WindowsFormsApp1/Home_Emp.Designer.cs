@@ -63,7 +63,7 @@ namespace WindowsFormsApp1
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label_emp_name = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
@@ -387,6 +387,7 @@ namespace WindowsFormsApp1
             this.label1.Size = new System.Drawing.Size(84, 32);
             this.label1.TabIndex = 3;
             this.label1.Text = "Home";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // pictureBox1
             // 
@@ -469,16 +470,16 @@ namespace WindowsFormsApp1
             this.label6.Text = "LogOut";
             this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
-            // label_emp_name
+            // label7
             // 
-            this.label_emp_name.AutoSize = true;
-            this.label_emp_name.Font = new System.Drawing.Font("Cambria", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_emp_name.Location = new System.Drawing.Point(111, 39);
-            this.label_emp_name.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label_emp_name.Name = "label_emp_name";
-            this.label_emp_name.Size = new System.Drawing.Size(142, 32);
-            this.label_emp_name.TabIndex = 15;
-            this.label_emp_name.Text = "Emp Name";
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Cambria", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(111, 39);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(142, 32);
+            this.label7.TabIndex = 15;
+            this.label7.Text = "Emp Name";
             // 
             // pictureBox7
             // 
@@ -552,7 +553,7 @@ namespace WindowsFormsApp1
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(182)))), ((int)(((byte)(164)))));
             this.ClientSize = new System.Drawing.Size(1543, 750);
-            this.Controls.Add(this.label_emp_name);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.pictureBox6);
@@ -620,7 +621,7 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.PictureBox pictureBox6;
-        public System.Windows.Forms.Label label_emp_name;
+        public System.Windows.Forms.Label label7;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label9;

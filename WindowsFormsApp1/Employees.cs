@@ -16,7 +16,9 @@ namespace WindowsFormsApp1
        
         public Employees()
         {
+            
             InitializeComponent();
+            label7.Text = temp.angajat;
             DisplayEmployees();
         }
 

@@ -7,17 +7,18 @@ namespace WindowsFormsApp1
 {
     public partial class Home_Emp : Form
     {
-
+        
         public Home_Emp()
         {
             InitializeComponent();
+            label7.Text = temp.angajat;
             CountDogs();
             CountCats();
             CountBirds();
             Finance();
         }
-
-        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\PetShopDb.mdf;Integrated Security=True;Connect Timeout=30");
+          
+         SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\PetShopDb.mdf;Integrated Security=True;Connect Timeout=30");
 
         private void CountDogs()
         {
@@ -140,6 +141,11 @@ namespace WindowsFormsApp1
             Choose_user obj = new Choose_user();
             obj.Show();
             this.Hide();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
