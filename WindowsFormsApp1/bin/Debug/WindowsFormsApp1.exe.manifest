@@ -78,26 +78,17 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WindowsFormsApp1.exe" size="300032">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WindowsFormsApp1.exe" size="299008">
       <assemblyIdentity name="WindowsFormsApp1" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>UBUStcG0IkZzJsRMTV0LBGlcI0l2SQJrfEoHrSublIg=</dsig:DigestValue>
+        <dsig:DigestValue>7SyUccxrTXyh4GGiI6T5R7OPVvj4S8VYSbAltqfcAMw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="PetShopDB.sql" size="3025">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>V3KPqOza3QZDsvJixnOgqF51I5sYqt1Jp2P465IvfhA=</dsig:DigestValue>
-    </hash>
-  </file>
   <file name="WindowsFormsApp1.exe.config" size="580">
     <hash>
       <dsig:Transforms>
