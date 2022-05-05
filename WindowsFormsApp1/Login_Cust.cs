@@ -31,7 +31,7 @@ namespace WindowsFormsApp1
                 con.Open();
                 cmd = new SqlCommand();
                 cmd.Connection = con;
-                cmd.CommandText = "SELECT* FROM CustomerTbl where CustName = '" + user + "' AND CustPass = '" + pass + "'";
+                cmd.CommandText = "SELECT* FROM CustomerTbl where CustLogin = '" + user + "' AND CustPass = '" + pass + "'";
                 dr = cmd.ExecuteReader();
 
                 if (dr.Read())
