@@ -21,7 +21,7 @@ namespace WindowsFormsApp1
           
         }
 
-        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\PetShopDb.mdf;Integrated Security=True;Connect Timeout=30");
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\PetShopDB.sql;Integrated Security=True;Connect Timeout=30");
         int key = 0;
         //listaremos los empleados una vez agreguemos uno y cuando se inicie el formulario
         private void DisplayCustomers()
