@@ -195,7 +195,7 @@ namespace WindowsFormsApp1
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.panel4.Controls.Add(this.label3);
             this.panel4.Controls.Add(this.pictureBox4);
-            this.panel4.Location = new System.Drawing.Point(16, 464);
+            this.panel4.Location = new System.Drawing.Point(16, 406);
             this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(312, 41);
@@ -204,7 +204,7 @@ namespace WindowsFormsApp1
             // pictureBox3
             // 
             this.pictureBox3.Image = global::WindowsFormsApp1.Properties.Resources.employee;
-            this.pictureBox3.Location = new System.Drawing.Point(33, 384);
+            this.pictureBox3.Location = new System.Drawing.Point(35, 320);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(68, 54);
@@ -220,7 +220,7 @@ namespace WindowsFormsApp1
             // pictureBox1
             // 
             this.pictureBox1.Image = global::WindowsFormsApp1.Properties.Resources.home;
-            this.pictureBox1.Location = new System.Drawing.Point(33, 234);
+            this.pictureBox1.Location = new System.Drawing.Point(35, 174);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(68, 57);
@@ -231,7 +231,7 @@ namespace WindowsFormsApp1
             // pictureBox7
             // 
             this.pictureBox7.Image = global::WindowsFormsApp1.Properties.Resources.employee_1_;
-            this.pictureBox7.Location = new System.Drawing.Point(33, 92);
+            this.pictureBox7.Location = new System.Drawing.Point(35, 28);
             this.pictureBox7.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(68, 54);
@@ -242,7 +242,7 @@ namespace WindowsFormsApp1
             // pictureBox6
             // 
             this.pictureBox6.Image = global::WindowsFormsApp1.Properties.Resources.logout;
-            this.pictureBox6.Location = new System.Drawing.Point(33, 639);
+            this.pictureBox6.Location = new System.Drawing.Point(35, 632);
             this.pictureBox6.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(68, 73);
@@ -253,7 +253,7 @@ namespace WindowsFormsApp1
             // pictureBox5
             // 
             this.pictureBox5.Image = global::WindowsFormsApp1.Properties.Resources.bill;
-            this.pictureBox5.Location = new System.Drawing.Point(33, 532);
+            this.pictureBox5.Location = new System.Drawing.Point(35, 468);
             this.pictureBox5.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(68, 54);
@@ -269,7 +269,7 @@ namespace WindowsFormsApp1
             // pictureBox2
             // 
             this.pictureBox2.Image = global::WindowsFormsApp1.Properties.Resources.box;
-            this.pictureBox2.Location = new System.Drawing.Point(33, 311);
+            this.pictureBox2.Location = new System.Drawing.Point(35, 247);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(68, 54);
@@ -294,7 +294,7 @@ namespace WindowsFormsApp1
             this.label1.AutoSize = true;
             this.label1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label1.Font = new System.Drawing.Font("Cambria", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(128, 251);
+            this.label1.Location = new System.Drawing.Point(112, 188);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(84, 32);
@@ -306,7 +306,7 @@ namespace WindowsFormsApp1
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Cambria", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(109, 103);
+            this.label7.Location = new System.Drawing.Point(111, 39);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(142, 32);
@@ -318,7 +318,7 @@ namespace WindowsFormsApp1
             this.label6.AutoSize = true;
             this.label6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label6.Font = new System.Drawing.Font("Cambria", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(109, 662);
+            this.label6.Location = new System.Drawing.Point(111, 656);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(102, 32);
@@ -331,7 +331,7 @@ namespace WindowsFormsApp1
             this.label5.AutoSize = true;
             this.label5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label5.Font = new System.Drawing.Font("Cambria", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(109, 543);
+            this.label5.Location = new System.Drawing.Point(112, 479);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(94, 32);
@@ -344,7 +344,7 @@ namespace WindowsFormsApp1
             this.label2.AutoSize = true;
             this.label2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label2.Font = new System.Drawing.Font("Cambria", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(109, 322);
+            this.label2.Location = new System.Drawing.Point(111, 258);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(122, 32);
@@ -465,7 +465,7 @@ namespace WindowsFormsApp1
             this.panel1.Location = new System.Drawing.Point(336, 37);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1191, 674);
+            this.panel1.Size = new System.Drawing.Size(1178, 674);
             this.panel1.TabIndex = 32;
             // 
             // CustomerDGV
@@ -504,7 +504,7 @@ namespace WindowsFormsApp1
             this.label12.AutoSize = true;
             this.label12.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label12.Font = new System.Drawing.Font("Cambria", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(109, 395);
+            this.label12.Location = new System.Drawing.Point(112, 331);
             this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(142, 32);
