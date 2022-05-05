@@ -20,8 +20,7 @@ namespace WindowsFormsApp1
             DisplayProduct();
             GetCustomers();
         }
-        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\PetShopDb.mdf;Integrated Security=True;Connect Timeout=30");
-        int key = 0;
+        SqlConnection con = new SqlConnection(@"Data Source = (localdb)\MSSQLLocalDB;Initial Catalog = PetShopDB; Integrated Security = True; Connect Timeout = 30; Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
         int Stock = 0;
         private void GetCustomers() 
         {
@@ -124,7 +123,7 @@ namespace WindowsFormsApp1
                 con.Open();
                 SqlCommand cmd = new SqlCommand("Update ProductTbl set PrQty = @PQ where PrId = @PKey",con);
                 cmd.Parameters.AddWithValue("@PQ", NewQty);
-                cmd.Parameters.AddWithValue("@PKey", key);
+               // cmd.Parameters.AddWithValue("@PKey", key);
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Product Edited");
                 con.Close();
@@ -164,7 +163,7 @@ namespace WindowsFormsApp1
         }
         private void Reset() 
         {
-            key = 0;
+            //key = 0;
             Stock = 0;
             PrNameTb.Text = "";
             QtyTb.Text = "";
@@ -177,7 +176,7 @@ namespace WindowsFormsApp1
             {
                 MessageBox.Show("No Enough In House");
             }
-            else if (QtyTb.Text == "" || key == 0)
+            else if (QtyTb.Text == "") //|| key == 0)
             {
                 MessageBox.Show("Missing Information");
             }
@@ -211,11 +210,11 @@ namespace WindowsFormsApp1
             PrPriceTb.Text = ProductsDGV.SelectedRows[0].Cells[4].Value.ToString();
             if (PrNameTb.Text == "")
             {
-                key = 0;
+               // key = 0;
             }
             else
             {
-                key = Convert.ToInt32(ProductsDGV.SelectedRows[0].Cells[0].Value.ToString());
+                //key = Convert.ToInt32(ProductsDGV.SelectedRows[0].Cells[0].Value.ToString());
             }
         }
         
