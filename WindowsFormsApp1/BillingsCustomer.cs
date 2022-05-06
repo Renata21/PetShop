@@ -1,12 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace WindowsFormsApp1
@@ -21,24 +16,25 @@ namespace WindowsFormsApp1
             GetCustomers();
         }
         SqlConnection con = new SqlConnection(@"Data Source = (localdb)\MSSQLLocalDB;Initial Catalog = PetShopDB; Integrated Security = True; Connect Timeout = 30; Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+        int key = 0;
         int Stock = 0;
-        private void GetCustomers() 
+        private void GetCustomers()
         {
             try
             {
                 con.Open();
-                SqlCommand cmd = new SqlCommand("select CustId from CustomerTbl",con);
+                SqlCommand cmd = new SqlCommand("select CustId from CustomerTbl", con);
                 SqlDataReader rdr;
                 rdr = cmd.ExecuteReader();
                 DataTable dt = new DataTable();
                 dt.Columns.Add("CustId", typeof(int));
                 dt.Load(rdr);
-                
+
                 con.Close();
             }
             catch (Exception ex)
             {
-                MessageBox.Show("There's been a problem ==>" + ex.Message);
+                MessageBox.Show("A aparut o problema ==>" + ex.Message);
             }
             finally
             {
@@ -51,16 +47,16 @@ namespace WindowsFormsApp1
             {
                 con.Open();
                 SqlCommand cmd = new SqlCommand("select * from CustomerTbl where CustId = @CustId", con);
-             
+
                 DataTable dt = new DataTable();
                 SqlDataAdapter sda = new SqlDataAdapter(cmd);
                 sda.Fill(dt);
-          
+
                 con.Close();
             }
             catch (Exception ex)
             {
-                MessageBox.Show("There's been a problem ==>" + ex.Message);
+                MessageBox.Show("A aparut o problema ==>" + ex.Message);
             }
             finally
             {
@@ -84,7 +80,7 @@ namespace WindowsFormsApp1
             }
             catch (Exception ex)
             {
-                MessageBox.Show("There's been a problem ==>" + ex.Message);
+                MessageBox.Show("A aparut o problema" + ex.Message);
             }
             finally
             {
@@ -102,13 +98,13 @@ namespace WindowsFormsApp1
                 SqlCommandBuilder Builder = new SqlCommandBuilder(sda);
                 var ds = new DataSet();
                 sda.Fill(ds);
-               
+
                 con.Close();
 
             }
             catch (Exception ex)
             {
-                MessageBox.Show("There's been a problem ==>" + ex.Message);
+                MessageBox.Show("A aparut o problema ==>" + ex.Message);
             }
             finally
             {
@@ -121,17 +117,17 @@ namespace WindowsFormsApp1
             {
                 int NewQty = Stock - Convert.ToInt32(QtyTb.Text);
                 con.Open();
-                SqlCommand cmd = new SqlCommand("Update ProductTbl set PrQty = @PQ where PrId = @PKey",con);
+                SqlCommand cmd = new SqlCommand("Update ProductTbl set PrQty = @PQ where PrID = @PKey", con);
                 cmd.Parameters.AddWithValue("@PQ", NewQty);
-               // cmd.Parameters.AddWithValue("@PKey", key);
+                cmd.Parameters.AddWithValue("@PKey", key);
                 cmd.ExecuteNonQuery();
-                MessageBox.Show("Product Edited");
+                MessageBox.Show("Produs adaugat si modificat.");
                 con.Close();
                 DisplayProduct();
             }
             catch (Exception ex)
             {
-                MessageBox.Show("There's been a problem ==>" + ex.Message);
+                MessageBox.Show("A aparut o problema ==>" + ex.Message);
             }
             finally
             {
@@ -143,27 +139,44 @@ namespace WindowsFormsApp1
             try
             {
                 con.Open();
-                SqlCommand cmd = new SqlCommand("insert into BillTbl (BDate,CustId,CustName,EmpName,Amt) values(@BD,@CI,@CN,@EN,@AT)", con);
+                SqlCommand cmd_id = new SqlCommand("select CustID from CustomerTbl where CustLogin = @CustLog", con);
+                MessageBox.Show((temp.client == "eric").ToString());
+                cmd_id.Parameters.AddWithValue("@CustLog", temp.client);
+                DataTable dt = new DataTable();
+                SqlDataAdapter sda = new SqlDataAdapter(cmd_id);
+                sda.Fill(dt);
+                string custID = "";
+                foreach (DataRow dr in dt.Rows)
+                {
+                    custID = dr["CustID"].ToString();
+                }
+
+                MessageBox.Show(custID);
+
+                SqlCommand cmd = new SqlCommand("insert into BillTbl (BDate,CustId,CustLogin,EmpLogin,Amt) values(@BD,@CI,@CN,@EN,@AT)", con);
+               
                 cmd.Parameters.AddWithValue("@BD", DateTime.Today.Date);
+                cmd.Parameters.AddWithValue("@CI", int.Parse(custID));
+                cmd.Parameters.AddWithValue("@CN", label7.Text);
                 cmd.Parameters.AddWithValue("@EN", "");
                 cmd.Parameters.AddWithValue("@AT", GrdTotal);
                 cmd.ExecuteNonQuery();
-                MessageBox.Show("Bill Added");
+                MessageBox.Show("Chitanta adaugata");
                 con.Close();
                 DisplayProduct();
             }
             catch (Exception ex)
             {
-                MessageBox.Show("There's been a problem ==>" + ex.Message);
+                MessageBox.Show("A aparut o problema ==>" + ex.Message);
             }
             finally
             {
                 con.Close();
             }
         }
-        private void Reset() 
+        private void Reset()
         {
-            //key = 0;
+            key = 0;
             Stock = 0;
             PrNameTb.Text = "";
             QtyTb.Text = "";
@@ -174,11 +187,11 @@ namespace WindowsFormsApp1
         {
             if (QtyTb.Text == "" || Convert.ToInt32(QtyTb.Text) > Stock)
             {
-                MessageBox.Show("No Enough In House");
+                MessageBox.Show("Stoc insuficient");
             }
-            else if (QtyTb.Text == "") //|| key == 0)
+            else if (QtyTb.Text == "" || key == 0)
             {
-                MessageBox.Show("Missing Information");
+                MessageBox.Show("Nu ati introdus destule informatii");
             }
             else
             {
@@ -210,18 +223,14 @@ namespace WindowsFormsApp1
             PrPriceTb.Text = ProductsDGV.SelectedRows[0].Cells[4].Value.ToString();
             if (PrNameTb.Text == "")
             {
-               // key = 0;
+                key = 0;
             }
             else
             {
-                //key = Convert.ToInt32(ProductsDGV.SelectedRows[0].Cells[0].Value.ToString());
+                key = Convert.ToInt32(ProductsDGV.SelectedRows[0].Cells[0].Value.ToString());
             }
         }
-        
-        private void CustIdCb_SelectionChangeCommitted(object sender, EventArgs e)
-        {
-            GetCustName();
-        }
+
         private void Printbtn_Click(object sender, EventArgs e)
         {
             Bill();
@@ -230,9 +239,9 @@ namespace WindowsFormsApp1
             printPreviewDialog1.ShowDialog();
             DisplayBills();
         }
-        int prodid,prodqty,prodprice,total,pos = 60;
+        int prodid, prodqty, prodprice, total, pos = 60;
 
-     
+
 
         private void label6_Click(object sender, EventArgs e)
         {
@@ -240,18 +249,6 @@ namespace WindowsFormsApp1
             obj.Show();
             this.Hide();
         }
-
-        private void label11_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-     
 
         private void label13_Click(object sender, EventArgs e)
         {
@@ -270,8 +267,8 @@ namespace WindowsFormsApp1
         string prodname;
         private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
-            e.Graphics.DrawString("My CodeSpace PetShop",new Font("Century Gothic",12,FontStyle.Bold),Brushes.Red, new Point(50));
-            e.Graphics.DrawString("ID PRODUCT PRICE QUANTITY TOTAL", new Font("Century Gothic", 10, FontStyle.Bold), Brushes.Red, new Point(5,20));
+            e.Graphics.DrawString("My CodeSpace PetShop", new Font("Century Gothic", 12, FontStyle.Bold), Brushes.Red, new Point(50));
+            e.Graphics.DrawString("ID PRODUCT PRICE QUANTITY TOTAL", new Font("Century Gothic", 10, FontStyle.Bold), Brushes.Red, new Point(5, 20));
             foreach (DataGridViewRow row in BillDGV.Rows)
             {
                 prodid = Convert.ToInt32(row.Cells["Id"].Value);
@@ -280,22 +277,20 @@ namespace WindowsFormsApp1
                 prodqty = Convert.ToInt32(row.Cells["Quantity"].Value);
                 total = Convert.ToInt32(row.Cells["Total"].Value);
 
-                e.Graphics.DrawString("" + prodid, new Font("Century Gothic", 8, FontStyle.Bold), Brushes.Blue, new Point(26,pos));
-                e.Graphics.DrawString("" + prodname, new Font("Century Gothic", 8, FontStyle.Bold), Brushes.Blue, new Point(45,pos));
+                e.Graphics.DrawString("" + prodid, new Font("Century Gothic", 8, FontStyle.Bold), Brushes.Blue, new Point(26, pos));
+                e.Graphics.DrawString("" + prodname, new Font("Century Gothic", 8, FontStyle.Bold), Brushes.Blue, new Point(45, pos));
                 e.Graphics.DrawString("" + prodprice, new Font("Century Gothic", 8, FontStyle.Bold), Brushes.Blue, new Point(110, pos));
                 e.Graphics.DrawString("" + prodqty, new Font("Century Gothic", 8, FontStyle.Bold), Brushes.Blue, new Point(170, pos));
-                e.Graphics.DrawString("" + total, new Font("Century Gothic", 8, FontStyle.Bold), Brushes.Blue, new Point(235  , pos));
+                e.Graphics.DrawString("" + total, new Font("Century Gothic", 8, FontStyle.Bold), Brushes.Blue, new Point(235, pos));
                 pos = pos + 20;
             }
-            e.Graphics.DrawString("Grand Total: $ " + GrdTotal, new Font("Century Gothic", 12, FontStyle.Bold), Brushes.Crimson, new Point(50 , pos + 50));
+            e.Graphics.DrawString("Grand Total: $ " + GrdTotal, new Font("Century Gothic", 12, FontStyle.Bold), Brushes.Crimson, new Point(50, pos + 50));
             e.Graphics.DrawString("***************PetShop***************", new Font("Century Gothic", 12, FontStyle.Bold), Brushes.Crimson, new Point(0, pos + 85));
             BillDGV.Rows.Clear();
             BillDGV.Refresh();
             pos = 100;
             GrdTotal = 0;
             n = 0;
-
         }
-
     }
 }

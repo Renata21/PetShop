@@ -28,19 +28,19 @@ namespace WindowsFormsApp1
             try
             {
                 con.Open();
-                SqlCommand cmd = new SqlCommand("select CustId from CustomerTbl",con);
+                SqlCommand cmd = new SqlCommand("select CustID from CustomerTbl",con);
                 SqlDataReader rdr;
                 rdr = cmd.ExecuteReader();
                 DataTable dt = new DataTable();
-                dt.Columns.Add("CustId", typeof(int));
+                dt.Columns.Add("CustID", typeof(int));
                 dt.Load(rdr);
-                CustIdCb.ValueMember = "CustId";
+                CustIdCb.ValueMember = "CustID";
                 CustIdCb.DataSource = dt;
                 con.Close();
             }
             catch (Exception ex)
             {
-                MessageBox.Show("There's been a problem ==>" + ex.Message);
+                MessageBox.Show("A aparut o problema ==>" + ex.Message);
             }
             finally
             {
@@ -52,20 +52,21 @@ namespace WindowsFormsApp1
             try
             {
                 con.Open();
-                SqlCommand cmd = new SqlCommand("select * from CustomerTbl where CustId = @CustId", con);
+
+                SqlCommand cmd = new SqlCommand("select * from CustomerTbl where CustID = @CustId", con);
                 cmd.Parameters.AddWithValue("@CustId", CustIdCb.SelectedValue);
                 DataTable dt = new DataTable();
                 SqlDataAdapter sda = new SqlDataAdapter(cmd);
                 sda.Fill(dt);
                 foreach (DataRow dr in dt.Rows)
                 {
-                    custNameTb.Text = dr["CustName"].ToString();
+                    custNameTb.Text = dr["CustLogin"].ToString();
                 }
                 con.Close();
             }
             catch (Exception ex)
             {
-                MessageBox.Show("There's been a problem ==>" + ex.Message);
+                MessageBox.Show("A aparut o problema ==>" + ex.Message);
             }
             finally
             {
@@ -85,11 +86,10 @@ namespace WindowsFormsApp1
                 sda.Fill(ds);
                 ProductsDGV.DataSource = ds.Tables[0];
                 con.Close();
-
             }
             catch (Exception ex)
             {
-                MessageBox.Show("There's been a problem ==>" + ex.Message);
+                MessageBox.Show("A aparut o problema ==>" + ex.Message);
             }
             finally
             {
@@ -113,7 +113,7 @@ namespace WindowsFormsApp1
             }
             catch (Exception ex)
             {
-                MessageBox.Show("There's been a problem ==>" + ex.Message);
+                MessageBox.Show("A aparut o problema ==>" + ex.Message);
             }
             finally
             {
@@ -126,17 +126,17 @@ namespace WindowsFormsApp1
             {
                 int NewQty = Stock - Convert.ToInt32(QtyTb.Text);
                 con.Open();
-                SqlCommand cmd = new SqlCommand("Update ProductTbl set PrQty = @PQ where PrId = @PKey",con);
+                SqlCommand cmd = new SqlCommand("Update ProductTbl set PrQty = @PQ where PrID = @PKey",con);
                 cmd.Parameters.AddWithValue("@PQ", NewQty);
                 cmd.Parameters.AddWithValue("@PKey", key);
                 cmd.ExecuteNonQuery();
-                MessageBox.Show("Product Edited");
+                MessageBox.Show("Produs adaugat si modificat.");
                 con.Close();
                 DisplayProduct();
             }
             catch (Exception ex)
             {
-                MessageBox.Show("There's been a problem ==>" + ex.Message);
+                MessageBox.Show("A aparut o problema ==>" + ex.Message);
             }
             finally
             {
@@ -148,20 +148,20 @@ namespace WindowsFormsApp1
             try
             {
                 con.Open();
-                SqlCommand cmd = new SqlCommand("insert into BillTbl (BDate,CustId,CustName,EmpName,Amt) values(@BD,@CI,@CN,@EN,@AT)", con);
+                SqlCommand cmd = new SqlCommand("insert into BillTbl (BDate,CustId,CustLogin,EmpLogin,Amt) values(@BD,@CI,@CN,@EN,@AT)", con);
                 cmd.Parameters.AddWithValue("@BD", DateTime.Today.Date);
                 cmd.Parameters.AddWithValue("@CI", CustIdCb.SelectedValue.ToString());
                 cmd.Parameters.AddWithValue("@CN", custNameTb.Text);
-                cmd.Parameters.AddWithValue("@EN", "");
+                cmd.Parameters.AddWithValue("@EN", temp.angajat);
                 cmd.Parameters.AddWithValue("@AT", GrdTotal);
                 cmd.ExecuteNonQuery();
-                MessageBox.Show("Bill Added");
+                MessageBox.Show("Chitanta adaugata");
                 con.Close();
                 DisplayProduct();
             }
             catch (Exception ex)
             {
-                MessageBox.Show("There's been a problem ==>" + ex.Message);
+                MessageBox.Show("A aparut o problema ==>" + ex.Message);
             }
             finally
             {
@@ -181,11 +181,11 @@ namespace WindowsFormsApp1
         {
             if (QtyTb.Text == "" || Convert.ToInt32(QtyTb.Text) > Stock)
             {
-                MessageBox.Show("No Enough In House");
+                MessageBox.Show("Stoc insuficient");
             }
             else if (QtyTb.Text == "" || key == 0)
             {
-                MessageBox.Show("Missing Information");
+                MessageBox.Show("Nu ati introdus destule informatii");
             }
             else
             {
@@ -251,11 +251,6 @@ namespace WindowsFormsApp1
             Choose_user obj = new Choose_user();
             obj.Show();
             this.Hide();
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
         }
 
         private void label12_Click(object sender, EventArgs e)

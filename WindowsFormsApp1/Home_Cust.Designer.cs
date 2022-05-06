@@ -431,6 +431,7 @@ namespace WindowsFormsApp1
             this.label5.Size = new System.Drawing.Size(94, 32);
             this.label5.TabIndex = 55;
             this.label5.Text = "Billing";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // Home_Cust
             // 

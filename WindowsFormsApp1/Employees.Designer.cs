@@ -55,7 +55,7 @@ namespace WindowsFormsApp1
             this.label10 = new System.Windows.Forms.Label();
             this.EmployeeAddress = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.EmployeName = new System.Windows.Forms.TextBox();
+            this.EmployeLogin = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.label3 = new System.Windows.Forms.Label();
@@ -69,6 +69,10 @@ namespace WindowsFormsApp1
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.EmployeName = new System.Windows.Forms.TextBox();
+            this.EmployeSurname = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.EmployeeDGV)).BeginInit();
             this.panel3.SuspendLayout();
@@ -189,14 +193,14 @@ namespace WindowsFormsApp1
             this.EmployeeDGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.EmployeeDGV.BackgroundColor = System.Drawing.Color.White;
             this.EmployeeDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.EmployeeDGV.Location = new System.Drawing.Point(20, 337);
+            this.EmployeeDGV.Location = new System.Drawing.Point(41, 332);
             this.EmployeeDGV.Margin = new System.Windows.Forms.Padding(4);
             this.EmployeeDGV.MultiSelect = false;
             this.EmployeeDGV.Name = "EmployeeDGV";
             this.EmployeeDGV.ReadOnly = true;
             this.EmployeeDGV.RowHeadersWidth = 51;
             this.EmployeeDGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.EmployeeDGV.Size = new System.Drawing.Size(1074, 319);
+            this.EmployeeDGV.Size = new System.Drawing.Size(1101, 319);
             this.EmployeeDGV.TabIndex = 36;
             this.EmployeeDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.EmployeeDGV_CellContentClick);
             // 
@@ -214,6 +218,10 @@ namespace WindowsFormsApp1
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(235)))), ((int)(((byte)(221)))));
+            this.panel3.Controls.Add(this.label13);
+            this.panel3.Controls.Add(this.label12);
+            this.panel3.Controls.Add(this.EmployeSurname);
+            this.panel3.Controls.Add(this.EmployeName);
             this.panel3.Controls.Add(this.btnDelete);
             this.panel3.Controls.Add(this.btnEdit);
             this.panel3.Controls.Add(this.btnSave);
@@ -226,12 +234,12 @@ namespace WindowsFormsApp1
             this.panel3.Controls.Add(this.label10);
             this.panel3.Controls.Add(this.EmployeeAddress);
             this.panel3.Controls.Add(this.label9);
-            this.panel3.Controls.Add(this.EmployeName);
+            this.panel3.Controls.Add(this.EmployeLogin);
             this.panel3.Controls.Add(this.label8);
             this.panel3.Location = new System.Drawing.Point(20, 25);
             this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1349, 272);
+            this.panel3.Size = new System.Drawing.Size(1154, 277);
             this.panel3.TabIndex = 0;
             // 
             // btnDelete
@@ -410,18 +418,18 @@ namespace WindowsFormsApp1
             this.label9.Location = new System.Drawing.Point(16, 53);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(82, 33);
+            this.label9.Size = new System.Drawing.Size(77, 33);
             this.label9.TabIndex = 24;
-            this.label9.Text = "Name";
+            this.label9.Text = "Login";
             // 
-            // EmployeName
+            // EmployeLogin
             // 
-            this.EmployeName.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EmployeName.Location = new System.Drawing.Point(21, 91);
-            this.EmployeName.Margin = new System.Windows.Forms.Padding(4);
-            this.EmployeName.Name = "EmployeName";
-            this.EmployeName.Size = new System.Drawing.Size(249, 38);
-            this.EmployeName.TabIndex = 23;
+            this.EmployeLogin.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EmployeLogin.Location = new System.Drawing.Point(21, 91);
+            this.EmployeLogin.Margin = new System.Windows.Forms.Padding(4);
+            this.EmployeLogin.Name = "EmployeLogin";
+            this.EmployeLogin.Size = new System.Drawing.Size(249, 38);
+            this.EmployeLogin.TabIndex = 23;
             // 
             // label8
             // 
@@ -550,6 +558,48 @@ namespace WindowsFormsApp1
             this.pictureBox2.TabIndex = 18;
             this.pictureBox2.TabStop = false;
             // 
+            // EmployeName
+            // 
+            this.EmployeName.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EmployeName.Location = new System.Drawing.Point(23, 166);
+            this.EmployeName.Margin = new System.Windows.Forms.Padding(4);
+            this.EmployeName.Name = "EmployeName";
+            this.EmployeName.Size = new System.Drawing.Size(249, 38);
+            this.EmployeName.TabIndex = 35;
+            // 
+            // EmployeSurname
+            // 
+            this.EmployeSurname.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EmployeSurname.Location = new System.Drawing.Point(23, 234);
+            this.EmployeSurname.Margin = new System.Windows.Forms.Padding(4);
+            this.EmployeSurname.Name = "EmployeSurname";
+            this.EmployeSurname.Size = new System.Drawing.Size(249, 38);
+            this.EmployeSurname.TabIndex = 36;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Corbel", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.Black;
+            this.label12.Location = new System.Drawing.Point(17, 133);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(82, 33);
+            this.label12.TabIndex = 37;
+            this.label12.Text = "Name";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Corbel", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.Black;
+            this.label13.Location = new System.Drawing.Point(26, 203);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(115, 33);
+            this.label13.TabIndex = 38;
+            this.label13.Text = "Surname";
+            // 
             // Employees
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -623,7 +673,7 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox EmployeeAddress;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox EmployeName;
+        private System.Windows.Forms.TextBox EmployeLogin;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private Bunifu.Framework.UI.BunifuThinButton2 btnDelete;
         private Bunifu.Framework.UI.BunifuThinButton2 btnEdit;
@@ -635,5 +685,9 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Panel panel4;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse4;
         private System.Windows.Forms.DataGridView EmployeeDGV;
+        private System.Windows.Forms.TextBox EmployeSurname;
+        private System.Windows.Forms.TextBox EmployeName;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label12;
     }
 }

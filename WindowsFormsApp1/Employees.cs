@@ -1,22 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
     public partial class Employees : Form
     {
-       
+
         public Employees()
         {
-            
+
             InitializeComponent();
             label7.Text = temp.angajat;
             DisplayEmployees();
@@ -32,7 +26,7 @@ namespace WindowsFormsApp1
                 con.Open();
                 string Query = " select *" +
                                " from EmployeeTbl";
-                SqlDataAdapter sda = new SqlDataAdapter(Query,con);
+                SqlDataAdapter sda = new SqlDataAdapter(Query, con);
                 SqlCommandBuilder Builder = new SqlCommandBuilder(sda);
                 var ds = new DataSet();
                 sda.Fill(ds);
@@ -42,60 +36,64 @@ namespace WindowsFormsApp1
             }
             catch (Exception ex)
             {
-                MessageBox.Show("There's been a problem ==>" + ex.Message);
+                MessageBox.Show("A aparut o problema ==>" + ex.Message);
             }
-            finally 
+            finally
             {
                 con.Close();
             }
         }
         private void btnSave_Click(object sender, EventArgs e)
         {
-            if (EmployeName.Text == "")
+            if (EmployeLogin.Text == "")
             {
-                MessageBox.Show("Please Add a Name");
+                MessageBox.Show("Adaugati numele de utilizator");
                 return;
             }
-            if (EmployePhone.Text == "")
-            {
-                MessageBox.Show("Please Add a Number Phone");
-                return;
-            }
-            if (EmployeeAddress.Text == "")
-            {
-                MessageBox.Show("Please Add a Address");
-                return;
-            }
+
             if (EmployeePassword.Text == "")
             {
                 MessageBox.Show("Please Add a Password");
                 return;
             }
-            else if(EmployeName.Text != "" && EmployePhone.Text != "" && EmployeeAddress.Text != "" && EmployeePassword.Text != "")
+            if (EmployeName.Text == "")
+            {
+                MessageBox.Show("Please Add a Name");
+                return;
+            }
+            if (EmployeSurname.Text == "")
+            {
+                MessageBox.Show("Please Add a SurName");
+                return;
+            }
+             if (EmployeLogin.Text != "" && EmployeePassword.Text != "" && EmployeName.Text != "" && EmployeSurname.Text != "")
             {
                 try
                 {
                     //abrimos la conexion a la base de datos
                     con.Open();
-                    SqlCommand cmd = new SqlCommand("insert into EmployeeTbl (EmpName,EmpAdd,EmpDOB,EmpPhone,EmpPass) " +
-                                                    "values(@EN,@EA,@ED,@EP,@EPa)",con);
+                    SqlCommand cmd = new SqlCommand("insert into EmployeeTbl (EmpLogin,EmpPass,EmpName,EmpSurname,EmpAdd,EmpDOB,EmpPhone) " +
+                                                    "values(@EL,@EPa,@EN, @ES,@EA,@ED,@EP)", con);
                     //asignamos los valores a la sentencia para evitar la concatenacion por seguridad   
-                    cmd.Parameters.AddWithValue("@EN",EmployeName.Text);
+                    cmd.Parameters.AddWithValue("@EL", EmployeLogin.Text); 
+                    cmd.Parameters.AddWithValue("@EPa", EmployeePassword.Text);
+                    cmd.Parameters.AddWithValue("@EN", EmployeName.Text);
+                    cmd.Parameters.AddWithValue("@ES", EmployeSurname.Text);
                     cmd.Parameters.AddWithValue("@EA", EmployeeAddress.Text);
                     cmd.Parameters.AddWithValue("@ED", cboDateOfBirth.Value.Date);
                     cmd.Parameters.AddWithValue("@EP", EmployePhone.Text);
-                    cmd.Parameters.AddWithValue("@EPa", EmployeePassword.Text);
+
                     cmd.ExecuteNonQuery();
-                    MessageBox.Show("Employee : " + EmployeName.Text + " Added");
+                    MessageBox.Show("Employee : " + EmployeLogin.Text + " Added");
                     con.Close();
                     DisplayEmployees();
                     Clear();
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("There's been a problem ==>" + ex.Message);
+                    MessageBox.Show("A aparut o problema ==>" + ex.Message);
                 }
-                finally 
+                finally
                 {
                     //cerramos la cadena independientemente si la sentencia se ejecuta d emanera exitosa o no
                     con.Close();
@@ -104,9 +102,11 @@ namespace WindowsFormsApp1
             }
         }
         //metodo para limpiar los campos del formulario
-        private void Clear() 
+        private void Clear()
         {
+            EmployeLogin.Text = "";
             EmployeName.Text = "";
+            EmployeSurname.Text = "";
             EmployeeAddress.Text = "";
             EmployePhone.Text = "";
             EmployeePassword.Text = "";
@@ -115,51 +115,58 @@ namespace WindowsFormsApp1
         private void EmployeeDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             key = Convert.ToInt32(EmployeeDGV.SelectedRows[0].Cells[0].Value.ToString());
-            EmployeName.Text = EmployeeDGV.SelectedRows[0].Cells[1].Value.ToString();
-            EmployeeAddress.Text = EmployeeDGV.SelectedRows[0].Cells[2].Value.ToString();
-            cboDateOfBirth.Value = Convert.ToDateTime(EmployeeDGV.SelectedRows[0].Cells[3].Value.ToString());
-            EmployePhone.Text = EmployeeDGV.SelectedRows[0].Cells[4].Value.ToString();
-            EmployeePassword.Text = EmployeeDGV.SelectedRows[0].Cells[5].Value.ToString();
+            EmployeLogin.Text = EmployeeDGV.SelectedRows[0].Cells[1].Value.ToString();
+            EmployeePassword.Text  = EmployeeDGV.SelectedRows[0].Cells[2].Value.ToString();
+            EmployeName.Text = EmployeeDGV.SelectedRows[0].Cells[3].Value.ToString();
+            EmployeSurname.Text = EmployeeDGV.SelectedRows[0].Cells[4].Value.ToString();
+            cboDateOfBirth.Value = Convert.ToDateTime(EmployeeDGV.SelectedRows[0].Cells[5].Value.ToString());
+            EmployePhone.Text = EmployeeDGV.SelectedRows[0].Cells[6].Value.ToString();
+            EmployeeAddress.Text = EmployeeDGV.SelectedRows[0].Cells[7].Value.ToString();
         }
-        
+
         private void btnEdit_Click(object sender, EventArgs e)
         {
-            if (EmployeName.Text == "")
+            if (EmployeLogin.Text == "")
             {
                 MessageBox.Show("Please Add a Name");
                 return;
             }
-            if (EmployePhone.Text == "")
-            {
-                MessageBox.Show("Please Add a Number Phone");
-                return;
-            }
-            if (EmployeeAddress.Text == "")
-            {
-                MessageBox.Show("Please Add a Address");
-                return;
-            }
+           
             if (EmployeePassword.Text == "")
             {
                 MessageBox.Show("Please Add a Password");
                 return;
             }
-            else if (EmployeName.Text != "" && EmployePhone.Text != "" && EmployeeAddress.Text != "" && EmployeePassword.Text != "")
+            if (EmployeName.Text == "")
+            {
+                MessageBox.Show("Please Add a Name");
+                return;
+            }
+            if (EmployeSurname.Text == "")
+            {
+                MessageBox.Show("Please Add a SurName");
+                return;
+            }
+             if (EmployeLogin.Text != "" &&  EmployeePassword.Text != "" && EmployeName.Text != "" && EmployeSurname.Text != "")
             {
                 try
                 {
                     //abrimos la conexion a la base de datos
                     con.Open();
                     SqlCommand cmd = new SqlCommand("update EmployeeTbl set" +
+                                                    "  EmpLogin = @EL  ," +
                                                     "  EmpName = @EN  ," +
+                                                    "  EmpSurname = @ES  ,"+
                                                     "  EmpAdd = @EA   ," +
                                                     "  EmpDOB = @ED   ," +
                                                     "  EmpPhone = @EP ," +
                                                     "  EmpPass = @EPa " +
-                                                    "  where EmpNum = @EKey", con);
+                                                    "  where EmpID = @EKey", con);
                     //asignamos los valores a la sentencia para evitar la concatenacion por seguridad   
+                    cmd.Parameters.AddWithValue("@EL", EmployeLogin.Text);
                     cmd.Parameters.AddWithValue("@EN", EmployeName.Text);
-                    cmd.Parameters.AddWithValue("@EA", EmployeeAddress.Text);
+                    cmd.Parameters.AddWithValue("@ES", EmployeSurname.Text);
+                    cmd.Parameters.AddWithValue("@EA", EmployeeAddress.Text);                  
                     cmd.Parameters.AddWithValue("@ED", cboDateOfBirth.Value.Date);
                     cmd.Parameters.AddWithValue("@EP", EmployePhone.Text);
                     cmd.Parameters.AddWithValue("@EPa", EmployeePassword.Text);
@@ -173,7 +180,7 @@ namespace WindowsFormsApp1
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("There's been a problem ==>" + ex.Message);
+                    MessageBox.Show("A aparut o problema ==>" + ex.Message);
                 }
                 finally
                 {
@@ -190,13 +197,13 @@ namespace WindowsFormsApp1
             {
                 MessageBox.Show("You nedd select a employeen");
             }
-            else 
+            else
             {
                 try
                 {
                     //abrimos la conexion a la base de datos
                     con.Open();
-                    SqlCommand cmd = new SqlCommand("delete from EmployeeTbl where EmpNum = @EmpKey", con);
+                    SqlCommand cmd = new SqlCommand("delete from EmployeeTbl where EmpID = @EmpKey", con);
                     //asignamos los valores a la sentencia para evitar la concatenacion por seguridad   
                     cmd.Parameters.AddWithValue("@EmpKey", key);
                     cmd.ExecuteNonQuery();
@@ -208,7 +215,7 @@ namespace WindowsFormsApp1
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("There's been a problem ==>" + ex.Message);
+                    MessageBox.Show("A aparut o problema ==>" + ex.Message);
                 }
                 finally
                 {
