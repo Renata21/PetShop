@@ -572,6 +572,8 @@ namespace WindowsFormsApp1
             this.Name = "Home_Emp";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Home";
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.top_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.top_MouseMove);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.gunaCircleProgressBar2.ResumeLayout(false);
