@@ -58,7 +58,7 @@ namespace WindowsFormsApp1
             this.label10 = new System.Windows.Forms.Label();
             this.CustomerAddress = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.CustomerName = new System.Windows.Forms.TextBox();
+            this.CustomerLogin = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
@@ -66,6 +66,12 @@ namespace WindowsFormsApp1
             this.CustomerDGV = new System.Windows.Forms.DataGridView();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.CustomerName = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.CustomerSurname = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.CustomerPass = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -99,7 +105,7 @@ namespace WindowsFormsApp1
             this.btnDelete.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnDelete.IdleForecolor = System.Drawing.Color.White;
             this.btnDelete.IdleLineColor = System.Drawing.SystemColors.Menu;
-            this.btnDelete.Location = new System.Drawing.Point(784, 203);
+            this.btnDelete.Location = new System.Drawing.Point(757, 210);
             this.btnDelete.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(251, 50);
@@ -126,7 +132,7 @@ namespace WindowsFormsApp1
             this.btnEdit.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnEdit.IdleForecolor = System.Drawing.Color.White;
             this.btnEdit.IdleLineColor = System.Drawing.SystemColors.Menu;
-            this.btnEdit.Location = new System.Drawing.Point(483, 203);
+            this.btnEdit.Location = new System.Drawing.Point(456, 210);
             this.btnEdit.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(251, 50);
@@ -152,7 +158,7 @@ namespace WindowsFormsApp1
             this.btnSave.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnSave.IdleForecolor = System.Drawing.Color.White;
             this.btnSave.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnSave.Location = new System.Drawing.Point(138, 203);
+            this.btnSave.Location = new System.Drawing.Point(138, 210);
             this.btnSave.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(251, 50);
@@ -282,7 +288,7 @@ namespace WindowsFormsApp1
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Corbel", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.Black;
-            this.label16.Location = new System.Drawing.Point(727, 51);
+            this.label16.Location = new System.Drawing.Point(885, 45);
             this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(85, 33);
@@ -360,6 +366,12 @@ namespace WindowsFormsApp1
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Transparent;
+            this.panel3.Controls.Add(this.label14);
+            this.panel3.Controls.Add(this.CustomerPass);
+            this.panel3.Controls.Add(this.label13);
+            this.panel3.Controls.Add(this.CustomerSurname);
+            this.panel3.Controls.Add(this.label4);
+            this.panel3.Controls.Add(this.CustomerName);
             this.panel3.Controls.Add(this.btnDelete);
             this.panel3.Controls.Add(this.btnEdit);
             this.panel3.Controls.Add(this.btnSave);
@@ -368,7 +380,7 @@ namespace WindowsFormsApp1
             this.panel3.Controls.Add(this.label10);
             this.panel3.Controls.Add(this.CustomerAddress);
             this.panel3.Controls.Add(this.label9);
-            this.panel3.Controls.Add(this.CustomerName);
+            this.panel3.Controls.Add(this.CustomerLogin);
             this.panel3.Controls.Add(this.label8);
             this.panel3.Controls.Add(this.pictureBox8);
             this.panel3.Location = new System.Drawing.Point(20, 25);
@@ -380,7 +392,7 @@ namespace WindowsFormsApp1
             // CustomerPhone
             // 
             this.CustomerPhone.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CustomerPhone.Location = new System.Drawing.Point(733, 92);
+            this.CustomerPhone.Location = new System.Drawing.Point(891, 86);
             this.CustomerPhone.Margin = new System.Windows.Forms.Padding(4);
             this.CustomerPhone.Name = "CustomerPhone";
             this.CustomerPhone.Size = new System.Drawing.Size(249, 38);
@@ -391,7 +403,7 @@ namespace WindowsFormsApp1
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Corbel", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(425, 51);
+            this.label10.Location = new System.Drawing.Point(583, 45);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(104, 33);
@@ -401,7 +413,7 @@ namespace WindowsFormsApp1
             // CustomerAddress
             // 
             this.CustomerAddress.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CustomerAddress.Location = new System.Drawing.Point(431, 92);
+            this.CustomerAddress.Location = new System.Drawing.Point(589, 86);
             this.CustomerAddress.Margin = new System.Windows.Forms.Padding(4);
             this.CustomerAddress.Multiline = true;
             this.CustomerAddress.Name = "CustomerAddress";
@@ -413,27 +425,27 @@ namespace WindowsFormsApp1
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Corbel", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(134, 55);
+            this.label9.Location = new System.Drawing.Point(312, 54);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(82, 33);
+            this.label9.Size = new System.Drawing.Size(77, 33);
             this.label9.TabIndex = 24;
-            this.label9.Text = "Name";
+            this.label9.Text = "Login";
             // 
-            // CustomerName
+            // CustomerLogin
             // 
-            this.CustomerName.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CustomerName.Location = new System.Drawing.Point(140, 92);
-            this.CustomerName.Margin = new System.Windows.Forms.Padding(4);
-            this.CustomerName.Name = "CustomerName";
-            this.CustomerName.Size = new System.Drawing.Size(249, 38);
-            this.CustomerName.TabIndex = 23;
+            this.CustomerLogin.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CustomerLogin.Location = new System.Drawing.Point(318, 91);
+            this.CustomerLogin.Margin = new System.Windows.Forms.Padding(4);
+            this.CustomerLogin.Name = "CustomerLogin";
+            this.CustomerLogin.Size = new System.Drawing.Size(249, 38);
+            this.CustomerLogin.TabIndex = 23;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Cambria", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(4, 19);
+            this.label8.Location = new System.Drawing.Point(5, 0);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(288, 32);
@@ -443,7 +455,7 @@ namespace WindowsFormsApp1
             // pictureBox8
             // 
             this.pictureBox8.Image = global::WindowsFormsApp1.Properties.Resources.pet_food;
-            this.pictureBox8.Location = new System.Drawing.Point(1003, 19);
+            this.pictureBox8.Location = new System.Drawing.Point(1019, 150);
             this.pictureBox8.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(123, 103);
@@ -511,6 +523,69 @@ namespace WindowsFormsApp1
             this.label12.TabIndex = 22;
             this.label12.Text = "Employees";
             this.label12.Click += new System.EventHandler(this.label12_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Corbel", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(38, 51);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(83, 33);
+            this.label4.TabIndex = 36;
+            this.label4.Text = "Nume";
+            // 
+            // CustomerName
+            // 
+            this.CustomerName.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CustomerName.Location = new System.Drawing.Point(44, 88);
+            this.CustomerName.Margin = new System.Windows.Forms.Padding(4);
+            this.CustomerName.Name = "CustomerName";
+            this.CustomerName.Size = new System.Drawing.Size(249, 38);
+            this.CustomerName.TabIndex = 35;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Corbel", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.Black;
+            this.label13.Location = new System.Drawing.Point(38, 130);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(115, 33);
+            this.label13.TabIndex = 38;
+            this.label13.Text = "Prenume";
+            // 
+            // CustomerSurname
+            // 
+            this.CustomerSurname.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CustomerSurname.Location = new System.Drawing.Point(44, 167);
+            this.CustomerSurname.Margin = new System.Windows.Forms.Padding(4);
+            this.CustomerSurname.Name = "CustomerSurname";
+            this.CustomerSurname.Size = new System.Drawing.Size(249, 38);
+            this.CustomerSurname.TabIndex = 37;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Corbel", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.Black;
+            this.label14.Location = new System.Drawing.Point(312, 133);
+            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(85, 33);
+            this.label14.TabIndex = 40;
+            this.label14.Text = "Parola";
+            // 
+            // CustomerPass
+            // 
+            this.CustomerPass.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CustomerPass.Location = new System.Drawing.Point(318, 170);
+            this.CustomerPass.Margin = new System.Windows.Forms.Padding(4);
+            this.CustomerPass.Name = "CustomerPass";
+            this.CustomerPass.Size = new System.Drawing.Size(249, 38);
+            this.CustomerPass.TabIndex = 39;
             // 
             // Customers
             // 
@@ -586,7 +661,7 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox CustomerAddress;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox CustomerName;
+        private System.Windows.Forms.TextBox CustomerLogin;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.PictureBox pictureBox8;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse2;
@@ -594,5 +669,11 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.DataGridView CustomerDGV;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TextBox CustomerSurname;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox CustomerName;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TextBox CustomerPass;
     }
 }

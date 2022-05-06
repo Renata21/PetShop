@@ -21,7 +21,7 @@ namespace WindowsFormsApp1
             DisplayProduct();
             GetCustomers();
         }
-        MySqlConnection con = new MySqlConnection("server = mysql.freehostia.com; port = 3306; username=fincri_petshop; password=f._qDNdNMf-#6e@; database=fincri_petshop; connect timeout=5;");
+        MySqlConnection con = new MySqlConnection("server = mysql.freehostia.com; port = 3306; username=fincri_petshop; password=f._qDNdNMf-#6e@; database=fincri_petshop; connect timeout=5; convert zero datetime=True");
         int key = 0;
         int Stock = 0;
         private void GetCustomers() 

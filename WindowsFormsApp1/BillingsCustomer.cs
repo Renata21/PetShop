@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
@@ -15,7 +16,7 @@ namespace WindowsFormsApp1
             DisplayProduct();
             GetCustomers();
         }
-        SqlConnection con = new SqlConnection(@"Data Source = (localdb)\MSSQLLocalDB;Initial Catalog = PetShopDB; Integrated Security = True; Connect Timeout = 30; Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+        MySqlConnection con = new MySqlConnection("server = mysql.freehostia.com; port = 3306; username=fincri_petshop; password=f._qDNdNMf-#6e@; database=fincri_petshop; connect timeout=5; convert zero datetime=True");
         int key = 0;
         int Stock = 0;
         private void GetCustomers()
@@ -23,8 +24,8 @@ namespace WindowsFormsApp1
             try
             {
                 con.Open();
-                SqlCommand cmd = new SqlCommand("select CustId from CustomerTbl", con);
-                SqlDataReader rdr;
+                MySqlCommand cmd = new MySqlCommand("select CustId from CustomerTbl", con);
+                MySqlDataReader rdr;
                 rdr = cmd.ExecuteReader();
                 DataTable dt = new DataTable();
                 dt.Columns.Add("CustId", typeof(int));
@@ -46,10 +47,10 @@ namespace WindowsFormsApp1
             try
             {
                 con.Open();
-                SqlCommand cmd = new SqlCommand("select * from CustomerTbl where CustId = @CustId", con);
+                MySqlCommand cmd = new MySqlCommand("select * from CustomerTbl where CustId = @CustId", con);
 
                 DataTable dt = new DataTable();
-                SqlDataAdapter sda = new SqlDataAdapter(cmd);
+                MySqlDataAdapter sda = new MySqlDataAdapter(cmd);
                 sda.Fill(dt);
 
                 con.Close();
@@ -70,8 +71,8 @@ namespace WindowsFormsApp1
                 con.Open();
                 string Query = " select *" +
                                " from ProductTbl";
-                SqlDataAdapter sda = new SqlDataAdapter(Query, con);
-                SqlCommandBuilder Builder = new SqlCommandBuilder(sda);
+                MySqlDataAdapter sda = new MySqlDataAdapter(Query, con);
+                MySqlCommandBuilder Builder = new MySqlCommandBuilder(sda);
                 var ds = new DataSet();
                 sda.Fill(ds);
                 ProductsDGV.DataSource = ds.Tables[0];
@@ -94,8 +95,8 @@ namespace WindowsFormsApp1
                 con.Open();
                 string Query = " select *" +
                                " from BillTbl";
-                SqlDataAdapter sda = new SqlDataAdapter(Query, con);
-                SqlCommandBuilder Builder = new SqlCommandBuilder(sda);
+                MySqlDataAdapter sda = new MySqlDataAdapter(Query, con);
+                MySqlCommandBuilder Builder = new MySqlCommandBuilder(sda);
                 var ds = new DataSet();
                 sda.Fill(ds);
 
@@ -117,7 +118,7 @@ namespace WindowsFormsApp1
             {
                 int NewQty = Stock - Convert.ToInt32(QtyTb.Text);
                 con.Open();
-                SqlCommand cmd = new SqlCommand("Update ProductTbl set PrQty = @PQ where PrID = @PKey", con);
+                MySqlCommand cmd = new MySqlCommand("Update ProductTbl set PrQty = @PQ where PrID = @PKey", con);
                 cmd.Parameters.AddWithValue("@PQ", NewQty);
                 cmd.Parameters.AddWithValue("@PKey", key);
                 cmd.ExecuteNonQuery();
@@ -139,11 +140,11 @@ namespace WindowsFormsApp1
             try
             {
                 con.Open();
-                SqlCommand cmd_id = new SqlCommand("select CustID from CustomerTbl where CustLogin = @CustLog", con);
-                MessageBox.Show((temp.client == "eric").ToString());
+                MySqlCommand cmd_id = new MySqlCommand("select CustID from CustomerTbl where CustLogin = @CustLog", con);
+                
                 cmd_id.Parameters.AddWithValue("@CustLog", temp.client);
                 DataTable dt = new DataTable();
-                SqlDataAdapter sda = new SqlDataAdapter(cmd_id);
+                MySqlDataAdapter sda = new MySqlDataAdapter(cmd_id);
                 sda.Fill(dt);
                 string custID = "";
                 foreach (DataRow dr in dt.Rows)
@@ -151,9 +152,9 @@ namespace WindowsFormsApp1
                     custID = dr["CustID"].ToString();
                 }
 
-                MessageBox.Show(custID);
+               
 
-                SqlCommand cmd = new SqlCommand("insert into BillTbl (BDate,CustId,CustLogin,EmpLogin,Amt) values(@BD,@CI,@CN,@EN,@AT)", con);
+                MySqlCommand cmd = new MySqlCommand("insert into BillTbl (BDate,CustId,CustLogin,EmpLogin,Amt) values(@BD,@CI,@CN,@EN,@AT)", con);
                
                 cmd.Parameters.AddWithValue("@BD", DateTime.Today.Date);
                 cmd.Parameters.AddWithValue("@CI", int.Parse(custID));

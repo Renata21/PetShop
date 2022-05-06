@@ -5,6 +5,7 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
+    
     public partial class Login_Cust : Form
     {
         public Login_Cust()
@@ -13,7 +14,7 @@ namespace WindowsFormsApp1
            
         }
 
-        MySqlConnection con = new MySqlConnection("server = mysql.freehostia.com; port = 3306; username=fincri_petshop; password=f._qDNdNMf-#6e@; database=fincri_petshop; connect timeout=5;");
+        MySqlConnection con = new MySqlConnection("server = mysql.freehostia.com; port = 3306; username=fincri_petshop; password=f._qDNdNMf-#6e@; database=fincri_petshop; connect timeout=5; convert zero datetime=True");
         MySqlCommand cmd;
 
         MySqlDataReader dr;

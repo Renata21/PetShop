@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -21,7 +22,7 @@ namespace WindowsFormsApp1
             Clear();
         }
 
-        SqlConnection con = new SqlConnection(@"Data Source = (localdb)\MSSQLLocalDB;Initial Catalog = PetShopDB; Integrated Security = True; Connect Timeout = 30; Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+        MySqlConnection con = new MySqlConnection("server = mysql.freehostia.com; port = 3306; username=fincri_petshop; password=f._qDNdNMf-#6e@; database=fincri_petshop; connect timeout=5; convert zero datetime=True");
         int key = 0;
         //listaremos los empleados una vez agreguemos uno y cuando se inicie el formulario
         private void DisplayCustomers()
@@ -31,8 +32,8 @@ namespace WindowsFormsApp1
                 con.Open();
                 string Query = " select *" +
                                " from ProductTbl";
-                SqlDataAdapter sda = new SqlDataAdapter(Query, con);
-                SqlCommandBuilder Builder = new SqlCommandBuilder(sda);
+                MySqlDataAdapter sda = new MySqlDataAdapter(Query, con);
+                MySqlCommandBuilder Builder = new MySqlCommandBuilder(sda);
                 var ds = new DataSet();
                 sda.Fill(ds);
                 ProductDGV.DataSource = ds.Tables[0];
@@ -77,7 +78,7 @@ namespace WindowsFormsApp1
                 {
                     //abrimos la conexion a la base de datos
                     con.Open();
-                    SqlCommand cmd = new SqlCommand("insert into ProductTbl (PrName,PrCat,PrQty,PrPrice) values(@PN,@PC,@PQ,@PP)", con);
+                    MySqlCommand cmd = new MySqlCommand("insert into ProductTbl (PrName,PrType,PrQty,PrPrice) values(@PN,@PC,@PQ,@PP)", con);
                     //asignamos los valores a la sentencia para evitar la concatenacion por seguridad   
                     cmd.Parameters.AddWithValue("@PN", ProductName_tb.Text);
                     cmd.Parameters.AddWithValue("@PC", cboProductCategory.SelectedItem.ToString());
@@ -122,7 +123,7 @@ namespace WindowsFormsApp1
                 {
                     //abrimos la conexion a la base de datos
                     con.Open();
-                    SqlCommand cmd = new SqlCommand("delete from ProductTbl where PrId = @PKey", con);
+                    MySqlCommand cmd = new MySqlCommand("delete from ProductTbl where PrID = @PKey", con);
                     //asignamos los valores a la sentencia para evitar la concatenacion por seguridad   
                     cmd.Parameters.AddWithValue("@PKey", key);
                     cmd.ExecuteNonQuery();
@@ -167,12 +168,12 @@ namespace WindowsFormsApp1
                 {
                     //abrimos la conexion a la base de datos
                     con.Open();
-                    SqlCommand cmd = new SqlCommand("update ProductTbl set" +
+                    MySqlCommand cmd = new MySqlCommand("update ProductTbl set" +
                                                     " PrName = @PN ," +
-                                                    " PrCat = @PC  ," +
+                                                    " PrType = @PC  ," +
                                                     " PrQty = @PQ  ," +
                                                     " PrPrice = @PP " +
-                                                    " where PrId = @PKey ", con);
+                                                    " where PrID = @PKey ", con);
                     //asignamos los valores a la sentencia para evitar la concatenacion por seguridad   
                     cmd.Parameters.AddWithValue("@PN", ProductName_tb.Text);
                     cmd.Parameters.AddWithValue("@PC", cboProductCategory.SelectedItem.ToString());
@@ -233,14 +234,6 @@ namespace WindowsFormsApp1
             this.Hide();
         }
 
-        private void label7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }

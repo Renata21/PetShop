@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
@@ -15,8 +16,7 @@ namespace WindowsFormsApp1
             label7.Text = temp.angajat;
             DisplayEmployees();
         }
-
-        SqlConnection con = new SqlConnection(@"Data Source = (localdb)\MSSQLLocalDB;Initial Catalog = PetShopDB; Integrated Security = True; Connect Timeout = 30; Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+        MySqlConnection con = new MySqlConnection("server = mysql.freehostia.com; port = 3306; username=fincri_petshop; password=f._qDNdNMf-#6e@; database=fincri_petshop; connect timeout=5; convert zero datetime=True");
         int key = 0;
         //listaremos los empleados una vez agreguemos uno y cuando se inicie el formulario
         private void DisplayEmployees()
@@ -26,8 +26,8 @@ namespace WindowsFormsApp1
                 con.Open();
                 string Query = " select *" +
                                " from EmployeeTbl";
-                SqlDataAdapter sda = new SqlDataAdapter(Query, con);
-                SqlCommandBuilder Builder = new SqlCommandBuilder(sda);
+                MySqlDataAdapter sda = new MySqlDataAdapter(Query, con);
+                MySqlCommandBuilder Builder = new MySqlCommandBuilder(sda);
                 var ds = new DataSet();
                 sda.Fill(ds);
                 EmployeeDGV.DataSource = ds.Tables[0];
@@ -61,6 +61,7 @@ namespace WindowsFormsApp1
                 MessageBox.Show("Please Add a Name");
                 return;
             }
+           
             if (EmployeSurname.Text == "")
             {
                 MessageBox.Show("Please Add a SurName");
@@ -72,14 +73,15 @@ namespace WindowsFormsApp1
                 {
                     //abrimos la conexion a la base de datos
                     con.Open();
-                    SqlCommand cmd = new SqlCommand("insert into EmployeeTbl (EmpLogin,EmpPass,EmpName,EmpSurname,EmpAdd,EmpDOB,EmpPhone) " +
+                    MySqlCommand cmd = new MySqlCommand("insert into EmployeeTbl (EmpLogin,EmpPass,EmpName,EmpSurname,EmpAdd,EmpDOB,EmpPhone) " +
                                                     "values(@EL,@EPa,@EN, @ES,@EA,@ED,@EP)", con);
-                    //asignamos los valores a la sentencia para evitar la concatenacion por seguridad   
+                     
                     cmd.Parameters.AddWithValue("@EL", EmployeLogin.Text); 
                     cmd.Parameters.AddWithValue("@EPa", EmployeePassword.Text);
                     cmd.Parameters.AddWithValue("@EN", EmployeName.Text);
                     cmd.Parameters.AddWithValue("@ES", EmployeSurname.Text);
                     cmd.Parameters.AddWithValue("@EA", EmployeeAddress.Text);
+
                     cmd.Parameters.AddWithValue("@ED", cboDateOfBirth.Value.Date);
                     cmd.Parameters.AddWithValue("@EP", EmployePhone.Text);
 
@@ -153,7 +155,7 @@ namespace WindowsFormsApp1
                 {
                     //abrimos la conexion a la base de datos
                     con.Open();
-                    SqlCommand cmd = new SqlCommand("update EmployeeTbl set" +
+                    MySqlCommand cmd = new MySqlCommand("update EmployeeTbl set" +
                                                     "  EmpLogin = @EL  ," +
                                                     "  EmpName = @EN  ," +
                                                     "  EmpSurname = @ES  ,"+
@@ -203,7 +205,7 @@ namespace WindowsFormsApp1
                 {
                     //abrimos la conexion a la base de datos
                     con.Open();
-                    SqlCommand cmd = new SqlCommand("delete from EmployeeTbl where EmpID = @EmpKey", con);
+                    MySqlCommand cmd = new MySqlCommand("delete from EmployeeTbl where EmpID = @EmpKey", con);
                     //asignamos los valores a la sentencia para evitar la concatenacion por seguridad   
                     cmd.Parameters.AddWithValue("@EmpKey", key);
                     cmd.ExecuteNonQuery();

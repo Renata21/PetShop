@@ -267,10 +267,10 @@ namespace WindowsFormsApp1
             this.cboProductCategory.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboProductCategory.FormattingEnabled = true;
             this.cboProductCategory.Items.AddRange(new object[] {
-            "Cat",
-            "Dog ",
-            "Bird",
-            "Food"});
+            "Pisica",
+            "Caine",
+            "Pasare",
+            "Hrana"});
             this.cboProductCategory.Location = new System.Drawing.Point(371, 83);
             this.cboProductCategory.Margin = new System.Windows.Forms.Padding(4);
             this.cboProductCategory.Name = "cboProductCategory";
@@ -432,7 +432,6 @@ namespace WindowsFormsApp1
             this.label7.Size = new System.Drawing.Size(142, 32);
             this.label7.TabIndex = 57;
             this.label7.Text = "Emp Name";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label4
             // 
@@ -468,7 +467,6 @@ namespace WindowsFormsApp1
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 46;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBox7
             // 

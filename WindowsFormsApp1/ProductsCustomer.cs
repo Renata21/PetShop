@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,8 +21,8 @@ namespace WindowsFormsApp1
             DisplayCustomers();
           
         }
-        
-                   SqlConnection con = new SqlConnection(@"Data Source = (localdb)\MSSQLLocalDB;Initial Catalog = PetShopDB; Integrated Security = True; Connect Timeout = 30; Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+
+        MySqlConnection con = new MySqlConnection("server = mysql.freehostia.com; port = 3306; username=fincri_petshop; password=f._qDNdNMf-#6e@; database=fincri_petshop; connect timeout=5; convert zero datetime=True");
         int key = 0;
         //listaremos los empleados una vez agreguemos uno y cuando se inicie el formulario
         private void DisplayCustomers()
@@ -31,8 +32,8 @@ namespace WindowsFormsApp1
                 con.Open();
                 string Query = " select *" +
                                " from ProductTbl";
-                SqlDataAdapter sda = new SqlDataAdapter(Query, con);
-                SqlCommandBuilder Builder = new SqlCommandBuilder(sda);
+                MySqlDataAdapter sda = new MySqlDataAdapter(Query, con);
+                MySqlCommandBuilder Builder = new MySqlCommandBuilder(sda);
                 var ds = new DataSet();
                 sda.Fill(ds);
                 ProductDGV.DataSource = ds.Tables[0];

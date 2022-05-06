@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Data;
-using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace WindowsFormsApp1
@@ -19,7 +13,7 @@ namespace WindowsFormsApp1
             label7.Text = temp.angajat;
             DisplayCustomers();
         }
-        SqlConnection con = new SqlConnection(@"Data Source = (localdb)\MSSQLLocalDB;Initial Catalog = PetShopDB; Integrated Security = True; Connect Timeout = 30; Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+        MySqlConnection con = new MySqlConnection("server = mysql.freehostia.com; port = 3306; username=fincri_petshop; password=f._qDNdNMf-#6e@; database=fincri_petshop; connect timeout=5; convert zero datetime=True");
         int key = 0;
         //listaremos los empleados una vez agreguemos uno y cuando se inicie el formulario
         private void DisplayCustomers()
@@ -29,8 +23,8 @@ namespace WindowsFormsApp1
                 con.Open();
                 string Query = " select *" +
                                " from CustomerTbl";
-                SqlDataAdapter sda = new SqlDataAdapter(Query, con);
-                SqlCommandBuilder Builder = new SqlCommandBuilder(sda);
+                MySqlDataAdapter sda = new MySqlDataAdapter(Query, con);
+                MySqlCommandBuilder Builder = new MySqlCommandBuilder(sda);
                 var ds = new DataSet();
                 sda.Fill(ds);
                 CustomerDGV.DataSource = ds.Tables[0];
@@ -39,7 +33,7 @@ namespace WindowsFormsApp1
             }
             catch (Exception ex)
             {
-                MessageBox.Show("There's been a problem ==>" + ex.Message);
+                MessageBox.Show("A aparut o problema ==>" + ex.Message);
             }
             finally
             {
@@ -49,50 +43,60 @@ namespace WindowsFormsApp1
         private void Clear()
         {
             CustomerName.Text = "";
+            CustomerSurname.Text = "";
+            CustomerLogin.Text = "";
             CustomerPhone.Text = "";
             CustomerAddress.Text = "";
         }
         private void btnSave_Click(object sender, EventArgs e)
         {
+            if (CustomerLogin.Text == "")
+            {
+                MessageBox.Show("Adaugati numele de utilizator");
+                return;
+            }
+            if (CustomerPass.Text == "")
+            {
+                MessageBox.Show("Adaugati parola");
+                return;
+            }
             if (CustomerName.Text == "")
             {
-                MessageBox.Show("Please Add a Name");
+                MessageBox.Show("Adaugati numele");
                 return;
             }
-            if (CustomerPhone.Text == "")
+            if (CustomerSurname.Text == "")
             {
-                MessageBox.Show("Please Add a Number Phone");
+                MessageBox.Show("Adaugati prenumele");
                 return;
             }
-            if (CustomerAddress.Text == "")
-            {
-                MessageBox.Show("Please Add a Address");
-                return;
-            }
-            else if (CustomerName.Text != "" && CustomerPhone.Text != "" && CustomerAddress.Text != "")
+            else if (CustomerLogin.Text != "" && CustomerPass.Text != "" && CustomerName.Text != "" && CustomerSurname.Text != "")
             {
                 try
                 {
                     //abrimos la conexion a la base de datos
                     con.Open();
-                    SqlCommand cmd = new SqlCommand("insert into CustomerTbl (CustName,CustAdd,CustPhone) values(@CN,@CA,@CP)", con);
+                    MySqlCommand cmd = new MySqlCommand("insert into CustomerTbl (CustLogin, CustPass, CustName, CustSurname,CustPhone, CustAdd) values(@CL, @CPA, @CN, @CS,@CP,@CA)", con);
                     //asignamos los valores a la sentencia para evitar la concatenacion por seguridad   
+                    cmd.Parameters.AddWithValue("@CL", CustomerLogin.Text);
+                    cmd.Parameters.AddWithValue("@CPa", CustomerPass.Text);
                     cmd.Parameters.AddWithValue("@CN", CustomerName.Text);
-                    cmd.Parameters.AddWithValue("@CA", CustomerAddress.Text);
+                    cmd.Parameters.AddWithValue("@CS", CustomerSurname.Text);
                     cmd.Parameters.AddWithValue("@CP", CustomerPhone.Text);
+                    cmd.Parameters.AddWithValue("@CA", CustomerAddress.Text);
+
                     cmd.ExecuteNonQuery();
-                    MessageBox.Show("Customer : " + CustomerName.Text + " Added");
+                    MessageBox.Show("Clientul : " + CustomerLogin.Text + " a fost adaugat");
                     con.Close();
                     DisplayCustomers();
                     Clear();
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("There's been a problem ==>" + ex.Message);
+                    MessageBox.Show("A aparut o problema ==>" + ex.Message);
                 }
                 finally
                 {
-                    //cerramos la cadena independientemente si la sentencia se ejecuta d emanera exitosa o no
                     con.Close();
                 }
             }
@@ -101,28 +105,29 @@ namespace WindowsFormsApp1
         private void CustomerDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             key = Convert.ToInt32(CustomerDGV.SelectedRows[0].Cells[0].Value.ToString());
-            CustomerName.Text = CustomerDGV.SelectedRows[0].Cells[1].Value.ToString();
-            CustomerAddress.Text = CustomerDGV.SelectedRows[0].Cells[2].Value.ToString();
-            CustomerPhone.Text = CustomerDGV.SelectedRows[0].Cells[3].Value.ToString();
+            CustomerLogin.Text = CustomerDGV.SelectedRows[0].Cells[1].Value.ToString();
+            CustomerPass.Text = CustomerDGV.SelectedRows[0].Cells[2].Value.ToString();
+            CustomerName.Text = CustomerDGV.SelectedRows[0].Cells[3].Value.ToString();
+            CustomerSurname.Text = CustomerDGV.SelectedRows[0].Cells[4].Value.ToString();
+            CustomerPhone.Text = CustomerDGV.SelectedRows[0].Cells[5].Value.ToString();
+            CustomerAddress.Text = CustomerDGV.SelectedRows[0].Cells[6].Value.ToString();
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
             if (key == 0)
             {
-                MessageBox.Show("You nedd select a Customer");
+                MessageBox.Show("Selectati un client");
             }
             else
             {
                 try
                 {
-                    //abrimos la conexion a la base de datos
                     con.Open();
-                    SqlCommand cmd = new SqlCommand("delete from CustomerTbl where CustId = @CustId", con);
-                    //asignamos los valores a la sentencia para evitar la concatenacion por seguridad   
+                    MySqlCommand cmd = new MySqlCommand("delete from CustomerTbl where CustId = @CustId", con);
                     cmd.Parameters.AddWithValue("@CustId", key);
                     cmd.ExecuteNonQuery();
-                    MessageBox.Show("Customer Deleted");
+                    MessageBox.Show("Client sters");
                     con.Close();
                     DisplayCustomers();
                     key = 0;
@@ -130,11 +135,10 @@ namespace WindowsFormsApp1
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("There's been a problem ==>" + ex.Message);
+                    MessageBox.Show("A aparut o problema ==>" + ex.Message);
                 }
                 finally
                 {
-                    //cerramos la cadena independientemente si la sentencia se ejecuta d emanera exitosa o no
                     con.Close();
                 }
             }
@@ -142,39 +146,50 @@ namespace WindowsFormsApp1
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
+            if (CustomerLogin.Text == "")
+            {
+                MessageBox.Show("Adaugati numele de utilizator");
+                return;
+            }
+            if (CustomerPass.Text == "")
+            {
+                MessageBox.Show("Adaugati parola");
+                return;
+            }
             if (CustomerName.Text == "")
             {
-                MessageBox.Show("Please Add a Name");
+                MessageBox.Show("Adaugati numele");
                 return;
             }
-            if (CustomerPhone.Text == "")
+            if (CustomerSurname.Text == "")
             {
-                MessageBox.Show("Please Add a Number Phone");
+                MessageBox.Show("Adaugati prenumele");
                 return;
             }
-            if (CustomerAddress.Text == "")
-            {
-                MessageBox.Show("Please Add a Address");
-                return;
-            }
-            else if (CustomerName.Text != "" && CustomerPhone.Text != "" && CustomerAddress.Text != "")
+            else if (CustomerLogin.Text != "" && CustomerPass.Text != "" && CustomerName.Text != "" && CustomerSurname.Text != "")
             {
                 try
                 {
                     //abrimos la conexion a la base de datos
                     con.Open();
-                    SqlCommand cmd = new SqlCommand("update CustomerTbl set" +
-                                                    " CustName = @CN ," +
-                                                    " CustAdd = @CA  ," +
+                    MySqlCommand cmd = new MySqlCommand("update CustomerTbl set" +
+                                                    " CustLogin = @CL ," +
+                                                    " CustomerPass = @CPa ," +
+                                                    " CustomerName = @CN ," +
+                                                    " CustomerSurname = @CS ," +
                                                     " CustPhone = @CP " +
+                                                    " CustAdd = @CA  ," +
                                                     " where CustId =@CustId ", con);
                     //asignamos los valores a la sentencia para evitar la concatenacion por seguridad   
+                    cmd.Parameters.AddWithValue("@CL", CustomerLogin.Text);
+                    cmd.Parameters.AddWithValue("@CPa", CustomerPass.Text);
                     cmd.Parameters.AddWithValue("@CN", CustomerName.Text);
-                    cmd.Parameters.AddWithValue("@CA", CustomerAddress.Text);
+                    cmd.Parameters.AddWithValue("@CS", CustomerSurname.Text);
                     cmd.Parameters.AddWithValue("@CP", CustomerPhone.Text);
+                    cmd.Parameters.AddWithValue("@CA", CustomerAddress.Text);
                     cmd.Parameters.AddWithValue("@CustId", key);
                     cmd.ExecuteNonQuery();
-                    MessageBox.Show("Employee Updated");
+                    MessageBox.Show("Datele au fost modificate.");
                     con.Close();
                     DisplayCustomers();
                     key = 0;
@@ -182,11 +197,10 @@ namespace WindowsFormsApp1
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("There's been a problem ==>" + ex.Message);
+                    MessageBox.Show("A aparut o problema ==>" + ex.Message);
                 }
                 finally
                 {
-                    //cerramos la cadena independientemente si la sentencia se ejecuta d emanera exitosa o no
                     con.Close();
                 }
             }

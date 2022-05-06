@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
@@ -32,7 +33,7 @@ namespace WindowsFormsApp1
         {
             lastPoint = new Point(e.X, e.Y);
         }
-        SqlConnection con = new SqlConnection(@"Data Source = (localdb)\MSSQLLocalDB;Initial Catalog = PetShopDB; Integrated Security = True; Connect Timeout = 30; Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+        MySqlConnection con = new MySqlConnection("server = mysql.freehostia.com; port = 3306; username=fincri_petshop; password=f._qDNdNMf-#6e@; database=fincri_petshop; connect timeout=5; convert zero datetime=True");
 
         private void CountDogs()
         {
@@ -40,7 +41,7 @@ namespace WindowsFormsApp1
             try
             {
                 con.Open();
-                SqlDataAdapter sda = new SqlDataAdapter("select count(*) from ProductTbl where PrType = '" + dog + "'", con);
+                MySqlDataAdapter sda = new MySqlDataAdapter("select count(*) from ProductTbl where PrType = '" + dog + "'", con);
                 DataTable dt = new DataTable();
                 sda.Fill(dt);
                 DogsLbl.Text = dt.Rows[0][0].ToString();
@@ -61,7 +62,7 @@ namespace WindowsFormsApp1
             try
             {
                 con.Open();
-                SqlDataAdapter sda = new SqlDataAdapter("select count(*) from ProductTbl where PrType = '" + cat + "'", con);
+                MySqlDataAdapter sda = new MySqlDataAdapter("select count(*) from ProductTbl where PrType = '" + cat + "'", con);
                 DataTable dt = new DataTable();
                 sda.Fill(dt);
                 LblCat.Text = dt.Rows[0][0].ToString();
@@ -82,7 +83,7 @@ namespace WindowsFormsApp1
             try
             {
                 con.Open();
-                SqlDataAdapter sda = new SqlDataAdapter("select count(*) from ProductTbl where PrType = '" + cat + "'", con);
+                MySqlDataAdapter sda = new MySqlDataAdapter("select count(*) from ProductTbl where PrType = '" + cat + "'", con);
                 DataTable dt = new DataTable();
                 sda.Fill(dt);
                 BirdLbl.Text = dt.Rows[0][0].ToString();
@@ -102,7 +103,7 @@ namespace WindowsFormsApp1
             try
             {
                 con.Open();
-                SqlDataAdapter sda = new SqlDataAdapter("select sum(Amt) from BillTbl", con);
+                MySqlDataAdapter sda = new MySqlDataAdapter("select sum(Amt) from BillTbl", con);
                 DataTable dt = new DataTable();
                 sda.Fill(dt);
                 lblFinance.Text = dt.Rows[0][0].ToString();
