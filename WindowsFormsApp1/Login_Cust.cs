@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Data.SqlClient;
 using System.Windows.Forms;
 
@@ -12,10 +13,10 @@ namespace WindowsFormsApp1
            
         }
 
-        SqlConnection con = new SqlConnection(@"Data Source = (localdb)\MSSQLLocalDB;Initial Catalog = PetShopDB; Integrated Security = True; Connect Timeout = 30; Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
-        SqlCommand cmd;
+        MySqlConnection con = new MySqlConnection("server = mysql.freehostia.com; port = 3306; username=fincri_petshop; password=f._qDNdNMf-#6e@; database=fincri_petshop; connect timeout=5;");
+        MySqlCommand cmd;
 
-        SqlDataReader dr;
+        MySqlDataReader dr;
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             System.Windows.Forms.Application.Exit();
@@ -29,7 +30,7 @@ namespace WindowsFormsApp1
                 string pass = Passwordtxt.Text;
 
                 con.Open();
-                cmd = new SqlCommand();
+                cmd = new MySqlCommand();
                 cmd.Connection = con;
                 cmd.CommandText = "SELECT* FROM CustomerTbl where CustLogin = '" + user + "' AND CustPass = '" + pass + "'";
                 dr = cmd.ExecuteReader();

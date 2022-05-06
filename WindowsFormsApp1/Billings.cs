@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,7 +21,7 @@ namespace WindowsFormsApp1
             DisplayProduct();
             GetCustomers();
         }
-        SqlConnection con = new SqlConnection(@"Data Source = (localdb)\MSSQLLocalDB;Initial Catalog = PetShopDB; Integrated Security = True; Connect Timeout = 30; Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+        MySqlConnection con = new MySqlConnection("server = mysql.freehostia.com; port = 3306; username=fincri_petshop; password=f._qDNdNMf-#6e@; database=fincri_petshop; connect timeout=5;");
         int key = 0;
         int Stock = 0;
         private void GetCustomers() 
@@ -28,8 +29,8 @@ namespace WindowsFormsApp1
             try
             {
                 con.Open();
-                SqlCommand cmd = new SqlCommand("select CustID from CustomerTbl",con);
-                SqlDataReader rdr;
+                MySqlCommand cmd = new MySqlCommand("select CustID from CustomerTbl",con);
+                MySqlDataReader rdr;
                 rdr = cmd.ExecuteReader();
                 DataTable dt = new DataTable();
                 dt.Columns.Add("CustID", typeof(int));
@@ -53,10 +54,10 @@ namespace WindowsFormsApp1
             {
                 con.Open();
 
-                SqlCommand cmd = new SqlCommand("select * from CustomerTbl where CustID = @CustId", con);
+                MySqlCommand cmd = new MySqlCommand("select * from CustomerTbl where CustID = @CustId", con);
                 cmd.Parameters.AddWithValue("@CustId", CustIdCb.SelectedValue);
                 DataTable dt = new DataTable();
-                SqlDataAdapter sda = new SqlDataAdapter(cmd);
+                MySqlDataAdapter sda = new MySqlDataAdapter(cmd);
                 sda.Fill(dt);
                 foreach (DataRow dr in dt.Rows)
                 {
@@ -80,8 +81,8 @@ namespace WindowsFormsApp1
                 con.Open();
                 string Query = " select *" +
                                " from ProductTbl";
-                SqlDataAdapter sda = new SqlDataAdapter(Query, con);
-                SqlCommandBuilder Builder = new SqlCommandBuilder(sda);
+                MySqlDataAdapter sda = new MySqlDataAdapter(Query, con);
+                MySqlCommandBuilder Builder = new MySqlCommandBuilder(sda);
                 var ds = new DataSet();
                 sda.Fill(ds);
                 ProductsDGV.DataSource = ds.Tables[0];
@@ -103,8 +104,8 @@ namespace WindowsFormsApp1
                 con.Open();
                 string Query = " select *" +
                                " from BillTbl";
-                SqlDataAdapter sda = new SqlDataAdapter(Query, con);
-                SqlCommandBuilder Builder = new SqlCommandBuilder(sda);
+                MySqlDataAdapter sda = new MySqlDataAdapter(Query, con);
+                MySqlCommandBuilder Builder = new MySqlCommandBuilder(sda);
                 var ds = new DataSet();
                 sda.Fill(ds);
                 TransactionsDGV.DataSource = ds.Tables[0];
@@ -126,7 +127,7 @@ namespace WindowsFormsApp1
             {
                 int NewQty = Stock - Convert.ToInt32(QtyTb.Text);
                 con.Open();
-                SqlCommand cmd = new SqlCommand("Update ProductTbl set PrQty = @PQ where PrID = @PKey",con);
+                MySqlCommand cmd = new MySqlCommand("Update ProductTbl set PrQty = @PQ where PrID = @PKey",con);
                 cmd.Parameters.AddWithValue("@PQ", NewQty);
                 cmd.Parameters.AddWithValue("@PKey", key);
                 cmd.ExecuteNonQuery();
@@ -148,7 +149,7 @@ namespace WindowsFormsApp1
             try
             {
                 con.Open();
-                SqlCommand cmd = new SqlCommand("insert into BillTbl (BDate,CustId,CustLogin,EmpLogin,Amt) values(@BD,@CI,@CN,@EN,@AT)", con);
+                MySqlCommand cmd = new MySqlCommand("insert into BillTbl (BDate,CustId,CustLogin,EmpLogin,Amt) values(@BD,@CI,@CN,@EN,@AT)", con);
                 cmd.Parameters.AddWithValue("@BD", DateTime.Today.Date);
                 cmd.Parameters.AddWithValue("@CI", CustIdCb.SelectedValue.ToString());
                 cmd.Parameters.AddWithValue("@CN", custNameTb.Text);
