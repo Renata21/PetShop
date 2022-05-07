@@ -262,14 +262,14 @@ namespace WindowsFormsApp1
             this.panel1.Location = new System.Drawing.Point(336, 14);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1077, 608);
+            this.panel1.Size = new System.Drawing.Size(1102, 661);
             this.panel1.TabIndex = 64;
             // 
             // TotalLbl
             // 
             this.TotalLbl.AutoSize = true;
             this.TotalLbl.Font = new System.Drawing.Font("Corbel", 15.75F);
-            this.TotalLbl.Location = new System.Drawing.Point(675, 549);
+            this.TotalLbl.Location = new System.Drawing.Point(674, 549);
             this.TotalLbl.Name = "TotalLbl";
             this.TotalLbl.Size = new System.Drawing.Size(29, 33);
             this.TotalLbl.TabIndex = 43;
@@ -279,7 +279,7 @@ namespace WindowsFormsApp1
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Cambria", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(861, 12);
+            this.label17.Location = new System.Drawing.Point(259, 258);
             this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(122, 32);
@@ -301,14 +301,14 @@ namespace WindowsFormsApp1
             this.ProductPrice,
             this.Quantity,
             this.Total});
-            this.BillDGV.Location = new System.Drawing.Point(207, 303);
+            this.BillDGV.Location = new System.Drawing.Point(630, 102);
             this.BillDGV.Margin = new System.Windows.Forms.Padding(4);
             this.BillDGV.MultiSelect = false;
             this.BillDGV.Name = "BillDGV";
             this.BillDGV.ReadOnly = true;
             this.BillDGV.RowHeadersWidth = 51;
             this.BillDGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.BillDGV.Size = new System.Drawing.Size(733, 219);
+            this.BillDGV.Size = new System.Drawing.Size(453, 386);
             this.BillDGV.TabIndex = 41;
             // 
             // Id
@@ -384,10 +384,10 @@ namespace WindowsFormsApp1
             this.panel2.Controls.Add(this.PrNameTb);
             this.panel2.Controls.Add(this.Savebtn);
             this.panel2.Controls.Add(this.label14);
-            this.panel2.Location = new System.Drawing.Point(15, 22);
+            this.panel2.Location = new System.Drawing.Point(24, 39);
             this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(595, 197);
+            this.panel2.Size = new System.Drawing.Size(583, 197);
             this.panel2.TabIndex = 37;
             // 
             // label15
@@ -395,7 +395,7 @@ namespace WindowsFormsApp1
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Corbel", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.Black;
-            this.label15.Location = new System.Drawing.Point(389, 48);
+            this.label15.Location = new System.Drawing.Point(385, 49);
             this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(113, 33);
@@ -405,7 +405,7 @@ namespace WindowsFormsApp1
             // QtyTb
             // 
             this.QtyTb.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.QtyTb.Location = new System.Drawing.Point(396, 84);
+            this.QtyTb.Location = new System.Drawing.Point(392, 85);
             this.QtyTb.Margin = new System.Windows.Forms.Padding(4);
             this.QtyTb.Name = "QtyTb";
             this.QtyTb.Size = new System.Drawing.Size(179, 38);
@@ -416,7 +416,7 @@ namespace WindowsFormsApp1
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Corbel", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(203, 48);
+            this.label5.Location = new System.Drawing.Point(199, 49);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(70, 33);
@@ -426,7 +426,7 @@ namespace WindowsFormsApp1
             // PrPriceTb
             // 
             this.PrPriceTb.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PrPriceTb.Location = new System.Drawing.Point(209, 84);
+            this.PrPriceTb.Location = new System.Drawing.Point(205, 85);
             this.PrPriceTb.Margin = new System.Windows.Forms.Padding(4);
             this.PrPriceTb.Name = "PrPriceTb";
             this.PrPriceTb.Size = new System.Drawing.Size(179, 38);
@@ -437,7 +437,7 @@ namespace WindowsFormsApp1
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Corbel", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(16, 48);
+            this.label10.Location = new System.Drawing.Point(12, 49);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(82, 33);
@@ -447,7 +447,7 @@ namespace WindowsFormsApp1
             // PrNameTb
             // 
             this.PrNameTb.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PrNameTb.Location = new System.Drawing.Point(23, 84);
+            this.PrNameTb.Location = new System.Drawing.Point(19, 85);
             this.PrNameTb.Margin = new System.Windows.Forms.Padding(4);
             this.PrNameTb.Name = "PrNameTb";
             this.PrNameTb.Size = new System.Drawing.Size(179, 38);
@@ -473,14 +473,14 @@ namespace WindowsFormsApp1
             this.ProductsDGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.ProductsDGV.BackgroundColor = System.Drawing.Color.White;
             this.ProductsDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.ProductsDGV.Location = new System.Drawing.Point(617, 48);
+            this.ProductsDGV.Location = new System.Drawing.Point(24, 294);
             this.ProductsDGV.Margin = new System.Windows.Forms.Padding(4);
             this.ProductsDGV.MultiSelect = false;
             this.ProductsDGV.Name = "ProductsDGV";
             this.ProductsDGV.ReadOnly = true;
             this.ProductsDGV.RowHeadersWidth = 51;
             this.ProductsDGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.ProductsDGV.Size = new System.Drawing.Size(573, 194);
+            this.ProductsDGV.Size = new System.Drawing.Size(583, 194);
             this.ProductsDGV.TabIndex = 38;
             this.ProductsDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ProductsDGV_CellContentClick);
             // 
@@ -488,7 +488,7 @@ namespace WindowsFormsApp1
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Cambria", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(488, 267);
+            this.label11.Location = new System.Drawing.Point(745, 52);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(169, 32);

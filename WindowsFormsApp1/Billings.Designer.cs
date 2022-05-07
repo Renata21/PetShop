@@ -31,6 +31,7 @@ namespace WindowsFormsApp1
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Billings));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.Deletebtn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.Savebtn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -84,6 +85,9 @@ namespace WindowsFormsApp1
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.petShopDbDataSet = new WindowsFormsApp1.PetShopDbDataSet();
+            this.productTblBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.productTblTableAdapter = new WindowsFormsApp1.PetShopDbDataSetTableAdapters.ProductTblTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -99,6 +103,8 @@ namespace WindowsFormsApp1
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.petShopDbDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productTblBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // Deletebtn
@@ -335,8 +341,10 @@ namespace WindowsFormsApp1
             this.BillDGV.Name = "BillDGV";
             this.BillDGV.ReadOnly = true;
             this.BillDGV.RowHeadersWidth = 51;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.BillDGV.RowsDefaultCellStyle = dataGridViewCellStyle1;
             this.BillDGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.BillDGV.Size = new System.Drawing.Size(531, 295);
+            this.BillDGV.Size = new System.Drawing.Size(516, 295);
             this.BillDGV.TabIndex = 41;
             // 
             // Id
@@ -427,7 +435,7 @@ namespace WindowsFormsApp1
             this.TransactionsDGV.ReadOnly = true;
             this.TransactionsDGV.RowHeadersWidth = 51;
             this.TransactionsDGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.TransactionsDGV.Size = new System.Drawing.Size(531, 214);
+            this.TransactionsDGV.Size = new System.Drawing.Size(516, 214);
             this.TransactionsDGV.TabIndex = 39;
             // 
             // panel2
@@ -729,6 +737,20 @@ namespace WindowsFormsApp1
             this.label4.Text = "Customers";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
+            // petShopDbDataSet
+            // 
+            this.petShopDbDataSet.DataSetName = "PetShopDbDataSet";
+            this.petShopDbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // productTblBindingSource
+            // 
+            this.productTblBindingSource.DataMember = "ProductTbl";
+            this.productTblBindingSource.DataSource = this.petShopDbDataSet;
+            // 
+            // productTblTableAdapter
+            // 
+            this.productTblTableAdapter.ClearBeforeFill = true;
+            // 
             // Billings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -754,6 +776,7 @@ namespace WindowsFormsApp1
             this.Name = "Billings";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Billings";
+            
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
@@ -773,6 +796,8 @@ namespace WindowsFormsApp1
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.petShopDbDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productTblBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -811,11 +836,6 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.DataGridView BillDGV;
         private System.Drawing.Printing.PrintDocument printDocument1;
         private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Id;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ProductPrice;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Quantity;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Total;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse4;
         private System.Windows.Forms.Label TotalLbl;
@@ -832,5 +852,13 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ProductPrice;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Quantity;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Total;
+        private PetShopDbDataSet petShopDbDataSet;
+        private System.Windows.Forms.BindingSource productTblBindingSource;
+        private PetShopDbDataSetTableAdapters.ProductTblTableAdapter productTblTableAdapter;
     }
 }
