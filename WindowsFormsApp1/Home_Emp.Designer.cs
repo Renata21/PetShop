@@ -120,7 +120,7 @@ namespace WindowsFormsApp1
             this.gunaCircleProgressBar2.IdleOffset = 20;
             this.gunaCircleProgressBar2.Image = null;
             this.gunaCircleProgressBar2.ImageSize = new System.Drawing.Size(52, 52);
-            this.gunaCircleProgressBar2.Location = new System.Drawing.Point(844, 427);
+            this.gunaCircleProgressBar2.Location = new System.Drawing.Point(760, 417);
             this.gunaCircleProgressBar2.Margin = new System.Windows.Forms.Padding(4);
             this.gunaCircleProgressBar2.Name = "gunaCircleProgressBar2";
             this.gunaCircleProgressBar2.ProgressMaxColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
@@ -132,8 +132,9 @@ namespace WindowsFormsApp1
             // label15
             // 
             this.label15.AutoSize = true;
+            this.label15.BackColor = System.Drawing.Color.Transparent;
             this.label15.Font = new System.Drawing.Font("Cambria", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(59, 110);
+            this.label15.Location = new System.Drawing.Point(68, 110);
             this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(28, 32);
@@ -143,8 +144,9 @@ namespace WindowsFormsApp1
             // lblFinance
             // 
             this.lblFinance.AutoSize = true;
+            this.lblFinance.BackColor = System.Drawing.Color.Transparent;
             this.lblFinance.Font = new System.Drawing.Font("Cambria", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFinance.Location = new System.Drawing.Point(97, 110);
+            this.lblFinance.Location = new System.Drawing.Point(106, 110);
             this.lblFinance.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblFinance.Name = "lblFinance";
             this.lblFinance.Size = new System.Drawing.Size(29, 32);
@@ -157,7 +159,7 @@ namespace WindowsFormsApp1
             this.panel6.Controls.Add(this.BirdLbl);
             this.panel6.Controls.Add(this.label14);
             this.panel6.Controls.Add(this.pictureBox11);
-            this.panel6.Location = new System.Drawing.Point(716, 304);
+            this.panel6.Location = new System.Drawing.Point(632, 294);
             this.panel6.Margin = new System.Windows.Forms.Padding(4);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(460, 116);
@@ -204,7 +206,7 @@ namespace WindowsFormsApp1
             this.panel5.Controls.Add(this.LblCat);
             this.panel5.Controls.Add(this.label13);
             this.panel5.Controls.Add(this.pictureBox10);
-            this.panel5.Location = new System.Drawing.Point(167, 452);
+            this.panel5.Location = new System.Drawing.Point(83, 442);
             this.panel5.Margin = new System.Windows.Forms.Padding(4);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(456, 116);
@@ -251,7 +253,7 @@ namespace WindowsFormsApp1
             this.panel4.Controls.Add(this.DogsLbl);
             this.panel4.Controls.Add(this.label12);
             this.panel4.Controls.Add(this.pictureBox9);
-            this.panel4.Location = new System.Drawing.Point(163, 305);
+            this.panel4.Location = new System.Drawing.Point(78, 295);
             this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(460, 116);
@@ -296,7 +298,7 @@ namespace WindowsFormsApp1
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Cambria", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(160, 244);
+            this.label11.Location = new System.Drawing.Point(76, 234);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(288, 32);
@@ -310,7 +312,7 @@ namespace WindowsFormsApp1
             this.panel3.Controls.Add(this.label9);
             this.panel3.Controls.Add(this.label8);
             this.panel3.Controls.Add(this.pictureBox8);
-            this.panel3.Location = new System.Drawing.Point(20, 25);
+            this.panel3.Location = new System.Drawing.Point(68, 19);
             this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1033, 165);
@@ -387,7 +389,6 @@ namespace WindowsFormsApp1
             this.label1.Size = new System.Drawing.Size(84, 32);
             this.label1.TabIndex = 3;
             this.label1.Text = "Home";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // pictureBox1
             // 

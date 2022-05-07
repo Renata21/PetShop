@@ -160,10 +160,10 @@ namespace WindowsFormsApp1
             this.panel6.Controls.Add(this.BirdLbl);
             this.panel6.Controls.Add(this.label14);
             this.panel6.Controls.Add(this.pictureBox11);
-            this.panel6.Location = new System.Drawing.Point(405, 448);
+            this.panel6.Location = new System.Drawing.Point(331, 439);
             this.panel6.Margin = new System.Windows.Forms.Padding(4);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(393, 116);
+            this.panel6.Size = new System.Drawing.Size(393, 130);
             this.panel6.TabIndex = 6;
             // 
             // BirdLbl
@@ -196,7 +196,7 @@ namespace WindowsFormsApp1
             this.pictureBox11.Location = new System.Drawing.Point(4, 4);
             this.pictureBox11.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(145, 108);
+            this.pictureBox11.Size = new System.Drawing.Size(155, 122);
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox11.TabIndex = 2;
             this.pictureBox11.TabStop = false;
@@ -207,10 +207,10 @@ namespace WindowsFormsApp1
             this.panel5.Controls.Add(this.LblCat);
             this.panel5.Controls.Add(this.label13);
             this.panel5.Controls.Add(this.pictureBox10);
-            this.panel5.Location = new System.Drawing.Point(660, 255);
+            this.panel5.Location = new System.Drawing.Point(575, 241);
             this.panel5.Margin = new System.Windows.Forms.Padding(4);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(393, 116);
+            this.panel5.Size = new System.Drawing.Size(393, 130);
             this.panel5.TabIndex = 5;
             // 
             // LblCat
@@ -243,7 +243,7 @@ namespace WindowsFormsApp1
             this.pictureBox10.Location = new System.Drawing.Point(4, 4);
             this.pictureBox10.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(145, 108);
+            this.pictureBox10.Size = new System.Drawing.Size(157, 126);
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox10.TabIndex = 2;
             this.pictureBox10.TabStop = false;
@@ -254,10 +254,10 @@ namespace WindowsFormsApp1
             this.panel4.Controls.Add(this.DogsLbl);
             this.panel4.Controls.Add(this.label12);
             this.panel4.Controls.Add(this.pictureBox9);
-            this.panel4.Location = new System.Drawing.Point(108, 255);
+            this.panel4.Location = new System.Drawing.Point(108, 241);
             this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(393, 116);
+            this.panel4.Size = new System.Drawing.Size(393, 130);
             this.panel4.TabIndex = 4;
             // 
             // DogsLbl
@@ -290,7 +290,7 @@ namespace WindowsFormsApp1
             this.pictureBox9.Location = new System.Drawing.Point(4, 4);
             this.pictureBox9.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(145, 108);
+            this.pictureBox9.Size = new System.Drawing.Size(157, 122);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox9.TabIndex = 2;
             this.pictureBox9.TabStop = false;

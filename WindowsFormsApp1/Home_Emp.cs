@@ -41,7 +41,7 @@ namespace WindowsFormsApp1
             try
             {
                 con.Open();
-                MySqlDataAdapter sda = new MySqlDataAdapter("select count(*) from ProductTbl where PrType = '" + dog + "'", con);
+                MySqlDataAdapter sda = new MySqlDataAdapter("select sum(PrQty) from ProductTbl where PrType = '" + dog + "'", con);
                 DataTable dt = new DataTable();
                 sda.Fill(dt);
                 DogsLbl.Text = dt.Rows[0][0].ToString();
@@ -62,7 +62,7 @@ namespace WindowsFormsApp1
             try
             {
                 con.Open();
-                MySqlDataAdapter sda = new MySqlDataAdapter("select count(*) from ProductTbl where PrType = '" + cat + "'", con);
+                MySqlDataAdapter sda = new MySqlDataAdapter("select sum(PrQty) from ProductTbl where PrType = '" + cat + "'", con);
                 DataTable dt = new DataTable();
                 sda.Fill(dt);
                 LblCat.Text = dt.Rows[0][0].ToString();
@@ -83,7 +83,7 @@ namespace WindowsFormsApp1
             try
             {
                 con.Open();
-                MySqlDataAdapter sda = new MySqlDataAdapter("select count(*) from ProductTbl where PrType = '" + cat + "'", con);
+                MySqlDataAdapter sda = new MySqlDataAdapter("select sum(PrQty) from ProductTbl where PrType = '" + cat + "'", con);
                 DataTable dt = new DataTable();
                 sda.Fill(dt);
                 BirdLbl.Text = dt.Rows[0][0].ToString();
@@ -152,11 +152,6 @@ namespace WindowsFormsApp1
             Choose_user obj = new Choose_user();
             obj.Show();
             this.Hide();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
+        } 
     }
 }
