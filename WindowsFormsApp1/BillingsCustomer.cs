@@ -42,28 +42,7 @@ namespace WindowsFormsApp1
                 con.Close();
             }
         }
-        private void GetCustName()
-        {
-            try
-            {
-                con.Open();
-                MySqlCommand cmd = new MySqlCommand("select * from CustomerTbl where CustId = @CustId", con);
-
-                DataTable dt = new DataTable();
-                MySqlDataAdapter sda = new MySqlDataAdapter(cmd);
-                sda.Fill(dt);
-
-                con.Close();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("A aparut o problema ==>" + ex.Message);
-            }
-            finally
-            {
-                con.Close();
-            }
-        }
+        
         private void DisplayProduct()
         {
             try
@@ -292,6 +271,21 @@ namespace WindowsFormsApp1
             pos = 100;
             GrdTotal = 0;
             n = 0;
+        }
+
+        Point lastPoint;
+        private void top_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                this.Left += e.X - lastPoint.X;
+                this.Top += e.Y - lastPoint.Y;
+            }
+        }
+
+        private void top_MouseDown(object sender, MouseEventArgs e)
+        {
+            lastPoint = new Point(e.X, e.Y);
         }
     }
 }

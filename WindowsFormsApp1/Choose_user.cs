@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace WindowsFormsApp1
@@ -73,16 +74,25 @@ namespace WindowsFormsApp1
             panel_cost.BackColor = System.Drawing.Color.FromArgb(216, 182, 164);
         }
 
-       
-
+      
         private void exit_Click(object sender, EventArgs e)
         {
             System.Windows.Forms.Application.Exit();
         }
 
-        private void Choose_user_Load(object sender, EventArgs e)
+        Point lastPoint;
+        private void top_MouseMove(object sender, MouseEventArgs e)
         {
+            if (e.Button == MouseButtons.Left)
+            {
+                this.Left += e.X - lastPoint.X;
+                this.Top += e.Y - lastPoint.Y;
+            }
+        }
 
+        private void top_MouseDown(object sender, MouseEventArgs e)
+        {
+            lastPoint = new Point(e.X, e.Y);
         }
     }
 }

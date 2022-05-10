@@ -48,13 +48,7 @@ namespace WindowsFormsApp1
                 con.Close();
             }
         }
-       
-       
-
-       
-
-        
-
+            
         private void label1_Click(object sender, EventArgs e)
         {
             Home_Cust obj = new Home_Cust();
@@ -77,9 +71,19 @@ namespace WindowsFormsApp1
             this.Hide();
         }
 
-        private void label7_Click(object sender, EventArgs e)
+        Point lastPoint;
+        private void top_MouseMove(object sender, MouseEventArgs e)
         {
+            if (e.Button == MouseButtons.Left)
+            {
+                this.Left += e.X - lastPoint.X;
+                this.Top += e.Y - lastPoint.Y;
+            }
+        }
 
+        private void top_MouseDown(object sender, MouseEventArgs e)
+        {
+            lastPoint = new Point(e.X, e.Y);
         }
     }
 }

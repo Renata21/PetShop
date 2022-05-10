@@ -1,6 +1,7 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
 using System.Data.SqlClient;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace WindowsFormsApp1
@@ -62,7 +63,9 @@ namespace WindowsFormsApp1
 
         private void Register_Click(object sender, EventArgs e)
         {
-            //va urma
+            Register register = new Register();
+            register.Show();
+            this.Hide();
         }
 
         private void Register_MouseEnter(object sender, EventArgs e)
@@ -72,12 +75,27 @@ namespace WindowsFormsApp1
 
         private void Register_btn_MouseLeave(object sender, EventArgs e)
         {
-            Register_btn.ForeColor = System.Drawing.Color.Black;
+            Register_btn.ForeColor = System.Drawing.Color.FromArgb(99, 0, 0);
         }
 
         private void Nametxt_TextChanged(object sender, EventArgs e)
         {
             temp.client = Nametxt.Text;
         }
+        Point lastPoint;
+        private void top_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                this.Left += e.X - lastPoint.X;
+                this.Top += e.Y - lastPoint.Y;
+            }
+        }
+
+        private void top_MouseDown(object sender, MouseEventArgs e)
+        {
+            lastPoint = new Point(e.X, e.Y);
+        }
+
     }
 }

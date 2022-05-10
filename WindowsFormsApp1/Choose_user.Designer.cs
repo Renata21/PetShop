@@ -50,10 +50,9 @@
             // 
             this.label_emp.AutoSize = true;
             this.label_emp.Font = new System.Drawing.Font("Cambria", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_emp.Location = new System.Drawing.Point(57, 95);
-            this.label_emp.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label_emp.Location = new System.Drawing.Point(43, 77);
             this.label_emp.Name = "label_emp";
-            this.label_emp.Size = new System.Drawing.Size(118, 32);
+            this.label_emp.Size = new System.Drawing.Size(93, 25);
             this.label_emp.TabIndex = 21;
             this.label_emp.Text = "Angajati";
             this.label_emp.Click += new System.EventHandler(this.label_emp_Click);
@@ -64,10 +63,9 @@
             this.panel_emp.Controls.Add(this.label_emp);
             this.panel_emp.Controls.Add(this.pictureBox_emp);
             this.panel_emp.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panel_emp.Location = new System.Drawing.Point(148, 140);
-            this.panel_emp.Margin = new System.Windows.Forms.Padding(4);
+            this.panel_emp.Location = new System.Drawing.Point(111, 114);
             this.panel_emp.Name = "panel_emp";
-            this.panel_emp.Size = new System.Drawing.Size(231, 171);
+            this.panel_emp.Size = new System.Drawing.Size(173, 139);
             this.panel_emp.TabIndex = 34;
             this.panel_emp.Click += new System.EventHandler(this.panel_emp_Click);
             this.panel_emp.MouseLeave += new System.EventHandler(this.panel_emp_MouseLeave);
@@ -76,10 +74,9 @@
             // pictureBox_emp
             // 
             this.pictureBox_emp.Image = global::WindowsFormsApp1.Properties.Resources.employee;
-            this.pictureBox_emp.Location = new System.Drawing.Point(81, 26);
-            this.pictureBox_emp.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox_emp.Location = new System.Drawing.Point(61, 21);
             this.pictureBox_emp.Name = "pictureBox_emp";
-            this.pictureBox_emp.Size = new System.Drawing.Size(77, 65);
+            this.pictureBox_emp.Size = new System.Drawing.Size(58, 53);
             this.pictureBox_emp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox_emp.TabIndex = 20;
             this.pictureBox_emp.TabStop = false;
@@ -96,10 +93,9 @@
             this.panel_cost.Controls.Add(this.label_cost);
             this.panel_cost.Controls.Add(this.pictureBox_cost);
             this.panel_cost.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panel_cost.Location = new System.Drawing.Point(428, 140);
-            this.panel_cost.Margin = new System.Windows.Forms.Padding(4);
+            this.panel_cost.Location = new System.Drawing.Point(321, 114);
             this.panel_cost.Name = "panel_cost";
-            this.panel_cost.Size = new System.Drawing.Size(231, 171);
+            this.panel_cost.Size = new System.Drawing.Size(173, 139);
             this.panel_cost.TabIndex = 35;
             this.panel_cost.Click += new System.EventHandler(this.panel_cost_Click);
             this.panel_cost.MouseLeave += new System.EventHandler(this.panel_cost_MouseLeave);
@@ -109,10 +105,9 @@
             // 
             this.label_cost.AutoSize = true;
             this.label_cost.Font = new System.Drawing.Font("Cambria", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_cost.Location = new System.Drawing.Point(72, 96);
-            this.label_cost.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label_cost.Location = new System.Drawing.Point(54, 78);
             this.label_cost.Name = "label_cost";
-            this.label_cost.Size = new System.Drawing.Size(92, 32);
+            this.label_cost.Size = new System.Drawing.Size(72, 25);
             this.label_cost.TabIndex = 21;
             this.label_cost.Text = "Clienti";
             this.label_cost.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -121,10 +116,9 @@
             // pictureBox_cost
             // 
             this.pictureBox_cost.Image = global::WindowsFormsApp1.Properties.Resources.customer;
-            this.pictureBox_cost.Location = new System.Drawing.Point(78, 27);
-            this.pictureBox_cost.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox_cost.Location = new System.Drawing.Point(58, 22);
             this.pictureBox_cost.Name = "pictureBox_cost";
-            this.pictureBox_cost.Size = new System.Drawing.Size(79, 65);
+            this.pictureBox_cost.Size = new System.Drawing.Size(59, 53);
             this.pictureBox_cost.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox_cost.TabIndex = 36;
             this.pictureBox_cost.TabStop = false;
@@ -143,9 +137,10 @@
             // pictureBox_exit
             // 
             this.pictureBox_exit.Image = global::WindowsFormsApp1.Properties.Resources.marca_x_white;
-            this.pictureBox_exit.Location = new System.Drawing.Point(730, 12);
+            this.pictureBox_exit.Location = new System.Drawing.Point(548, 10);
+            this.pictureBox_exit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox_exit.Name = "pictureBox_exit";
-            this.pictureBox_exit.Size = new System.Drawing.Size(47, 41);
+            this.pictureBox_exit.Size = new System.Drawing.Size(35, 33);
             this.pictureBox_exit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox_exit.TabIndex = 37;
             this.pictureBox_exit.TabStop = false;
@@ -153,18 +148,20 @@
             // 
             // Choose_user
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.pictureBox_exit);
             this.Controls.Add(this.panel_cost);
             this.Controls.Add(this.panel_emp);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Choose_user";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Choose_user";
-            this.Load += new System.EventHandler(this.Choose_user_Load);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.top_MouseMove);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.top_MouseDown);
             this.panel_emp.ResumeLayout(false);
             this.panel_emp.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_emp)).EndInit();

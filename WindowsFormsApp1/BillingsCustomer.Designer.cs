@@ -100,10 +100,10 @@ namespace WindowsFormsApp1
             this.Deletebtn.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.Deletebtn.IdleForecolor = System.Drawing.Color.Transparent;
             this.Deletebtn.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.Deletebtn.Location = new System.Drawing.Point(312, 133);
-            this.Deletebtn.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.Deletebtn.Location = new System.Drawing.Point(234, 108);
+            this.Deletebtn.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.Deletebtn.Name = "Deletebtn";
-            this.Deletebtn.Size = new System.Drawing.Size(244, 50);
+            this.Deletebtn.Size = new System.Drawing.Size(183, 41);
             this.Deletebtn.TabIndex = 34;
             this.Deletebtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Deletebtn.Click += new System.EventHandler(this.Deletebtn_Click);
@@ -126,10 +126,10 @@ namespace WindowsFormsApp1
             this.Savebtn.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.Savebtn.IdleForecolor = System.Drawing.Color.Transparent;
             this.Savebtn.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.Savebtn.Location = new System.Drawing.Point(45, 133);
-            this.Savebtn.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.Savebtn.Location = new System.Drawing.Point(34, 108);
+            this.Savebtn.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.Savebtn.Name = "Savebtn";
-            this.Savebtn.Size = new System.Drawing.Size(253, 50);
+            this.Savebtn.Size = new System.Drawing.Size(190, 41);
             this.Savebtn.TabIndex = 32;
             this.Savebtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Savebtn.Click += new System.EventHandler(this.Savebtn_Click);
@@ -137,10 +137,9 @@ namespace WindowsFormsApp1
             // pictureBox1
             // 
             this.pictureBox1.Image = global::WindowsFormsApp1.Properties.Resources.home;
-            this.pictureBox1.Location = new System.Drawing.Point(33, 165);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Location = new System.Drawing.Point(25, 134);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(68, 57);
+            this.pictureBox1.Size = new System.Drawing.Size(51, 46);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 62;
             this.pictureBox1.TabStop = false;
@@ -148,10 +147,9 @@ namespace WindowsFormsApp1
             // pictureBox7
             // 
             this.pictureBox7.Image = global::WindowsFormsApp1.Properties.Resources.employee_1_;
-            this.pictureBox7.Location = new System.Drawing.Point(35, 28);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox7.Location = new System.Drawing.Point(26, 23);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(68, 54);
+            this.pictureBox7.Size = new System.Drawing.Size(51, 44);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox7.TabIndex = 70;
             this.pictureBox7.TabStop = false;
@@ -159,10 +157,9 @@ namespace WindowsFormsApp1
             // pictureBox5
             // 
             this.pictureBox5.Image = global::WindowsFormsApp1.Properties.Resources.bill;
-            this.pictureBox5.Location = new System.Drawing.Point(17, 0);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox5.Location = new System.Drawing.Point(13, 0);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(68, 41);
+            this.pictureBox5.Size = new System.Drawing.Size(51, 33);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 66;
             this.pictureBox5.TabStop = false;
@@ -172,10 +169,9 @@ namespace WindowsFormsApp1
             this.label1.AutoSize = true;
             this.label1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label1.Font = new System.Drawing.Font("Cambria", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(117, 180);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(88, 146);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(84, 32);
+            this.label1.Size = new System.Drawing.Size(66, 25);
             this.label1.TabIndex = 63;
             this.label1.Text = "Home";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -185,10 +181,9 @@ namespace WindowsFormsApp1
             this.label6.AutoSize = true;
             this.label6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label6.Font = new System.Drawing.Font("Cambria", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(111, 572);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(83, 465);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(102, 32);
+            this.label6.Size = new System.Drawing.Size(80, 25);
             this.label6.TabIndex = 69;
             this.label6.Text = "LogOut";
             this.label6.Click += new System.EventHandler(this.label6_Click);
@@ -198,10 +193,9 @@ namespace WindowsFormsApp1
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.panel4.Controls.Add(this.label3);
             this.panel4.Controls.Add(this.pictureBox5);
-            this.panel4.Location = new System.Drawing.Point(16, 327);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4);
+            this.panel4.Location = new System.Drawing.Point(12, 266);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(312, 41);
+            this.panel4.Size = new System.Drawing.Size(234, 33);
             this.panel4.TabIndex = 65;
             // 
             // label3
@@ -209,20 +203,18 @@ namespace WindowsFormsApp1
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Cambria", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Transparent;
-            this.label3.Location = new System.Drawing.Point(91, 4);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(68, 3);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(94, 32);
+            this.label3.Size = new System.Drawing.Size(73, 25);
             this.label3.TabIndex = 21;
             this.label3.Text = "Billing";
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::WindowsFormsApp1.Properties.Resources.box;
-            this.pictureBox2.Location = new System.Drawing.Point(33, 247);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox2.Location = new System.Drawing.Point(25, 201);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(68, 57);
+            this.pictureBox2.Size = new System.Drawing.Size(51, 46);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 49;
             this.pictureBox2.TabStop = false;
@@ -231,20 +223,18 @@ namespace WindowsFormsApp1
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Cambria", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(111, 39);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Location = new System.Drawing.Point(83, 32);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(142, 32);
+            this.label7.Size = new System.Drawing.Size(113, 25);
             this.label7.TabIndex = 71;
             this.label7.Text = "Emp Name";
             // 
             // pictureBox6
             // 
             this.pictureBox6.Image = global::WindowsFormsApp1.Properties.Resources.logout;
-            this.pictureBox6.Location = new System.Drawing.Point(35, 548);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox6.Location = new System.Drawing.Point(26, 445);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(68, 73);
+            this.pictureBox6.Size = new System.Drawing.Size(51, 59);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox6.TabIndex = 68;
             this.pictureBox6.TabStop = false;
@@ -259,19 +249,19 @@ namespace WindowsFormsApp1
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.ProductsDGV);
             this.panel1.Controls.Add(this.label11);
-            this.panel1.Location = new System.Drawing.Point(336, 14);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
+            this.panel1.Location = new System.Drawing.Point(252, 11);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1102, 661);
+            this.panel1.Size = new System.Drawing.Size(826, 537);
             this.panel1.TabIndex = 64;
             // 
             // TotalLbl
             // 
             this.TotalLbl.AutoSize = true;
             this.TotalLbl.Font = new System.Drawing.Font("Corbel", 15.75F);
-            this.TotalLbl.Location = new System.Drawing.Point(674, 549);
+            this.TotalLbl.Location = new System.Drawing.Point(506, 446);
+            this.TotalLbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.TotalLbl.Name = "TotalLbl";
-            this.TotalLbl.Size = new System.Drawing.Size(29, 33);
+            this.TotalLbl.Size = new System.Drawing.Size(23, 26);
             this.TotalLbl.TabIndex = 43;
             this.TotalLbl.Text = "$";
             // 
@@ -279,10 +269,9 @@ namespace WindowsFormsApp1
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Cambria", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(259, 258);
-            this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label17.Location = new System.Drawing.Point(194, 210);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(122, 32);
+            this.label17.Size = new System.Drawing.Size(96, 25);
             this.label17.TabIndex = 42;
             this.label17.Text = "Products";
             // 
@@ -301,14 +290,13 @@ namespace WindowsFormsApp1
             this.ProductPrice,
             this.Quantity,
             this.Total});
-            this.BillDGV.Location = new System.Drawing.Point(630, 102);
-            this.BillDGV.Margin = new System.Windows.Forms.Padding(4);
+            this.BillDGV.Location = new System.Drawing.Point(472, 83);
             this.BillDGV.MultiSelect = false;
             this.BillDGV.Name = "BillDGV";
             this.BillDGV.ReadOnly = true;
             this.BillDGV.RowHeadersWidth = 51;
             this.BillDGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.BillDGV.Size = new System.Drawing.Size(453, 386);
+            this.BillDGV.Size = new System.Drawing.Size(340, 314);
             this.BillDGV.TabIndex = 41;
             // 
             // Id
@@ -364,10 +352,10 @@ namespace WindowsFormsApp1
             this.Printbtn.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.Printbtn.IdleForecolor = System.Drawing.Color.Transparent;
             this.Printbtn.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.Printbtn.Location = new System.Drawing.Point(383, 532);
-            this.Printbtn.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.Printbtn.Location = new System.Drawing.Point(287, 432);
+            this.Printbtn.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.Printbtn.Name = "Printbtn";
-            this.Printbtn.Size = new System.Drawing.Size(244, 50);
+            this.Printbtn.Size = new System.Drawing.Size(183, 41);
             this.Printbtn.TabIndex = 35;
             this.Printbtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Printbtn.Click += new System.EventHandler(this.Printbtn_Click);
@@ -384,10 +372,9 @@ namespace WindowsFormsApp1
             this.panel2.Controls.Add(this.PrNameTb);
             this.panel2.Controls.Add(this.Savebtn);
             this.panel2.Controls.Add(this.label14);
-            this.panel2.Location = new System.Drawing.Point(24, 39);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4);
+            this.panel2.Location = new System.Drawing.Point(18, 32);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(583, 197);
+            this.panel2.Size = new System.Drawing.Size(437, 160);
             this.panel2.TabIndex = 37;
             // 
             // label15
@@ -395,20 +382,18 @@ namespace WindowsFormsApp1
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Corbel", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.Black;
-            this.label15.Location = new System.Drawing.Point(385, 49);
-            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label15.Location = new System.Drawing.Point(289, 40);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(113, 33);
+            this.label15.Size = new System.Drawing.Size(89, 26);
             this.label15.TabIndex = 28;
             this.label15.Text = "Quantity";
             // 
             // QtyTb
             // 
             this.QtyTb.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.QtyTb.Location = new System.Drawing.Point(392, 85);
-            this.QtyTb.Margin = new System.Windows.Forms.Padding(4);
+            this.QtyTb.Location = new System.Drawing.Point(294, 69);
             this.QtyTb.Name = "QtyTb";
-            this.QtyTb.Size = new System.Drawing.Size(179, 38);
+            this.QtyTb.Size = new System.Drawing.Size(135, 32);
             this.QtyTb.TabIndex = 27;
             // 
             // label5
@@ -416,20 +401,18 @@ namespace WindowsFormsApp1
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Corbel", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(199, 49);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(149, 40);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(70, 33);
+            this.label5.Size = new System.Drawing.Size(55, 26);
             this.label5.TabIndex = 26;
             this.label5.Text = "Price";
             // 
             // PrPriceTb
             // 
             this.PrPriceTb.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PrPriceTb.Location = new System.Drawing.Point(205, 85);
-            this.PrPriceTb.Margin = new System.Windows.Forms.Padding(4);
+            this.PrPriceTb.Location = new System.Drawing.Point(154, 69);
             this.PrPriceTb.Name = "PrPriceTb";
-            this.PrPriceTb.Size = new System.Drawing.Size(179, 38);
+            this.PrPriceTb.Size = new System.Drawing.Size(135, 32);
             this.PrPriceTb.TabIndex = 25;
             // 
             // label10
@@ -437,30 +420,27 @@ namespace WindowsFormsApp1
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Corbel", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(12, 49);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Location = new System.Drawing.Point(9, 40);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(82, 33);
+            this.label10.Size = new System.Drawing.Size(64, 26);
             this.label10.TabIndex = 24;
             this.label10.Text = "Name";
             // 
             // PrNameTb
             // 
             this.PrNameTb.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PrNameTb.Location = new System.Drawing.Point(19, 85);
-            this.PrNameTb.Margin = new System.Windows.Forms.Padding(4);
+            this.PrNameTb.Location = new System.Drawing.Point(14, 69);
             this.PrNameTb.Name = "PrNameTb";
-            this.PrNameTb.Size = new System.Drawing.Size(179, 38);
+            this.PrNameTb.Size = new System.Drawing.Size(135, 32);
             this.PrNameTb.TabIndex = 23;
             // 
             // label14
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Cambria", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(4, 16);
-            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label14.Location = new System.Drawing.Point(3, 13);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(110, 32);
+            this.label14.Size = new System.Drawing.Size(87, 25);
             this.label14.TabIndex = 22;
             this.label14.Text = "Product";
             // 
@@ -473,14 +453,13 @@ namespace WindowsFormsApp1
             this.ProductsDGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.ProductsDGV.BackgroundColor = System.Drawing.Color.White;
             this.ProductsDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.ProductsDGV.Location = new System.Drawing.Point(24, 294);
-            this.ProductsDGV.Margin = new System.Windows.Forms.Padding(4);
+            this.ProductsDGV.Location = new System.Drawing.Point(18, 239);
             this.ProductsDGV.MultiSelect = false;
             this.ProductsDGV.Name = "ProductsDGV";
             this.ProductsDGV.ReadOnly = true;
             this.ProductsDGV.RowHeadersWidth = 51;
             this.ProductsDGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.ProductsDGV.Size = new System.Drawing.Size(583, 194);
+            this.ProductsDGV.Size = new System.Drawing.Size(437, 158);
             this.ProductsDGV.TabIndex = 38;
             this.ProductsDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ProductsDGV_CellContentClick);
             // 
@@ -488,10 +467,9 @@ namespace WindowsFormsApp1
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Cambria", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(745, 52);
-            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label11.Location = new System.Drawing.Point(559, 42);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(169, 32);
+            this.label11.Size = new System.Drawing.Size(132, 25);
             this.label11.TabIndex = 35;
             this.label11.Text = "Products Bill";
             // 
@@ -510,10 +488,9 @@ namespace WindowsFormsApp1
             this.label13.AutoSize = true;
             this.label13.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label13.Font = new System.Drawing.Font("Cambria", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(111, 258);
-            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label13.Location = new System.Drawing.Point(83, 210);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(122, 32);
+            this.label13.Size = new System.Drawing.Size(96, 25);
             this.label13.TabIndex = 50;
             this.label13.Text = "Products";
             this.label13.Click += new System.EventHandler(this.label13_Click);
@@ -544,10 +521,10 @@ namespace WindowsFormsApp1
             // 
             // BillingsCustomer
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(182)))), ((int)(((byte)(164)))));
-            this.ClientSize = new System.Drawing.Size(1451, 646);
+            this.ClientSize = new System.Drawing.Size(1088, 525);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
@@ -559,10 +536,11 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "BillingsCustomer";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Billings";
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.top_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.top_MouseMove);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();

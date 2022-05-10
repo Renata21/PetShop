@@ -69,10 +69,9 @@ namespace WindowsFormsApp1
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.panel4.Controls.Add(this.label3);
             this.panel4.Controls.Add(this.pictureBox2);
-            this.panel4.Location = new System.Drawing.Point(13, 254);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4);
+            this.panel4.Location = new System.Drawing.Point(10, 206);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(312, 41);
+            this.panel4.Size = new System.Drawing.Size(234, 33);
             this.panel4.TabIndex = 50;
             // 
             // label3
@@ -80,20 +79,18 @@ namespace WindowsFormsApp1
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Cambria", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Transparent;
-            this.label3.Location = new System.Drawing.Point(91, 4);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(68, 3);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(122, 32);
+            this.label3.Size = new System.Drawing.Size(96, 25);
             this.label3.TabIndex = 21;
             this.label3.Text = "Products";
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::WindowsFormsApp1.Properties.Resources.box;
-            this.pictureBox2.Location = new System.Drawing.Point(17, 0);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox2.Location = new System.Drawing.Point(13, 0);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(68, 41);
+            this.pictureBox2.Size = new System.Drawing.Size(51, 33);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 49;
             this.pictureBox2.TabStop = false;
@@ -108,10 +105,9 @@ namespace WindowsFormsApp1
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(235)))), ((int)(((byte)(221)))));
             this.panel1.Controls.Add(this.ProductDGV);
             this.panel1.Controls.Add(this.label11);
-            this.panel1.Location = new System.Drawing.Point(336, 13);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
+            this.panel1.Location = new System.Drawing.Point(252, 11);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1078, 607);
+            this.panel1.Size = new System.Drawing.Size(808, 493);
             this.panel1.TabIndex = 48;
             // 
             // ProductDGV
@@ -123,24 +119,22 @@ namespace WindowsFormsApp1
             this.ProductDGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.ProductDGV.BackgroundColor = System.Drawing.Color.White;
             this.ProductDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.ProductDGV.Location = new System.Drawing.Point(63, 98);
-            this.ProductDGV.Margin = new System.Windows.Forms.Padding(4);
+            this.ProductDGV.Location = new System.Drawing.Point(47, 80);
             this.ProductDGV.MultiSelect = false;
             this.ProductDGV.Name = "ProductDGV";
             this.ProductDGV.ReadOnly = true;
             this.ProductDGV.RowHeadersWidth = 51;
             this.ProductDGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.ProductDGV.Size = new System.Drawing.Size(968, 459);
+            this.ProductDGV.Size = new System.Drawing.Size(726, 373);
             this.ProductDGV.TabIndex = 38;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Cambria", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(453, 40);
-            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label11.Location = new System.Drawing.Point(340, 32);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(172, 32);
+            this.label11.Size = new System.Drawing.Size(135, 25);
             this.label11.TabIndex = 35;
             this.label11.Text = "Products List";
             // 
@@ -149,10 +143,9 @@ namespace WindowsFormsApp1
             this.label1.AutoSize = true;
             this.label1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label1.Font = new System.Drawing.Font("Cambria", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(117, 180);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(88, 146);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(84, 32);
+            this.label1.Size = new System.Drawing.Size(66, 25);
             this.label1.TabIndex = 47;
             this.label1.Text = "Home";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -162,10 +155,9 @@ namespace WindowsFormsApp1
             this.label6.AutoSize = true;
             this.label6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label6.Font = new System.Drawing.Font("Cambria", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(111, 572);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(83, 465);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(102, 32);
+            this.label6.Size = new System.Drawing.Size(80, 25);
             this.label6.TabIndex = 55;
             this.label6.Text = "LogOut";
             this.label6.Click += new System.EventHandler(this.label6_Click);
@@ -175,10 +167,9 @@ namespace WindowsFormsApp1
             this.label5.AutoSize = true;
             this.label5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label5.Font = new System.Drawing.Font("Cambria", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(112, 342);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(84, 278);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(94, 32);
+            this.label5.Size = new System.Drawing.Size(73, 25);
             this.label5.TabIndex = 53;
             this.label5.Text = "Billing";
             this.label5.Click += new System.EventHandler(this.label5_Click);
@@ -203,21 +194,18 @@ namespace WindowsFormsApp1
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Cambria", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(111, 39);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Location = new System.Drawing.Point(83, 32);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(142, 32);
+            this.label7.Size = new System.Drawing.Size(113, 25);
             this.label7.TabIndex = 57;
             this.label7.Text = "Emp Name";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::WindowsFormsApp1.Properties.Resources.home;
-            this.pictureBox1.Location = new System.Drawing.Point(33, 165);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Location = new System.Drawing.Point(25, 134);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(68, 57);
+            this.pictureBox1.Size = new System.Drawing.Size(51, 46);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 46;
             this.pictureBox1.TabStop = false;
@@ -225,10 +213,9 @@ namespace WindowsFormsApp1
             // pictureBox7
             // 
             this.pictureBox7.Image = global::WindowsFormsApp1.Properties.Resources.employee_1_;
-            this.pictureBox7.Location = new System.Drawing.Point(35, 28);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox7.Location = new System.Drawing.Point(26, 23);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(68, 54);
+            this.pictureBox7.Size = new System.Drawing.Size(51, 44);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox7.TabIndex = 56;
             this.pictureBox7.TabStop = false;
@@ -236,10 +223,9 @@ namespace WindowsFormsApp1
             // pictureBox6
             // 
             this.pictureBox6.Image = global::WindowsFormsApp1.Properties.Resources.logout;
-            this.pictureBox6.Location = new System.Drawing.Point(35, 548);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox6.Location = new System.Drawing.Point(26, 445);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(68, 73);
+            this.pictureBox6.Size = new System.Drawing.Size(51, 59);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox6.TabIndex = 54;
             this.pictureBox6.TabStop = false;
@@ -247,20 +233,19 @@ namespace WindowsFormsApp1
             // pictureBox5
             // 
             this.pictureBox5.Image = global::WindowsFormsApp1.Properties.Resources.bill;
-            this.pictureBox5.Location = new System.Drawing.Point(35, 330);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox5.Location = new System.Drawing.Point(26, 268);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(68, 54);
+            this.pictureBox5.Size = new System.Drawing.Size(51, 44);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 52;
             this.pictureBox5.TabStop = false;
             // 
             // ProductsCustomer
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(182)))), ((int)(((byte)(164)))));
-            this.ClientSize = new System.Drawing.Size(1451, 646);
+            this.ClientSize = new System.Drawing.Size(1088, 525);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.pictureBox6);
@@ -272,10 +257,11 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.label7);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ProductsCustomer";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Products";
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.top_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.top_MouseMove);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

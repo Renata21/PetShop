@@ -5,13 +5,6 @@ VisualStudioVersion = 17.1.32421.90
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp1", "WindowsFormsApp1\WindowsFormsApp1.csproj", "{8ED5C966-A3F9-4711-8D50-77B374D42748}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{908E70BC-E51E-49F6-A5EA-B2906BF5D985}"
-	ProjectSection(SolutionItems) = preProject
-		WindowsFormsApp1\bin\Debug\PetShopDb.mdf = WindowsFormsApp1\bin\Debug\PetShopDb.mdf
-		WindowsFormsApp1\bin\Debug\PetShopDB.sql = WindowsFormsApp1\bin\Debug\PetShopDB.sql
-		WindowsFormsApp1\bin\Debug\PetShopDb_log.ldf = WindowsFormsApp1\bin\Debug\PetShopDb_log.ldf
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

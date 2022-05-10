@@ -54,6 +54,12 @@ namespace WindowsFormsApp1
             this.label2 = new System.Windows.Forms.Label();
             this.bunifuElipse3 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panel3 = new System.Windows.Forms.Panel();
+            this.label14 = new System.Windows.Forms.Label();
+            this.CustomerPass = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.CustomerSurname = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.CustomerName = new System.Windows.Forms.TextBox();
             this.CustomerPhone = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.CustomerAddress = new System.Windows.Forms.TextBox();
@@ -66,12 +72,6 @@ namespace WindowsFormsApp1
             this.CustomerDGV = new System.Windows.Forms.DataGridView();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.CustomerName = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.CustomerSurname = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.CustomerPass = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -105,10 +105,10 @@ namespace WindowsFormsApp1
             this.btnDelete.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnDelete.IdleForecolor = System.Drawing.Color.White;
             this.btnDelete.IdleLineColor = System.Drawing.SystemColors.Menu;
-            this.btnDelete.Location = new System.Drawing.Point(757, 210);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.btnDelete.Location = new System.Drawing.Point(568, 171);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(251, 50);
+            this.btnDelete.Size = new System.Drawing.Size(188, 41);
             this.btnDelete.TabIndex = 34;
             this.btnDelete.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
@@ -132,10 +132,10 @@ namespace WindowsFormsApp1
             this.btnEdit.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnEdit.IdleForecolor = System.Drawing.Color.White;
             this.btnEdit.IdleLineColor = System.Drawing.SystemColors.Menu;
-            this.btnEdit.Location = new System.Drawing.Point(456, 210);
-            this.btnEdit.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.btnEdit.Location = new System.Drawing.Point(342, 171);
+            this.btnEdit.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(251, 50);
+            this.btnEdit.Size = new System.Drawing.Size(188, 41);
             this.btnEdit.TabIndex = 33;
             this.btnEdit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
@@ -158,10 +158,10 @@ namespace WindowsFormsApp1
             this.btnSave.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnSave.IdleForecolor = System.Drawing.Color.White;
             this.btnSave.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnSave.Location = new System.Drawing.Point(138, 210);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.btnSave.Location = new System.Drawing.Point(104, 171);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(251, 50);
+            this.btnSave.Size = new System.Drawing.Size(188, 41);
             this.btnSave.TabIndex = 32;
             this.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
@@ -169,10 +169,9 @@ namespace WindowsFormsApp1
             // pictureBox4
             // 
             this.pictureBox4.Image = global::WindowsFormsApp1.Properties.Resources.customer;
-            this.pictureBox4.Location = new System.Drawing.Point(17, 0);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox4.Location = new System.Drawing.Point(13, 0);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(68, 41);
+            this.pictureBox4.Size = new System.Drawing.Size(51, 33);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 36;
             this.pictureBox4.TabStop = false;
@@ -189,10 +188,9 @@ namespace WindowsFormsApp1
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Cambria", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(91, 4);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(68, 3);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(142, 32);
+            this.label3.Size = new System.Drawing.Size(111, 25);
             this.label3.TabIndex = 21;
             this.label3.Text = "Customers";
             // 
@@ -201,19 +199,17 @@ namespace WindowsFormsApp1
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.panel4.Controls.Add(this.label3);
             this.panel4.Controls.Add(this.pictureBox4);
-            this.panel4.Location = new System.Drawing.Point(16, 406);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4);
+            this.panel4.Location = new System.Drawing.Point(12, 330);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(312, 41);
+            this.panel4.Size = new System.Drawing.Size(234, 33);
             this.panel4.TabIndex = 34;
             // 
             // pictureBox3
             // 
             this.pictureBox3.Image = global::WindowsFormsApp1.Properties.Resources.employee;
-            this.pictureBox3.Location = new System.Drawing.Point(35, 320);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox3.Location = new System.Drawing.Point(26, 260);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(68, 54);
+            this.pictureBox3.Size = new System.Drawing.Size(51, 44);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 20;
             this.pictureBox3.TabStop = false;
@@ -226,10 +222,9 @@ namespace WindowsFormsApp1
             // pictureBox1
             // 
             this.pictureBox1.Image = global::WindowsFormsApp1.Properties.Resources.home;
-            this.pictureBox1.Location = new System.Drawing.Point(35, 174);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Location = new System.Drawing.Point(26, 141);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(68, 57);
+            this.pictureBox1.Size = new System.Drawing.Size(51, 46);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 30;
             this.pictureBox1.TabStop = false;
@@ -237,10 +232,9 @@ namespace WindowsFormsApp1
             // pictureBox7
             // 
             this.pictureBox7.Image = global::WindowsFormsApp1.Properties.Resources.employee_1_;
-            this.pictureBox7.Location = new System.Drawing.Point(35, 28);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox7.Location = new System.Drawing.Point(26, 23);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(68, 54);
+            this.pictureBox7.Size = new System.Drawing.Size(51, 44);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox7.TabIndex = 42;
             this.pictureBox7.TabStop = false;
@@ -248,10 +242,9 @@ namespace WindowsFormsApp1
             // pictureBox6
             // 
             this.pictureBox6.Image = global::WindowsFormsApp1.Properties.Resources.logout;
-            this.pictureBox6.Location = new System.Drawing.Point(35, 632);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox6.Location = new System.Drawing.Point(26, 514);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(68, 73);
+            this.pictureBox6.Size = new System.Drawing.Size(51, 59);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox6.TabIndex = 40;
             this.pictureBox6.TabStop = false;
@@ -259,10 +252,9 @@ namespace WindowsFormsApp1
             // pictureBox5
             // 
             this.pictureBox5.Image = global::WindowsFormsApp1.Properties.Resources.bill;
-            this.pictureBox5.Location = new System.Drawing.Point(35, 468);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox5.Location = new System.Drawing.Point(26, 380);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(68, 54);
+            this.pictureBox5.Size = new System.Drawing.Size(51, 44);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 38;
             this.pictureBox5.TabStop = false;
@@ -275,10 +267,9 @@ namespace WindowsFormsApp1
             // pictureBox2
             // 
             this.pictureBox2.Image = global::WindowsFormsApp1.Properties.Resources.box;
-            this.pictureBox2.Location = new System.Drawing.Point(35, 247);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox2.Location = new System.Drawing.Point(26, 201);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(68, 54);
+            this.pictureBox2.Size = new System.Drawing.Size(51, 44);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 33;
             this.pictureBox2.TabStop = false;
@@ -288,10 +279,9 @@ namespace WindowsFormsApp1
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Corbel", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.Black;
-            this.label16.Location = new System.Drawing.Point(885, 45);
-            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label16.Location = new System.Drawing.Point(664, 37);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(85, 33);
+            this.label16.Size = new System.Drawing.Size(67, 26);
             this.label16.TabIndex = 28;
             this.label16.Text = "Phone";
             // 
@@ -300,10 +290,9 @@ namespace WindowsFormsApp1
             this.label1.AutoSize = true;
             this.label1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label1.Font = new System.Drawing.Font("Cambria", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(112, 188);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(84, 153);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(84, 32);
+            this.label1.Size = new System.Drawing.Size(66, 25);
             this.label1.TabIndex = 31;
             this.label1.Text = "Home";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -312,10 +301,9 @@ namespace WindowsFormsApp1
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Cambria", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(111, 39);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Location = new System.Drawing.Point(83, 32);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(142, 32);
+            this.label7.Size = new System.Drawing.Size(113, 25);
             this.label7.TabIndex = 43;
             this.label7.Text = "Emp Name";
             // 
@@ -324,10 +312,9 @@ namespace WindowsFormsApp1
             this.label6.AutoSize = true;
             this.label6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label6.Font = new System.Drawing.Font("Cambria", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(111, 656);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(83, 533);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(102, 32);
+            this.label6.Size = new System.Drawing.Size(80, 25);
             this.label6.TabIndex = 41;
             this.label6.Text = "LogOut";
             this.label6.Click += new System.EventHandler(this.label6_Click);
@@ -337,10 +324,9 @@ namespace WindowsFormsApp1
             this.label5.AutoSize = true;
             this.label5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label5.Font = new System.Drawing.Font("Cambria", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(112, 479);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(84, 389);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(94, 32);
+            this.label5.Size = new System.Drawing.Size(73, 25);
             this.label5.TabIndex = 39;
             this.label5.Text = "Billing";
             this.label5.Click += new System.EventHandler(this.label5_Click);
@@ -350,10 +336,9 @@ namespace WindowsFormsApp1
             this.label2.AutoSize = true;
             this.label2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label2.Font = new System.Drawing.Font("Cambria", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(111, 258);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(83, 210);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(122, 32);
+            this.label2.Size = new System.Drawing.Size(96, 25);
             this.label2.TabIndex = 35;
             this.label2.Text = "Products";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -383,19 +368,74 @@ namespace WindowsFormsApp1
             this.panel3.Controls.Add(this.CustomerLogin);
             this.panel3.Controls.Add(this.label8);
             this.panel3.Controls.Add(this.pictureBox8);
-            this.panel3.Location = new System.Drawing.Point(20, 25);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4);
+            this.panel3.Location = new System.Drawing.Point(15, 20);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1142, 272);
+            this.panel3.Size = new System.Drawing.Size(856, 221);
             this.panel3.TabIndex = 0;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Corbel", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.Black;
+            this.label14.Location = new System.Drawing.Point(234, 108);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(67, 26);
+            this.label14.TabIndex = 40;
+            this.label14.Text = "Parola";
+            // 
+            // CustomerPass
+            // 
+            this.CustomerPass.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CustomerPass.Location = new System.Drawing.Point(238, 138);
+            this.CustomerPass.Name = "CustomerPass";
+            this.CustomerPass.Size = new System.Drawing.Size(188, 32);
+            this.CustomerPass.TabIndex = 39;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Corbel", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.Black;
+            this.label13.Location = new System.Drawing.Point(28, 106);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(90, 26);
+            this.label13.TabIndex = 38;
+            this.label13.Text = "Prenume";
+            // 
+            // CustomerSurname
+            // 
+            this.CustomerSurname.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CustomerSurname.Location = new System.Drawing.Point(33, 136);
+            this.CustomerSurname.Name = "CustomerSurname";
+            this.CustomerSurname.Size = new System.Drawing.Size(188, 32);
+            this.CustomerSurname.TabIndex = 37;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Corbel", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(28, 41);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(65, 26);
+            this.label4.TabIndex = 36;
+            this.label4.Text = "Nume";
+            // 
+            // CustomerName
+            // 
+            this.CustomerName.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CustomerName.Location = new System.Drawing.Point(33, 72);
+            this.CustomerName.Name = "CustomerName";
+            this.CustomerName.Size = new System.Drawing.Size(188, 32);
+            this.CustomerName.TabIndex = 35;
             // 
             // CustomerPhone
             // 
             this.CustomerPhone.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CustomerPhone.Location = new System.Drawing.Point(891, 86);
-            this.CustomerPhone.Margin = new System.Windows.Forms.Padding(4);
+            this.CustomerPhone.Location = new System.Drawing.Point(668, 70);
             this.CustomerPhone.Name = "CustomerPhone";
-            this.CustomerPhone.Size = new System.Drawing.Size(249, 38);
+            this.CustomerPhone.Size = new System.Drawing.Size(188, 32);
             this.CustomerPhone.TabIndex = 27;
             // 
             // label10
@@ -403,21 +443,19 @@ namespace WindowsFormsApp1
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Corbel", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(583, 45);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Location = new System.Drawing.Point(437, 37);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(104, 33);
+            this.label10.Size = new System.Drawing.Size(80, 26);
             this.label10.TabIndex = 26;
             this.label10.Text = "Address";
             // 
             // CustomerAddress
             // 
             this.CustomerAddress.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CustomerAddress.Location = new System.Drawing.Point(589, 86);
-            this.CustomerAddress.Margin = new System.Windows.Forms.Padding(4);
+            this.CustomerAddress.Location = new System.Drawing.Point(442, 70);
             this.CustomerAddress.Multiline = true;
             this.CustomerAddress.Name = "CustomerAddress";
-            this.CustomerAddress.Size = new System.Drawing.Size(249, 101);
+            this.CustomerAddress.Size = new System.Drawing.Size(188, 83);
             this.CustomerAddress.TabIndex = 25;
             // 
             // label9
@@ -425,40 +463,36 @@ namespace WindowsFormsApp1
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Corbel", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(312, 54);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Location = new System.Drawing.Point(234, 44);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(77, 33);
+            this.label9.Size = new System.Drawing.Size(61, 26);
             this.label9.TabIndex = 24;
             this.label9.Text = "Login";
             // 
             // CustomerLogin
             // 
             this.CustomerLogin.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CustomerLogin.Location = new System.Drawing.Point(318, 91);
-            this.CustomerLogin.Margin = new System.Windows.Forms.Padding(4);
+            this.CustomerLogin.Location = new System.Drawing.Point(238, 74);
             this.CustomerLogin.Name = "CustomerLogin";
-            this.CustomerLogin.Size = new System.Drawing.Size(249, 38);
+            this.CustomerLogin.Size = new System.Drawing.Size(188, 32);
             this.CustomerLogin.TabIndex = 23;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Cambria", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(5, 0);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Location = new System.Drawing.Point(4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(288, 32);
+            this.label8.Size = new System.Drawing.Size(226, 25);
             this.label8.TabIndex = 22;
             this.label8.Text = "MyCodeSpace Pet Shop";
             // 
             // pictureBox8
             // 
             this.pictureBox8.Image = global::WindowsFormsApp1.Properties.Resources.pet_food;
-            this.pictureBox8.Location = new System.Drawing.Point(1019, 150);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox8.Location = new System.Drawing.Point(764, 122);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(123, 103);
+            this.pictureBox8.Size = new System.Drawing.Size(92, 84);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox8.TabIndex = 16;
             this.pictureBox8.TabStop = false;
@@ -474,10 +508,9 @@ namespace WindowsFormsApp1
             this.panel1.Controls.Add(this.CustomerDGV);
             this.panel1.Controls.Add(this.label11);
             this.panel1.Controls.Add(this.panel3);
-            this.panel1.Location = new System.Drawing.Point(336, 37);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
+            this.panel1.Location = new System.Drawing.Point(252, 30);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1178, 674);
+            this.panel1.Size = new System.Drawing.Size(884, 548);
             this.panel1.TabIndex = 32;
             // 
             // CustomerDGV
@@ -489,14 +522,13 @@ namespace WindowsFormsApp1
             this.CustomerDGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.CustomerDGV.BackgroundColor = System.Drawing.Color.White;
             this.CustomerDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.CustomerDGV.Location = new System.Drawing.Point(20, 338);
-            this.CustomerDGV.Margin = new System.Windows.Forms.Padding(4);
+            this.CustomerDGV.Location = new System.Drawing.Point(15, 275);
             this.CustomerDGV.MultiSelect = false;
             this.CustomerDGV.Name = "CustomerDGV";
             this.CustomerDGV.ReadOnly = true;
             this.CustomerDGV.RowHeadersWidth = 51;
             this.CustomerDGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.CustomerDGV.Size = new System.Drawing.Size(1142, 319);
+            this.CustomerDGV.Size = new System.Drawing.Size(856, 259);
             this.CustomerDGV.TabIndex = 37;
             this.CustomerDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.CustomerDGV_CellContentClick);
             // 
@@ -504,10 +536,9 @@ namespace WindowsFormsApp1
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Cambria", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(486, 301);
-            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label11.Location = new System.Drawing.Point(364, 245);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(192, 32);
+            this.label11.Size = new System.Drawing.Size(150, 25);
             this.label11.TabIndex = 35;
             this.label11.Text = "Customers List";
             // 
@@ -516,83 +547,19 @@ namespace WindowsFormsApp1
             this.label12.AutoSize = true;
             this.label12.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label12.Font = new System.Drawing.Font("Cambria", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(112, 331);
-            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label12.Location = new System.Drawing.Point(84, 269);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(142, 32);
+            this.label12.Size = new System.Drawing.Size(111, 25);
             this.label12.TabIndex = 22;
             this.label12.Text = "Employees";
             this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Corbel", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(38, 51);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(83, 33);
-            this.label4.TabIndex = 36;
-            this.label4.Text = "Nume";
-            // 
-            // CustomerName
-            // 
-            this.CustomerName.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CustomerName.Location = new System.Drawing.Point(44, 88);
-            this.CustomerName.Margin = new System.Windows.Forms.Padding(4);
-            this.CustomerName.Name = "CustomerName";
-            this.CustomerName.Size = new System.Drawing.Size(249, 38);
-            this.CustomerName.TabIndex = 35;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Corbel", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.Black;
-            this.label13.Location = new System.Drawing.Point(38, 130);
-            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(115, 33);
-            this.label13.TabIndex = 38;
-            this.label13.Text = "Prenume";
-            // 
-            // CustomerSurname
-            // 
-            this.CustomerSurname.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CustomerSurname.Location = new System.Drawing.Point(44, 167);
-            this.CustomerSurname.Margin = new System.Windows.Forms.Padding(4);
-            this.CustomerSurname.Name = "CustomerSurname";
-            this.CustomerSurname.Size = new System.Drawing.Size(249, 38);
-            this.CustomerSurname.TabIndex = 37;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Corbel", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.Black;
-            this.label14.Location = new System.Drawing.Point(312, 133);
-            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(85, 33);
-            this.label14.TabIndex = 40;
-            this.label14.Text = "Parola";
-            // 
-            // CustomerPass
-            // 
-            this.CustomerPass.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CustomerPass.Location = new System.Drawing.Point(318, 170);
-            this.CustomerPass.Margin = new System.Windows.Forms.Padding(4);
-            this.CustomerPass.Name = "CustomerPass";
-            this.CustomerPass.Size = new System.Drawing.Size(249, 38);
-            this.CustomerPass.TabIndex = 39;
-            // 
             // Customers
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(182)))), ((int)(((byte)(164)))));
-            this.ClientSize = new System.Drawing.Size(1543, 750);
+            this.ClientSize = new System.Drawing.Size(1157, 609);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.panel4);
@@ -608,10 +575,11 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Customers";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Customers";
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.top_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.top_MouseMove);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
