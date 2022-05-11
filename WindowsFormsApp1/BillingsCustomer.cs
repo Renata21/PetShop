@@ -159,6 +159,7 @@ namespace WindowsFormsApp1
             key = 0;
             Stock = 0;
             PrNameTb.Text = "";
+            PrPriceTb.Text = string.Empty;
             QtyTb.Text = "";
         }
         int n = 0, GrdTotal = 0;

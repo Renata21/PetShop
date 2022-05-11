@@ -117,7 +117,7 @@ namespace WindowsFormsApp1
             this.LblPet.ForeColor = System.Drawing.Color.Black;
             this.LblPet.Location = new System.Drawing.Point(82, 14);
             this.LblPet.Name = "LblPet";
-            this.LblPet.Size = new System.Drawing.Size(115, 28);
+            this.LblPet.Size = new System.Drawing.Size(145, 36);
             this.LblPet.TabIndex = 2;
             this.LblPet.Text = "Pet House";
             // 
@@ -130,7 +130,7 @@ namespace WindowsFormsApp1
             // 
             this.Nametxt.Location = new System.Drawing.Point(45, 187);
             this.Nametxt.Name = "Nametxt";
-            this.Nametxt.Size = new System.Drawing.Size(188, 32);
+            this.Nametxt.Size = new System.Drawing.Size(188, 38);
             this.Nametxt.TabIndex = 1;
             this.Nametxt.TextChanged += new System.EventHandler(this.Nametxt_TextChanged);
             // 
@@ -141,7 +141,7 @@ namespace WindowsFormsApp1
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(45, 158);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(171, 26);
+            this.label1.Size = new System.Drawing.Size(218, 33);
             this.label1.TabIndex = 4;
             this.label1.Text = "Nume de utilizator";
             // 
@@ -152,7 +152,7 @@ namespace WindowsFormsApp1
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(50, 236);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(67, 26);
+            this.label2.Size = new System.Drawing.Size(85, 33);
             this.label2.TabIndex = 6;
             this.label2.Text = "Parola";
             // 
@@ -161,9 +161,8 @@ namespace WindowsFormsApp1
             this.Passwordtxt.Location = new System.Drawing.Point(45, 265);
             this.Passwordtxt.Name = "Passwordtxt";
             this.Passwordtxt.PasswordChar = '*';
-            this.Passwordtxt.Size = new System.Drawing.Size(188, 32);
+            this.Passwordtxt.Size = new System.Drawing.Size(188, 38);
             this.Passwordtxt.TabIndex = 5;
-            this.Passwordtxt.Enter += new System.EventHandler(this.Loginbtn_Click);
             // 
             // panel2
             // 
@@ -181,7 +180,7 @@ namespace WindowsFormsApp1
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.label4.Location = new System.Drawing.Point(101, 114);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(76, 26);
+            this.label4.Size = new System.Drawing.Size(97, 33);
             this.label4.TabIndex = 10;
             this.label4.Text = "Logare";
             // 
@@ -193,7 +192,7 @@ namespace WindowsFormsApp1
             this.Register_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.Register_btn.Location = new System.Drawing.Point(86, 370);
             this.Register_btn.Name = "Register_btn";
-            this.Register_btn.Size = new System.Drawing.Size(107, 23);
+            this.Register_btn.Size = new System.Drawing.Size(129, 28);
             this.Register_btn.TabIndex = 11;
             this.Register_btn.Text = "Inregistrare";
             this.Register_btn.Click += new System.EventHandler(this.Register_Click);
@@ -202,7 +201,7 @@ namespace WindowsFormsApp1
             // 
             // Login_Cust
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(235)))), ((int)(((byte)(221)))));
             this.ClientSize = new System.Drawing.Size(279, 422);

@@ -249,5 +249,10 @@ namespace WindowsFormsApp1
         {
             lastPoint = new Point(e.X, e.Y);
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
