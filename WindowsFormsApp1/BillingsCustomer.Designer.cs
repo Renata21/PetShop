@@ -70,6 +70,7 @@ namespace WindowsFormsApp1
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuElipse4 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.Search_btn = new Bunifu.Framework.UI.BunifuThinButton2();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -100,10 +101,10 @@ namespace WindowsFormsApp1
             this.Deletebtn.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.Deletebtn.IdleForecolor = System.Drawing.Color.Transparent;
             this.Deletebtn.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.Deletebtn.Location = new System.Drawing.Point(312, 133);
+            this.Deletebtn.Location = new System.Drawing.Point(391, 133);
             this.Deletebtn.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.Deletebtn.Name = "Deletebtn";
-            this.Deletebtn.Size = new System.Drawing.Size(244, 50);
+            this.Deletebtn.Size = new System.Drawing.Size(165, 50);
             this.Deletebtn.TabIndex = 34;
             this.Deletebtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Deletebtn.Click += new System.EventHandler(this.Deletebtn_Click);
@@ -126,10 +127,10 @@ namespace WindowsFormsApp1
             this.Savebtn.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.Savebtn.IdleForecolor = System.Drawing.Color.Transparent;
             this.Savebtn.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.Savebtn.Location = new System.Drawing.Point(45, 133);
+            this.Savebtn.Location = new System.Drawing.Point(217, 133);
             this.Savebtn.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.Savebtn.Name = "Savebtn";
-            this.Savebtn.Size = new System.Drawing.Size(253, 50);
+            this.Savebtn.Size = new System.Drawing.Size(160, 50);
             this.Savebtn.TabIndex = 32;
             this.Savebtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Savebtn.Click += new System.EventHandler(this.Savebtn_Click);
@@ -376,6 +377,7 @@ namespace WindowsFormsApp1
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.Search_btn);
             this.panel2.Controls.Add(this.label15);
             this.panel2.Controls.Add(this.QtyTb);
             this.panel2.Controls.Add(this.label5);
@@ -476,6 +478,7 @@ namespace WindowsFormsApp1
             this.ProductsDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.ProductsDGV.Location = new System.Drawing.Point(24, 294);
             this.ProductsDGV.Margin = new System.Windows.Forms.Padding(4);
+            this.ProductsDGV.MinimumSize = new System.Drawing.Size(583, 194);
             this.ProductsDGV.MultiSelect = false;
             this.ProductsDGV.Name = "ProductsDGV";
             this.ProductsDGV.ReadOnly = true;
@@ -543,6 +546,32 @@ namespace WindowsFormsApp1
             // 
             this.bunifuElipse4.ElipseRadius = 35;
             this.bunifuElipse4.TargetControl = this.panel4;
+            // 
+            // Search_btn
+            // 
+            this.Search_btn.ActiveBorderThickness = 1;
+            this.Search_btn.ActiveCornerRadius = 20;
+            this.Search_btn.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.Search_btn.ActiveForecolor = System.Drawing.Color.White;
+            this.Search_btn.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.Search_btn.BackColor = System.Drawing.Color.White;
+            this.Search_btn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Search_btn.BackgroundImage")));
+            this.Search_btn.ButtonText = "Search";
+            this.Search_btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Search_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Search_btn.ForeColor = System.Drawing.Color.SeaGreen;
+            this.Search_btn.IdleBorderThickness = 1;
+            this.Search_btn.IdleCornerRadius = 20;
+            this.Search_btn.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Search_btn.IdleForecolor = System.Drawing.Color.Transparent;
+            this.Search_btn.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Search_btn.Location = new System.Drawing.Point(30, 133);
+            this.Search_btn.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.Search_btn.Name = "Search_btn";
+            this.Search_btn.Size = new System.Drawing.Size(152, 50);
+            this.Search_btn.TabIndex = 35;
+            this.Search_btn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Search_btn.Click += new System.EventHandler(this.Search_btn_Click);
             // 
             // BillingsCustomer
             // 
@@ -625,5 +654,6 @@ namespace WindowsFormsApp1
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse4;
         private System.Windows.Forms.Label TotalLbl;
+        private Bunifu.Framework.UI.BunifuThinButton2 Search_btn;
     }
 }

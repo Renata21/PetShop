@@ -1,7 +1,6 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
 using System.Data;
-using System.Data.SqlClient;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -42,7 +41,7 @@ namespace WindowsFormsApp1
                 con.Close();
             }
         }
-        
+
         private void DisplayProduct()
         {
             try
@@ -55,6 +54,7 @@ namespace WindowsFormsApp1
                 var ds = new DataSet();
                 sda.Fill(ds);
                 ProductsDGV.DataSource = ds.Tables[0];
+
                 con.Close();
 
             }
@@ -120,7 +120,7 @@ namespace WindowsFormsApp1
             {
                 con.Open();
                 MySqlCommand cmd_id = new MySqlCommand("select CustID from CustomerTbl where CustLogin = @CustLog", con);
-                
+
                 cmd_id.Parameters.AddWithValue("@CustLog", temp.client);
                 DataTable dt = new DataTable();
                 MySqlDataAdapter sda = new MySqlDataAdapter(cmd_id);
@@ -131,10 +131,10 @@ namespace WindowsFormsApp1
                     custID = dr["CustID"].ToString();
                 }
 
-               
+
 
                 MySqlCommand cmd = new MySqlCommand("insert into BillTbl (BDate,CustId,CustLogin,EmpLogin,Amt) values(@BD,@CI,@CN,@EN,@AT)", con);
-               
+
                 cmd.Parameters.AddWithValue("@BD", DateTime.Today.Date);
                 cmd.Parameters.AddWithValue("@CI", int.Parse(custID));
                 cmd.Parameters.AddWithValue("@CN", label7.Text);
@@ -156,6 +156,9 @@ namespace WindowsFormsApp1
         }
         private void Reset()
         {
+            ProductsDGV.Columns.Clear();
+            DisplayProduct();
+
             key = 0;
             Stock = 0;
             PrNameTb.Text = "";
@@ -243,6 +246,40 @@ namespace WindowsFormsApp1
             Home_Cust obj = new Home_Cust();
             obj.Show();
             this.Hide();
+        }
+        
+        private void Search_btn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (PrNameTb.Text != "")
+                {
+                    con.Open();
+                    string Query = " select * from ProductTbl where PrName like @PN";
+                    MySqlCommand cmd = new MySqlCommand(Query, con);
+                    cmd.Parameters.AddWithValue("@PN", "%"+PrNameTb.Text+ "%");
+                    MySqlDataAdapter adp = new MySqlDataAdapter(cmd);
+                    DataSet dt = new DataSet();
+                    adp.Fill(dt);
+               
+                    ProductsDGV.DataSource = dt.Tables[0];
+
+                    con.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Adaugati numele produsului cautat.");
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("A aparut o problema" + ex.Message);
+            }
+            finally
+            {
+                con.Close();
+            }
         }
 
         string prodname;
