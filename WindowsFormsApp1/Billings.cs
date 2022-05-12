@@ -233,7 +233,7 @@ namespace WindowsFormsApp1
         private void Printbtn_Click(object sender, EventArgs e)
         {
             Bill();
-            printDocument1.DefaultPageSettings.PaperSize = new System.Drawing.Printing.PaperSize("pprnm", 285, 600);
+            printDocument1.DefaultPageSettings.PaperSize = new System.Drawing.Printing.PaperSize("pprnm", 840, 1188);
             printPreviewDialog1.Document = printDocument1;
             printPreviewDialog1.ShowDialog();
             DisplayBills();
@@ -278,8 +278,14 @@ namespace WindowsFormsApp1
         string prodname;
         private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
-            e.Graphics.DrawString("My CodeSpace PetShop",new Font("Century Gothic",12,FontStyle.Bold),Brushes.Red, new Point(50));
-            e.Graphics.DrawString("ID PRODUCT PRICE QUANTITY TOTAL", new Font("Century Gothic", 10, FontStyle.Bold), Brushes.Red, new Point(5,20));
+
+          
+
+            e.Graphics.DrawString("PetHouse",new Font("Century Gothic",18,FontStyle.Bold),Brushes.Red, new Point(50));
+  
+            e.Graphics.DrawString("ID PRODUCT PRICE QUANTITY TOTAL", new Font("Century Gothic", 15, FontStyle.Bold), Brushes.Red, new Point(50,20));
+            pos = pos + 5;
+
             foreach (DataGridViewRow row in BillDGV.Rows)
             {
                 prodid = Convert.ToInt32(row.Cells["Id"].Value);
@@ -288,15 +294,15 @@ namespace WindowsFormsApp1
                 prodqty = Convert.ToInt32(row.Cells["Quantity"].Value);
                 total = Convert.ToInt32(row.Cells["Total"].Value);
 
-                e.Graphics.DrawString("" + prodid, new Font("Century Gothic", 8, FontStyle.Bold), Brushes.Blue, new Point(26,pos));
-                e.Graphics.DrawString("" + prodname, new Font("Century Gothic", 8, FontStyle.Bold), Brushes.Blue, new Point(45,pos));
-                e.Graphics.DrawString("" + prodprice, new Font("Century Gothic", 8, FontStyle.Bold), Brushes.Blue, new Point(110, pos));
-                e.Graphics.DrawString("" + prodqty, new Font("Century Gothic", 8, FontStyle.Bold), Brushes.Blue, new Point(170, pos));
-                e.Graphics.DrawString("" + total, new Font("Century Gothic", 8, FontStyle.Bold), Brushes.Blue, new Point(235  , pos));
+                e.Graphics.DrawString("" + prodid, new Font("Century Gothic", 12, FontStyle.Bold), Brushes.Blue, new Point(26,pos));
+                e.Graphics.DrawString("" + prodname, new Font("Century Gothic", 12, FontStyle.Bold), Brushes.Blue, new Point(45,pos));
+                e.Graphics.DrawString("" + prodprice, new Font("Century Gothic", 12, FontStyle.Bold), Brushes.Blue, new Point(110, pos));
+                e.Graphics.DrawString("" + prodqty, new Font("Century Gothic", 12, FontStyle.Bold), Brushes.Blue, new Point(170, pos));
+                e.Graphics.DrawString("" + total, new Font("Century Gothic", 12, FontStyle.Bold), Brushes.Blue, new Point(235  , pos));
                 pos = pos + 20;
             }
-            e.Graphics.DrawString("Grand Total: $ " + GrdTotal, new Font("Century Gothic", 12, FontStyle.Bold), Brushes.Crimson, new Point(50 , pos + 50));
-            e.Graphics.DrawString("***************PetShop***************", new Font("Century Gothic", 12, FontStyle.Bold), Brushes.Crimson, new Point(0, pos + 85));
+            e.Graphics.DrawString("Total: $ " + GrdTotal, new Font("Century Gothic", 15, FontStyle.Bold), Brushes.Crimson, new Point(50 , pos + 50));
+            e.Graphics.DrawString("***************  PetHouse  ***************", new Font("Century Gothic", 15, FontStyle.Bold), Brushes.Crimson, new Point(0, pos + 85));
             BillDGV.Rows.Clear();
             BillDGV.Refresh();
             pos = 100;
