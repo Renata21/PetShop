@@ -285,6 +285,7 @@ namespace WindowsFormsApp1
         string prodname;
         private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
+
             e.Graphics.DrawString("My CodeSpace PetShop", new Font("Century Gothic", 12, FontStyle.Bold), Brushes.Red, new Point(50));
             e.Graphics.DrawString("ID PRODUCT PRICE QUANTITY TOTAL", new Font("Century Gothic", 10, FontStyle.Bold), Brushes.Red, new Point(5, 20));
             foreach (DataGridViewRow row in BillDGV.Rows)
