@@ -1,13 +1,7 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Data.SqlClient;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace WindowsFormsApp1
@@ -16,15 +10,13 @@ namespace WindowsFormsApp1
     {
         public ProductsCustomer()
         {
-            InitializeComponent();
             label7.Text = temp.client;
+            InitializeComponent();
             DisplayCustomers();
-          
         }
 
         MySqlConnection con = new MySqlConnection("server = mysql.freehostia.com; port = 3306; username=fincri_petshop; password=f._qDNdNMf-#6e@; database=fincri_petshop; connect timeout=5; convert zero datetime=True");
-        int key = 0;
-        //listaremos los empleados una vez agreguemos uno y cuando se inicie el formulario
+
         private void DisplayCustomers()
         {
             try
@@ -48,7 +40,7 @@ namespace WindowsFormsApp1
                 con.Close();
             }
         }
-            
+
         private void label1_Click(object sender, EventArgs e)
         {
             Home_Cust obj = new Home_Cust();

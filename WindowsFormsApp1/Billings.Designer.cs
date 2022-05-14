@@ -203,7 +203,7 @@ namespace WindowsFormsApp1
             this.label1.Size = new System.Drawing.Size(84, 32);
             this.label1.TabIndex = 63;
             this.label1.Text = "Home";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.label1.Click += new System.EventHandler(this.Home_Click);
             // 
             // label6
             // 
@@ -216,7 +216,7 @@ namespace WindowsFormsApp1
             this.label6.Size = new System.Drawing.Size(102, 32);
             this.label6.TabIndex = 69;
             this.label6.Text = "LogOut";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
+            this.label6.Click += new System.EventHandler(this.LogOut_Click);
             // 
             // panel4
             // 
@@ -666,11 +666,11 @@ namespace WindowsFormsApp1
             this.label13.Size = new System.Drawing.Size(122, 32);
             this.label13.TabIndex = 50;
             this.label13.Text = "Products";
-            this.label13.Click += new System.EventHandler(this.label13_Click);
+            this.label13.Click += new System.EventHandler(this.Products_Click);
             // 
             // printDocument1
             // 
-            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
+            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.PrintDocument_PrintPage);
             // 
             // printPreviewDialog1
             // 
@@ -703,7 +703,7 @@ namespace WindowsFormsApp1
             this.label12.Size = new System.Drawing.Size(142, 32);
             this.label12.TabIndex = 61;
             this.label12.Text = "Employees";
-            this.label12.Click += new System.EventHandler(this.label12_Click);
+            this.label12.Click += new System.EventHandler(this.Employees_Click);
             // 
             // pictureBox3
             // 
@@ -738,7 +738,7 @@ namespace WindowsFormsApp1
             this.label4.Size = new System.Drawing.Size(142, 32);
             this.label4.TabIndex = 59;
             this.label4.Text = "Customers";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+            this.label4.Click += new System.EventHandler(this.Customers_Click);
             // 
             // petShopDbDataSet
             // 
@@ -779,8 +779,8 @@ namespace WindowsFormsApp1
             this.Name = "Billings";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Billings";
-            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.top_MouseDown);
-            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.top_MouseMove);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Top_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Top_MouseMove);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();

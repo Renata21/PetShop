@@ -54,6 +54,7 @@ namespace WindowsFormsApp1
             this.Total = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Printbtn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.Search_btn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.label15 = new System.Windows.Forms.Label();
             this.QtyTb = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -70,7 +71,6 @@ namespace WindowsFormsApp1
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuElipse4 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.Search_btn = new Bunifu.Framework.UI.BunifuThinButton2();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -127,7 +127,7 @@ namespace WindowsFormsApp1
             this.Savebtn.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.Savebtn.IdleForecolor = System.Drawing.Color.Transparent;
             this.Savebtn.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.Savebtn.Location = new System.Drawing.Point(217, 133);
+            this.Savebtn.Location = new System.Drawing.Point(19, 133);
             this.Savebtn.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.Savebtn.Name = "Savebtn";
             this.Savebtn.Size = new System.Drawing.Size(160, 50);
@@ -384,14 +384,40 @@ namespace WindowsFormsApp1
             this.panel2.Controls.Add(this.Deletebtn);
             this.panel2.Controls.Add(this.PrPriceTb);
             this.panel2.Controls.Add(this.label10);
-            this.panel2.Controls.Add(this.PrNameTb);
             this.panel2.Controls.Add(this.Savebtn);
+            this.panel2.Controls.Add(this.PrNameTb);
             this.panel2.Controls.Add(this.label14);
             this.panel2.Location = new System.Drawing.Point(24, 39);
             this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(583, 197);
             this.panel2.TabIndex = 37;
+            // 
+            // Search_btn
+            // 
+            this.Search_btn.ActiveBorderThickness = 1;
+            this.Search_btn.ActiveCornerRadius = 20;
+            this.Search_btn.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.Search_btn.ActiveForecolor = System.Drawing.Color.White;
+            this.Search_btn.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.Search_btn.BackColor = System.Drawing.Color.White;
+            this.Search_btn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Search_btn.BackgroundImage")));
+            this.Search_btn.ButtonText = "Search";
+            this.Search_btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Search_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Search_btn.ForeColor = System.Drawing.Color.SeaGreen;
+            this.Search_btn.IdleBorderThickness = 1;
+            this.Search_btn.IdleCornerRadius = 20;
+            this.Search_btn.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Search_btn.IdleForecolor = System.Drawing.Color.Transparent;
+            this.Search_btn.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Search_btn.Location = new System.Drawing.Point(205, 133);
+            this.Search_btn.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.Search_btn.Name = "Search_btn";
+            this.Search_btn.Size = new System.Drawing.Size(152, 50);
+            this.Search_btn.TabIndex = 35;
+            this.Search_btn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Search_btn.Click += new System.EventHandler(this.Search_btn_Click);
             // 
             // label15
             // 
@@ -546,32 +572,6 @@ namespace WindowsFormsApp1
             // 
             this.bunifuElipse4.ElipseRadius = 35;
             this.bunifuElipse4.TargetControl = this.panel4;
-            // 
-            // Search_btn
-            // 
-            this.Search_btn.ActiveBorderThickness = 1;
-            this.Search_btn.ActiveCornerRadius = 20;
-            this.Search_btn.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.Search_btn.ActiveForecolor = System.Drawing.Color.White;
-            this.Search_btn.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.Search_btn.BackColor = System.Drawing.Color.White;
-            this.Search_btn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Search_btn.BackgroundImage")));
-            this.Search_btn.ButtonText = "Search";
-            this.Search_btn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Search_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Search_btn.ForeColor = System.Drawing.Color.SeaGreen;
-            this.Search_btn.IdleBorderThickness = 1;
-            this.Search_btn.IdleCornerRadius = 20;
-            this.Search_btn.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.Search_btn.IdleForecolor = System.Drawing.Color.Transparent;
-            this.Search_btn.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.Search_btn.Location = new System.Drawing.Point(30, 133);
-            this.Search_btn.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
-            this.Search_btn.Name = "Search_btn";
-            this.Search_btn.Size = new System.Drawing.Size(152, 50);
-            this.Search_btn.TabIndex = 35;
-            this.Search_btn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Search_btn.Click += new System.EventHandler(this.Search_btn_Click);
             // 
             // BillingsCustomer
             // 
