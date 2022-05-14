@@ -114,6 +114,10 @@ namespace WindowsFormsApp1
         }
         private void Reset()
         {
+            ProductsDGV.Columns.Clear();
+            ProductsDGV.Refresh();
+            DisplayProduct();
+
             key = 0;
             Stock = 0;
             PrNameTb.Text = "";
@@ -144,7 +148,7 @@ namespace WindowsFormsApp1
                 newRow.Cells[3].Value = QtyTb.Text;
                 newRow.Cells[4].Value = total;
 
-                GrdTotal = GrdTotal + total;
+                GrdTotal += total;
                 BillDGV.Rows.Add(newRow);
                 n++;
                 TotalLbl.Text = "$" + GrdTotal;
@@ -184,13 +188,14 @@ namespace WindowsFormsApp1
                 if (PrNameTb.Text != "")
                 {
                     con.Open();
+
                     string Query = " select * from ProductTbl where PrName like @PN";
                     MySqlCommand cmd = new MySqlCommand(Query, con);
                     cmd.Parameters.AddWithValue("@PN", "%" + PrNameTb.Text + "%");
                     MySqlDataAdapter adp = new MySqlDataAdapter(cmd);
+
                     DataSet dt = new DataSet();
                     adp.Fill(dt);
-
                     ProductsDGV.DataSource = dt.Tables[0];
 
                     con.Close();
@@ -199,7 +204,6 @@ namespace WindowsFormsApp1
                 {
                     MessageBox.Show("Adaugati numele produsului cautat.");
                 }
-
             }
             catch (Exception ex)
             {
@@ -227,7 +231,7 @@ namespace WindowsFormsApp1
             n = 0;
         }
        
-        private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        private void PrintDocument_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
             int pos = 10;
 
@@ -255,12 +259,11 @@ namespace WindowsFormsApp1
             e.Graphics.DrawString("Total: $ " + GrdTotal, new Font("Century Gothic", 15, FontStyle.Bold), Brushes.Crimson, new Point(50, pos + 50));
             e.Graphics.DrawString("\t \t     ***************  PetHouse  ***************", new Font("Century Gothic", 15, FontStyle.Bold), Brushes.Crimson, new Point(0, pos + 85));
             e.Graphics.DrawString("\t \t \t     " + DateTime.Now, new Font("Century Gothic", 15, FontStyle.Bold), Brushes.Crimson, new Point(0, pos + 120));
-
         }
 
         //MISCARE FEREASTRA
         Point lastPoint;
-        private void top_MouseMove(object sender, MouseEventArgs e)
+        private void Top_MouseMove(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
             {
@@ -269,27 +272,27 @@ namespace WindowsFormsApp1
             }
         }
 
-        private void top_MouseDown(object sender, MouseEventArgs e)
+        private void Top_MouseDown(object sender, MouseEventArgs e)
         {
             lastPoint = new Point(e.X, e.Y);
         }
 
         //MENIU
-        private void label6_Click(object sender, EventArgs e)
+        private void LogOut_Click(object sender, EventArgs e)
         {
             Choose_user obj = new Choose_user();
             obj.Show();
             this.Hide();
         }
 
-        private void label13_Click(object sender, EventArgs e)
+        private void Products_Click(object sender, EventArgs e)
         {
             ProductsCustomer obj = new ProductsCustomer();
             obj.Show();
             this.Hide();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void Home_Click(object sender, EventArgs e)
         {
             Home_Cust obj = new Home_Cust();
             obj.Show();

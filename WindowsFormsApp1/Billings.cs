@@ -109,8 +109,7 @@ namespace WindowsFormsApp1
             try
             {
                 con.Open();
-                string Query = " select *" +
-                               " from BillTbl";
+                string Query = " select * from BillTbl ORDER BY BId DESC";
                 MySqlDataAdapter sda = new MySqlDataAdapter(Query, con);
                 MySqlCommandBuilder Builder = new MySqlCommandBuilder(sda);
                 var ds = new DataSet();
@@ -191,6 +190,10 @@ namespace WindowsFormsApp1
 
         private void Reset()
         {
+            ProductsDGV.Columns.Clear();
+            ProductsDGV.Refresh();
+            DisplayProduct();
+
             key = 0;
             Stock = 0;
             PrNameTb.Text = "";
@@ -235,6 +238,40 @@ namespace WindowsFormsApp1
         private void Deletebtn_Click(object sender, EventArgs e)
         {
             Reset();
+        }
+
+        private void Search_btn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (PrNameTb.Text != "")
+                {
+                    con.Open();
+
+                    string Query = " select * from ProductTbl where PrName like @PN";
+                    MySqlCommand cmd = new MySqlCommand(Query, con);
+                    cmd.Parameters.AddWithValue("@PN", "%" + PrNameTb.Text + "%");
+                    MySqlDataAdapter adp = new MySqlDataAdapter(cmd);
+
+                    DataSet dt = new DataSet();
+                    adp.Fill(dt);
+                    ProductsDGV.DataSource = dt.Tables[0];
+
+                    con.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Adaugati numele produsului cautat.");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("A aparut o problema" + ex.Message);
+            }
+            finally
+            {
+                con.Close();
+            }
         }
 
         private void ProductsDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -343,7 +380,7 @@ namespace WindowsFormsApp1
             Products obj = new Products();
             obj.Show();
             this.Hide();
-        }
+        }    
 
         private void Home_Click(object sender, EventArgs e)
         {
