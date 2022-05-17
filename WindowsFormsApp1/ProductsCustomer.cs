@@ -10,8 +10,9 @@ namespace WindowsFormsApp1
     {
         public ProductsCustomer()
         {
-            label7.Text = temp.client;
+           
             InitializeComponent();
+            label7.Text = temp.client;
             DisplayCustomers();
         }
 

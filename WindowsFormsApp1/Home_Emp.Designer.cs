@@ -347,9 +347,9 @@ namespace WindowsFormsApp1
             this.label8.Location = new System.Drawing.Point(19, 30);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(288, 32);
+            this.label8.Size = new System.Drawing.Size(128, 32);
             this.label8.TabIndex = 16;
-            this.label8.Text = "MyCodeSpace Pet Shop";
+            this.label8.Text = "PetHouse";
             // 
             // pictureBox8
             // 
