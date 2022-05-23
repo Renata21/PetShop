@@ -89,7 +89,7 @@ namespace WindowsFormsApp1
             this.LblPet.ForeColor = System.Drawing.Color.Black;
             this.LblPet.Location = new System.Drawing.Point(83, 14);
             this.LblPet.Name = "LblPet";
-            this.LblPet.Size = new System.Drawing.Size(115, 28);
+            this.LblPet.Size = new System.Drawing.Size(145, 36);
             this.LblPet.TabIndex = 2;
             this.LblPet.Text = "Pet House";
             // 
@@ -102,7 +102,7 @@ namespace WindowsFormsApp1
             // 
             this.Nametxt.Location = new System.Drawing.Point(55, 204);
             this.Nametxt.Name = "Nametxt";
-            this.Nametxt.Size = new System.Drawing.Size(188, 32);
+            this.Nametxt.Size = new System.Drawing.Size(188, 38);
             this.Nametxt.TabIndex = 1;
             this.Nametxt.TextChanged += new System.EventHandler(this.Nametxt_TextChanged);
             // 
@@ -113,7 +113,7 @@ namespace WindowsFormsApp1
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(51, 173);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(171, 26);
+            this.label1.Size = new System.Drawing.Size(218, 33);
             this.label1.TabIndex = 4;
             this.label1.Text = "Nume de utilizator";
             // 
@@ -124,7 +124,7 @@ namespace WindowsFormsApp1
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(51, 252);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(67, 26);
+            this.label2.Size = new System.Drawing.Size(85, 33);
             this.label2.TabIndex = 6;
             this.label2.Text = "Parola";
             // 
@@ -133,7 +133,7 @@ namespace WindowsFormsApp1
             this.Passwordtxt.Location = new System.Drawing.Point(55, 288);
             this.Passwordtxt.Name = "Passwordtxt";
             this.Passwordtxt.PasswordChar = '*';
-            this.Passwordtxt.Size = new System.Drawing.Size(188, 32);
+            this.Passwordtxt.Size = new System.Drawing.Size(188, 38);
             this.Passwordtxt.TabIndex = 5;
             // 
             // Loginbtn
@@ -178,13 +178,13 @@ namespace WindowsFormsApp1
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.label4.Location = new System.Drawing.Point(101, 120);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(76, 26);
+            this.label4.Size = new System.Drawing.Size(97, 33);
             this.label4.TabIndex = 10;
             this.label4.Text = "Logare";
             // 
             // Login_Emp
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(235)))), ((int)(((byte)(221)))));
             this.ClientSize = new System.Drawing.Size(310, 430);
@@ -198,6 +198,7 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "Login_Emp";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

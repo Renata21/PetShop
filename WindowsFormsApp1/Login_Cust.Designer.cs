@@ -216,6 +216,7 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "Login_Cust";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

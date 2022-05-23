@@ -30,6 +30,7 @@ namespace WindowsFormsApp1
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home_Cust));
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -92,7 +93,7 @@ namespace WindowsFormsApp1
             this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Location = new System.Drawing.Point(336, 14);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1077, 608);
             this.panel1.TabIndex = 0;
@@ -105,7 +106,7 @@ namespace WindowsFormsApp1
             this.panel3.Controls.Add(this.label8);
             this.panel3.Controls.Add(this.pictureBox8);
             this.panel3.Location = new System.Drawing.Point(20, 25);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1033, 165);
             this.panel3.TabIndex = 6;
@@ -147,7 +148,7 @@ namespace WindowsFormsApp1
             // 
             this.pictureBox8.Image = global::WindowsFormsApp1.Properties.Resources.pet_food;
             this.pictureBox8.Location = new System.Drawing.Point(889, 30);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(123, 103);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -161,7 +162,7 @@ namespace WindowsFormsApp1
             this.panel6.Controls.Add(this.label14);
             this.panel6.Controls.Add(this.pictureBox11);
             this.panel6.Location = new System.Drawing.Point(331, 439);
-            this.panel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel6.Margin = new System.Windows.Forms.Padding(4);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(393, 130);
             this.panel6.TabIndex = 6;
@@ -194,7 +195,7 @@ namespace WindowsFormsApp1
             // 
             this.pictureBox11.Image = global::WindowsFormsApp1.Properties.Resources.bird;
             this.pictureBox11.Location = new System.Drawing.Point(4, 4);
-            this.pictureBox11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox11.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox11.Name = "pictureBox11";
             this.pictureBox11.Size = new System.Drawing.Size(155, 122);
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -208,7 +209,7 @@ namespace WindowsFormsApp1
             this.panel5.Controls.Add(this.label13);
             this.panel5.Controls.Add(this.pictureBox10);
             this.panel5.Location = new System.Drawing.Point(575, 241);
-            this.panel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(393, 130);
             this.panel5.TabIndex = 5;
@@ -241,7 +242,7 @@ namespace WindowsFormsApp1
             // 
             this.pictureBox10.Image = global::WindowsFormsApp1.Properties.Resources.happy;
             this.pictureBox10.Location = new System.Drawing.Point(4, 4);
-            this.pictureBox10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox10.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(157, 126);
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -255,7 +256,7 @@ namespace WindowsFormsApp1
             this.panel4.Controls.Add(this.label12);
             this.panel4.Controls.Add(this.pictureBox9);
             this.panel4.Location = new System.Drawing.Point(108, 241);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(393, 130);
             this.panel4.TabIndex = 4;
@@ -288,7 +289,7 @@ namespace WindowsFormsApp1
             // 
             this.pictureBox9.Image = global::WindowsFormsApp1.Properties.Resources.dog;
             this.pictureBox9.Location = new System.Drawing.Point(4, 4);
-            this.pictureBox9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox9.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(157, 122);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -306,7 +307,7 @@ namespace WindowsFormsApp1
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Location = new System.Drawing.Point(16, 180);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(312, 41);
             this.panel2.TabIndex = 1;
@@ -327,7 +328,7 @@ namespace WindowsFormsApp1
             // 
             this.pictureBox1.Image = global::WindowsFormsApp1.Properties.Resources.home;
             this.pictureBox1.Location = new System.Drawing.Point(32, 4);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(55, 31);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -380,7 +381,7 @@ namespace WindowsFormsApp1
             // 
             this.pictureBox7.Image = global::WindowsFormsApp1.Properties.Resources.employee_1_;
             this.pictureBox7.Location = new System.Drawing.Point(35, 28);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(68, 54);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -391,7 +392,7 @@ namespace WindowsFormsApp1
             // 
             this.pictureBox6.Image = global::WindowsFormsApp1.Properties.Resources.logout;
             this.pictureBox6.Location = new System.Drawing.Point(35, 548);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(68, 73);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -402,7 +403,7 @@ namespace WindowsFormsApp1
             // 
             this.pictureBox2.Image = global::WindowsFormsApp1.Properties.Resources.box;
             this.pictureBox2.Location = new System.Drawing.Point(35, 247);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(68, 54);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -413,7 +414,7 @@ namespace WindowsFormsApp1
             // 
             this.pictureBox5.Image = global::WindowsFormsApp1.Properties.Resources.bill;
             this.pictureBox5.Location = new System.Drawing.Point(35, 330);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(68, 54);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -451,7 +452,8 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.panel1);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Home_Cust";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Home";
