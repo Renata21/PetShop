@@ -301,9 +301,9 @@ namespace WindowsFormsApp1
             this.label11.Location = new System.Drawing.Point(76, 234);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(288, 32);
+            this.label11.Size = new System.Drawing.Size(274, 32);
             this.label11.TabIndex = 19;
-            this.label11.Text = "MyCodeSpace Pet Shop";
+            this.label11.Text = "Animalele disponibile";
             // 
             // panel3
             // 
@@ -322,29 +322,29 @@ namespace WindowsFormsApp1
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(20, 87);
+            this.label10.Location = new System.Drawing.Point(9, 124);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(758, 28);
+            this.label10.Size = new System.Drawing.Size(364, 28);
             this.label10.TabIndex = 18;
-            this.label10.Text = "We serve you with high quality service and nice care to you pet with food";
+            this.label10.Text = "Vă mulțumim că ne-ați ales pe noi!";
             // 
             // label9
             // 
-            this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(20, 60);
+            this.label9.Location = new System.Drawing.Point(10, 60);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(655, 28);
+            this.label9.Size = new System.Drawing.Size(839, 72);
             this.label9.TabIndex = 17;
-            this.label9.Text = "We serve you with high quality service and nice care to you pet";
+            this.label9.Text = "Va oferim servicii de calitate și garantăm că fiecare animal din magazinul nostru" +
+    " este îngrijit cum se cuvine în adăpostul nostru!\r\n";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Cambria", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(19, 30);
+            this.label8.Location = new System.Drawing.Point(13, 9);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(128, 32);
