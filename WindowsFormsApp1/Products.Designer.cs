@@ -89,7 +89,7 @@ namespace WindowsFormsApp1
             // 
             this.ProductoPrice.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ProductoPrice.Location = new System.Drawing.Point(839, 87);
-            this.ProductoPrice.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ProductoPrice.Margin = new System.Windows.Forms.Padding(4);
             this.ProductoPrice.Name = "ProductoPrice";
             this.ProductoPrice.Size = new System.Drawing.Size(147, 38);
             this.ProductoPrice.TabIndex = 27;
@@ -110,7 +110,7 @@ namespace WindowsFormsApp1
             // 
             this.ProductQuantity.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ProductQuantity.Location = new System.Drawing.Point(664, 85);
-            this.ProductQuantity.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ProductQuantity.Margin = new System.Windows.Forms.Padding(4);
             this.ProductQuantity.Name = "ProductQuantity";
             this.ProductQuantity.Size = new System.Drawing.Size(129, 38);
             this.ProductQuantity.TabIndex = 25;
@@ -120,7 +120,7 @@ namespace WindowsFormsApp1
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.panel4.Controls.Add(this.label3);
             this.panel4.Location = new System.Drawing.Point(16, 258);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(312, 41);
             this.panel4.TabIndex = 50;
@@ -143,7 +143,7 @@ namespace WindowsFormsApp1
             this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.pictureBox2.Image = global::WindowsFormsApp1.Properties.Resources.box;
             this.pictureBox2.Location = new System.Drawing.Point(41, 258);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(68, 41);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -166,7 +166,7 @@ namespace WindowsFormsApp1
             // 
             this.ProductName_tb.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ProductName_tb.Location = new System.Drawing.Point(93, 82);
-            this.ProductName_tb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ProductName_tb.Margin = new System.Windows.Forms.Padding(4);
             this.ProductName_tb.Name = "ProductName_tb";
             this.ProductName_tb.Size = new System.Drawing.Size(239, 38);
             this.ProductName_tb.TabIndex = 23;
@@ -194,7 +194,7 @@ namespace WindowsFormsApp1
             this.panel1.Controls.Add(this.label11);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Location = new System.Drawing.Point(336, 37);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1179, 674);
             this.panel1.TabIndex = 48;
@@ -209,7 +209,7 @@ namespace WindowsFormsApp1
             this.ProductDGV.BackgroundColor = System.Drawing.Color.White;
             this.ProductDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.ProductDGV.Location = new System.Drawing.Point(20, 258);
-            this.ProductDGV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ProductDGV.Margin = new System.Windows.Forms.Padding(4);
             this.ProductDGV.MultiSelect = false;
             this.ProductDGV.Name = "ProductDGV";
             this.ProductDGV.ReadOnly = true;
@@ -247,7 +247,7 @@ namespace WindowsFormsApp1
             this.panel3.Controls.Add(this.ProductName_tb);
             this.panel3.Controls.Add(this.label8);
             this.panel3.Location = new System.Drawing.Point(20, 25);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1124, 196);
             this.panel3.TabIndex = 0;
@@ -274,7 +274,7 @@ namespace WindowsFormsApp1
             "Pasare",
             "Hrana"});
             this.cboProductCategory.Location = new System.Drawing.Point(371, 82);
-            this.cboProductCategory.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cboProductCategory.Margin = new System.Windows.Forms.Padding(4);
             this.cboProductCategory.Name = "cboProductCategory";
             this.cboProductCategory.Size = new System.Drawing.Size(241, 39);
             this.cboProductCategory.TabIndex = 35;
@@ -452,7 +452,7 @@ namespace WindowsFormsApp1
             // 
             this.pictureBox4.Image = global::WindowsFormsApp1.Properties.Resources.customer;
             this.pictureBox4.Location = new System.Drawing.Point(35, 394);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(68, 54);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -463,7 +463,7 @@ namespace WindowsFormsApp1
             // 
             this.pictureBox1.Image = global::WindowsFormsApp1.Properties.Resources.home;
             this.pictureBox1.Location = new System.Drawing.Point(35, 174);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(68, 57);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -474,7 +474,7 @@ namespace WindowsFormsApp1
             // 
             this.pictureBox7.Image = global::WindowsFormsApp1.Properties.Resources.employee_1_;
             this.pictureBox7.Location = new System.Drawing.Point(35, 28);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(68, 54);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -485,7 +485,7 @@ namespace WindowsFormsApp1
             // 
             this.pictureBox6.Image = global::WindowsFormsApp1.Properties.Resources.logout;
             this.pictureBox6.Location = new System.Drawing.Point(35, 633);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(68, 73);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -496,7 +496,7 @@ namespace WindowsFormsApp1
             // 
             this.pictureBox5.Image = global::WindowsFormsApp1.Properties.Resources.bill;
             this.pictureBox5.Location = new System.Drawing.Point(35, 468);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(68, 54);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -507,7 +507,7 @@ namespace WindowsFormsApp1
             // 
             this.pictureBox3.Image = global::WindowsFormsApp1.Properties.Resources.employee;
             this.pictureBox3.Location = new System.Drawing.Point(35, 320);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(68, 54);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -549,7 +549,8 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.label7);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Products";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Products";
