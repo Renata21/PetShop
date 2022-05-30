@@ -158,5 +158,12 @@ namespace WindowsFormsApp1
         {
 
         }
+
+        private void label16_Click(object sender, EventArgs e)
+        {
+            Partners_examen form = new Partners_examen();
+            form.Show();
+            this.Hide();
+        }
     }
 }

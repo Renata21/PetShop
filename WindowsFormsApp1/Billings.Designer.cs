@@ -164,7 +164,7 @@ namespace WindowsFormsApp1
             // 
             this.pictureBox1.Image = global::WindowsFormsApp1.Properties.Resources.home;
             this.pictureBox1.Location = new System.Drawing.Point(35, 174);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(68, 57);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -175,7 +175,7 @@ namespace WindowsFormsApp1
             // 
             this.pictureBox7.Image = global::WindowsFormsApp1.Properties.Resources.employee_1_;
             this.pictureBox7.Location = new System.Drawing.Point(35, 28);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(68, 54);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -186,7 +186,7 @@ namespace WindowsFormsApp1
             // 
             this.pictureBox5.Image = global::WindowsFormsApp1.Properties.Resources.bill;
             this.pictureBox5.Location = new System.Drawing.Point(17, 0);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(68, 41);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -225,7 +225,7 @@ namespace WindowsFormsApp1
             this.panel4.Controls.Add(this.label3);
             this.panel4.Controls.Add(this.pictureBox5);
             this.panel4.Location = new System.Drawing.Point(16, 479);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(312, 41);
             this.panel4.TabIndex = 65;
@@ -246,7 +246,7 @@ namespace WindowsFormsApp1
             // 
             this.pictureBox2.Image = global::WindowsFormsApp1.Properties.Resources.box;
             this.pictureBox2.Location = new System.Drawing.Point(35, 247);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(68, 57);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -274,7 +274,7 @@ namespace WindowsFormsApp1
             // 
             this.pictureBox6.Image = global::WindowsFormsApp1.Properties.Resources.logout;
             this.pictureBox6.Location = new System.Drawing.Point(35, 633);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(68, 73);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -295,7 +295,7 @@ namespace WindowsFormsApp1
             this.panel1.Controls.Add(this.label11);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Location = new System.Drawing.Point(336, 37);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1179, 674);
             this.panel1.TabIndex = 64;
@@ -337,7 +337,7 @@ namespace WindowsFormsApp1
             this.Quantity,
             this.Total});
             this.BillDGV.Location = new System.Drawing.Point(647, 55);
-            this.BillDGV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BillDGV.Margin = new System.Windows.Forms.Padding(4);
             this.BillDGV.MultiSelect = false;
             this.BillDGV.Name = "BillDGV";
             this.BillDGV.ReadOnly = true;
@@ -431,7 +431,7 @@ namespace WindowsFormsApp1
             this.TransactionsDGV.BackgroundColor = System.Drawing.Color.White;
             this.TransactionsDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.TransactionsDGV.Location = new System.Drawing.Point(647, 443);
-            this.TransactionsDGV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TransactionsDGV.Margin = new System.Windows.Forms.Padding(4);
             this.TransactionsDGV.MultiSelect = false;
             this.TransactionsDGV.Name = "TransactionsDGV";
             this.TransactionsDGV.ReadOnly = true;
@@ -455,7 +455,7 @@ namespace WindowsFormsApp1
             this.panel2.Controls.Add(this.Savebtn);
             this.panel2.Controls.Add(this.label14);
             this.panel2.Location = new System.Drawing.Point(20, 210);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(595, 203);
             this.panel2.TabIndex = 37;
@@ -502,7 +502,7 @@ namespace WindowsFormsApp1
             // 
             this.QtyTb.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.QtyTb.Location = new System.Drawing.Point(396, 84);
-            this.QtyTb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.QtyTb.Margin = new System.Windows.Forms.Padding(4);
             this.QtyTb.Name = "QtyTb";
             this.QtyTb.Size = new System.Drawing.Size(179, 38);
             this.QtyTb.TabIndex = 27;
@@ -523,7 +523,7 @@ namespace WindowsFormsApp1
             // 
             this.PrPriceTb.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PrPriceTb.Location = new System.Drawing.Point(209, 84);
-            this.PrPriceTb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PrPriceTb.Margin = new System.Windows.Forms.Padding(4);
             this.PrPriceTb.Name = "PrPriceTb";
             this.PrPriceTb.Size = new System.Drawing.Size(179, 38);
             this.PrPriceTb.TabIndex = 25;
@@ -544,7 +544,7 @@ namespace WindowsFormsApp1
             // 
             this.PrNameTb.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PrNameTb.Location = new System.Drawing.Point(23, 84);
-            this.PrNameTb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PrNameTb.Margin = new System.Windows.Forms.Padding(4);
             this.PrNameTb.Name = "PrNameTb";
             this.PrNameTb.Size = new System.Drawing.Size(179, 38);
             this.PrNameTb.TabIndex = 23;
@@ -568,9 +568,10 @@ namespace WindowsFormsApp1
             this.ProductsDGV.AllowUserToResizeRows = false;
             this.ProductsDGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.ProductsDGV.BackgroundColor = System.Drawing.Color.White;
+            this.ProductsDGV.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableWithoutHeaderText;
             this.ProductsDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.ProductsDGV.Location = new System.Drawing.Point(20, 462);
-            this.ProductsDGV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ProductsDGV.Margin = new System.Windows.Forms.Padding(4);
             this.ProductsDGV.MultiSelect = false;
             this.ProductsDGV.Name = "ProductsDGV";
             this.ProductsDGV.ReadOnly = true;
@@ -602,7 +603,7 @@ namespace WindowsFormsApp1
             this.panel3.Controls.Add(this.label8);
             this.panel3.Controls.Add(this.pictureBox8);
             this.panel3.Location = new System.Drawing.Point(20, 25);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(556, 160);
             this.panel3.TabIndex = 0;
@@ -624,7 +625,7 @@ namespace WindowsFormsApp1
             this.CustIdCb.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CustIdCb.FormattingEnabled = true;
             this.CustIdCb.Location = new System.Drawing.Point(23, 92);
-            this.CustIdCb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CustIdCb.Margin = new System.Windows.Forms.Padding(4);
             this.CustIdCb.Name = "CustIdCb";
             this.CustIdCb.Size = new System.Drawing.Size(151, 39);
             this.CustIdCb.TabIndex = 35;
@@ -646,7 +647,7 @@ namespace WindowsFormsApp1
             // 
             this.custNameTb.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.custNameTb.Location = new System.Drawing.Point(244, 94);
-            this.custNameTb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.custNameTb.Margin = new System.Windows.Forms.Padding(4);
             this.custNameTb.Name = "custNameTb";
             this.custNameTb.Size = new System.Drawing.Size(185, 38);
             this.custNameTb.TabIndex = 23;
@@ -666,7 +667,7 @@ namespace WindowsFormsApp1
             // 
             this.pictureBox8.Image = global::WindowsFormsApp1.Properties.Resources.pet_food;
             this.pictureBox8.Location = new System.Drawing.Point(475, 12);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(77, 69);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -737,7 +738,7 @@ namespace WindowsFormsApp1
             // 
             this.pictureBox3.Image = global::WindowsFormsApp1.Properties.Resources.employee;
             this.pictureBox3.Location = new System.Drawing.Point(35, 320);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(68, 54);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -748,7 +749,7 @@ namespace WindowsFormsApp1
             // 
             this.pictureBox4.Image = global::WindowsFormsApp1.Properties.Resources.customer;
             this.pictureBox4.Location = new System.Drawing.Point(35, 394);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(68, 54);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -804,7 +805,7 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Billings";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Billings";
