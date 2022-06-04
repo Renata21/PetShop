@@ -1,7 +1,6 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
 using System.Data;
-using System.Data.SqlClient;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -9,7 +8,7 @@ namespace WindowsFormsApp1
 {
     public partial class Home_Emp : Form
     {
-        
+
         public Home_Emp()
         {
             InitializeComponent();
@@ -19,20 +18,7 @@ namespace WindowsFormsApp1
             CountBirds();
             Finance();
         }
-        Point lastPoint;
-        private void top_MouseMove(object sender, MouseEventArgs e)
-        {
-            if (e.Button == MouseButtons.Left)
-            {
-                this.Left += e.X - lastPoint.X;
-                this.Top += e.Y - lastPoint.Y;
-            }
-        }
 
-        private void top_MouseDown(object sender, MouseEventArgs e)
-        {
-            lastPoint = new Point(e.X, e.Y);
-        }
         MySqlConnection con = new MySqlConnection("server = mysql.freehostia.com; port = 3306; username=fincri_petshop; password=f._qDNdNMf-#6e@; database=fincri_petshop; connect timeout=5; convert zero datetime=True");
 
         private void CountDogs()
@@ -152,6 +138,32 @@ namespace WindowsFormsApp1
             Choose_user obj = new Choose_user();
             obj.Show();
             this.Hide();
-        } 
+        }
+        Point lastPoint;
+        private void top_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                this.Left += e.X - lastPoint.X;
+                this.Top += e.Y - lastPoint.Y;
+            }
+        }
+
+        private void top_MouseDown(object sender, MouseEventArgs e)
+        {
+            lastPoint = new Point(e.X, e.Y);
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label16_Click(object sender, EventArgs e)
+        {
+            Partners_examen form = new Partners_examen();
+            form.Show();
+            this.Hide();
+        }
     }
 }

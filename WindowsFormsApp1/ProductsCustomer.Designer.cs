@@ -30,6 +30,7 @@ namespace WindowsFormsApp1
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProductsCustomer));
             this.bunifuElipse3 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panel4 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
@@ -108,10 +109,10 @@ namespace WindowsFormsApp1
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(235)))), ((int)(((byte)(221)))));
             this.panel1.Controls.Add(this.ProductDGV);
             this.panel1.Controls.Add(this.label11);
-            this.panel1.Location = new System.Drawing.Point(336, 13);
+            this.panel1.Location = new System.Drawing.Point(336, 14);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1078, 607);
+            this.panel1.Size = new System.Drawing.Size(1077, 607);
             this.panel1.TabIndex = 48;
             // 
             // ProductDGV
@@ -128,6 +129,7 @@ namespace WindowsFormsApp1
             this.ProductDGV.MultiSelect = false;
             this.ProductDGV.Name = "ProductDGV";
             this.ProductDGV.ReadOnly = true;
+            this.ProductDGV.RowHeadersVisible = false;
             this.ProductDGV.RowHeadersWidth = 51;
             this.ProductDGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.ProductDGV.Size = new System.Drawing.Size(968, 459);
@@ -137,7 +139,7 @@ namespace WindowsFormsApp1
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Cambria", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(453, 40);
+            this.label11.Location = new System.Drawing.Point(453, 39);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(172, 32);
@@ -209,7 +211,6 @@ namespace WindowsFormsApp1
             this.label7.Size = new System.Drawing.Size(142, 32);
             this.label7.TabIndex = 57;
             this.label7.Text = "Emp Name";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // pictureBox1
             // 
@@ -272,10 +273,13 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.label7);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ProductsCustomer";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Products";
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.top_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.top_MouseMove);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

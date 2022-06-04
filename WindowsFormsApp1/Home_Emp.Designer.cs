@@ -30,6 +30,7 @@ namespace WindowsFormsApp1
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home_Emp));
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.gunaCircleProgressBar2 = new Guna.UI.WinForms.GunaCircleProgressBar();
@@ -70,6 +71,9 @@ namespace WindowsFormsApp1
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.gunaCircleProgressBar2.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -88,6 +92,8 @@ namespace WindowsFormsApp1
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -301,9 +307,9 @@ namespace WindowsFormsApp1
             this.label11.Location = new System.Drawing.Point(76, 234);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(288, 32);
+            this.label11.Size = new System.Drawing.Size(274, 32);
             this.label11.TabIndex = 19;
-            this.label11.Text = "MyCodeSpace Pet Shop";
+            this.label11.Text = "Animalele disponibile";
             // 
             // panel3
             // 
@@ -322,34 +328,34 @@ namespace WindowsFormsApp1
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(20, 87);
+            this.label10.Location = new System.Drawing.Point(9, 124);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(758, 28);
+            this.label10.Size = new System.Drawing.Size(364, 28);
             this.label10.TabIndex = 18;
-            this.label10.Text = "We serve you with high quality service and nice care to you pet with food";
+            this.label10.Text = "Vă mulțumim că ne-ați ales pe noi!";
             // 
             // label9
             // 
-            this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(20, 60);
+            this.label9.Location = new System.Drawing.Point(10, 60);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(655, 28);
+            this.label9.Size = new System.Drawing.Size(839, 72);
             this.label9.TabIndex = 17;
-            this.label9.Text = "We serve you with high quality service and nice care to you pet";
+            this.label9.Text = "Va oferim servicii de calitate și garantăm că fiecare animal din magazinul nostru" +
+    " este îngrijit cum se cuvine în adăpostul nostru!\r\n";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Cambria", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(19, 30);
+            this.label8.Location = new System.Drawing.Point(13, 9);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(288, 32);
+            this.label8.Size = new System.Drawing.Size(128, 32);
             this.label8.TabIndex = 16;
-            this.label8.Text = "MyCodeSpace Pet Shop";
+            this.label8.Text = "PetHouse";
             // 
             // pictureBox8
             // 
@@ -548,12 +554,50 @@ namespace WindowsFormsApp1
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
             // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label16.Font = new System.Drawing.Font("Cambria", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(111, 564);
+            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(120, 32);
+            this.label16.TabIndex = 17;
+            this.label16.Text = "Partners";
+            this.label16.Click += new System.EventHandler(this.label16_Click);
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.Image = global::WindowsFormsApp1.Properties.Resources.bill;
+            this.pictureBox12.Location = new System.Drawing.Point(35, 553);
+            this.pictureBox12.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(68, 54);
+            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox12.TabIndex = 16;
+            this.pictureBox12.TabStop = false;
+            // 
+            // pictureBox13
+            // 
+            this.pictureBox13.Image = global::WindowsFormsApp1.Properties.Resources.customer;
+            this.pictureBox13.Location = new System.Drawing.Point(35, 553);
+            this.pictureBox13.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(68, 54);
+            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox13.TabIndex = 18;
+            this.pictureBox13.TabStop = false;
+            // 
             // Home_Emp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(182)))), ((int)(((byte)(164)))));
             this.ClientSize = new System.Drawing.Size(1543, 750);
+            this.Controls.Add(this.pictureBox13);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.pictureBox12);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.label6);
@@ -569,6 +613,7 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Home_Emp";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -600,6 +645,8 @@ namespace WindowsFormsApp1
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -647,5 +694,8 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Label LblCat;
         private System.Windows.Forms.Label BirdLbl;
         private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.PictureBox pictureBox13;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.PictureBox pictureBox12;
     }
 }

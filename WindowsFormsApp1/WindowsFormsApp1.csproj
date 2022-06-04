@@ -23,6 +23,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
+    <AutorunEnabled>true</AutorunEnabled>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
@@ -122,6 +123,7 @@
     <Reference Include="Ubiety.Dns.Core, Version=2.2.1.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <HintPath>..\packages\MySql.Data.8.0.29\lib\net452\Ubiety.Dns.Core.dll</HintPath>
     </Reference>
+    <Reference Include="WindowsBase" />
     <Reference Include="ZstdNet, Version=1.4.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <HintPath>..\packages\MySql.Data.8.0.29\lib\net452\ZstdNet.dll</HintPath>
     </Reference>
@@ -157,6 +159,12 @@
     <Compile Include="Employees.Designer.cs">
       <DependentUpon>Employees.cs</DependentUpon>
     </Compile>
+    <Compile Include="Adaugare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Adaugare.Designer.cs">
+      <DependentUpon>Adaugare.cs</DependentUpon>
+    </Compile>
     <Compile Include="Home_Cust.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -181,6 +189,12 @@
     <Compile Include="Login_Emp.Designer.cs">
       <DependentUpon>Login_Emp.cs</DependentUpon>
     </Compile>
+    <Compile Include="Partners_examen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Partners_examen.Designer.cs">
+      <DependentUpon>Partners_examen.cs</DependentUpon>
+    </Compile>
     <Compile Include="PetShopDbDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -197,6 +211,12 @@
     </Compile>
     <Compile Include="Products.Designer.cs">
       <DependentUpon>Products.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
     </Compile>
     <Compile Include="Splash.cs">
       <SubType>Form</SubType>
@@ -222,6 +242,9 @@
     <EmbeddedResource Include="Employees.resx">
       <DependentUpon>Employees.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Adaugare.resx">
+      <DependentUpon>Adaugare.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Home_Cust.resx">
       <DependentUpon>Home_Cust.cs</DependentUpon>
     </EmbeddedResource>
@@ -234,11 +257,17 @@
     <EmbeddedResource Include="Login_Emp.resx">
       <DependentUpon>Login_Emp.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Partners_examen.resx">
+      <DependentUpon>Partners_examen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ProductsCustomer.resx">
       <DependentUpon>ProductsCustomer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Products.resx">
       <DependentUpon>Products.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Splash.resx">
       <DependentUpon>Splash.cs</DependentUpon>

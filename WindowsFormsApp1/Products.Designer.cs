@@ -99,7 +99,7 @@ namespace WindowsFormsApp1
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Corbel", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(658, 51);
+            this.label10.Location = new System.Drawing.Point(659, 50);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(113, 33);
@@ -136,6 +136,7 @@ namespace WindowsFormsApp1
             this.label3.Size = new System.Drawing.Size(122, 32);
             this.label3.TabIndex = 21;
             this.label3.Text = "Products";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // pictureBox2
             // 
@@ -154,7 +155,7 @@ namespace WindowsFormsApp1
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Corbel", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(87, 51);
+            this.label9.Location = new System.Drawing.Point(87, 50);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(82, 33);
@@ -164,7 +165,7 @@ namespace WindowsFormsApp1
             // ProductName_tb
             // 
             this.ProductName_tb.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ProductName_tb.Location = new System.Drawing.Point(93, 83);
+            this.ProductName_tb.Location = new System.Drawing.Point(93, 82);
             this.ProductName_tb.Margin = new System.Windows.Forms.Padding(4);
             this.ProductName_tb.Name = "ProductName_tb";
             this.ProductName_tb.Size = new System.Drawing.Size(239, 38);
@@ -195,7 +196,7 @@ namespace WindowsFormsApp1
             this.panel1.Location = new System.Drawing.Point(336, 37);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1178, 674);
+            this.panel1.Size = new System.Drawing.Size(1179, 674);
             this.panel1.TabIndex = 48;
             // 
             // ProductDGV
@@ -212,6 +213,7 @@ namespace WindowsFormsApp1
             this.ProductDGV.MultiSelect = false;
             this.ProductDGV.Name = "ProductDGV";
             this.ProductDGV.ReadOnly = true;
+            this.ProductDGV.RowHeadersVisible = false;
             this.ProductDGV.RowHeadersWidth = 51;
             this.ProductDGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.ProductDGV.Size = new System.Drawing.Size(1124, 398);
@@ -222,7 +224,7 @@ namespace WindowsFormsApp1
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Cambria", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(550, 225);
+            this.label11.Location = new System.Drawing.Point(549, 225);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(172, 32);
@@ -271,10 +273,10 @@ namespace WindowsFormsApp1
             "Caine",
             "Pasare",
             "Hrana"});
-            this.cboProductCategory.Location = new System.Drawing.Point(371, 83);
+            this.cboProductCategory.Location = new System.Drawing.Point(371, 82);
             this.cboProductCategory.Margin = new System.Windows.Forms.Padding(4);
             this.cboProductCategory.Name = "cboProductCategory";
-            this.cboProductCategory.Size = new System.Drawing.Size(242, 39);
+            this.cboProductCategory.Size = new System.Drawing.Size(241, 39);
             this.cboProductCategory.TabIndex = 35;
             // 
             // Deletebtn
@@ -482,7 +484,7 @@ namespace WindowsFormsApp1
             // pictureBox6
             // 
             this.pictureBox6.Image = global::WindowsFormsApp1.Properties.Resources.logout;
-            this.pictureBox6.Location = new System.Drawing.Point(35, 632);
+            this.pictureBox6.Location = new System.Drawing.Point(35, 633);
             this.pictureBox6.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(68, 73);
@@ -547,10 +549,13 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.label7);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Products";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Products";
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.top_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.top_MouseMove);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

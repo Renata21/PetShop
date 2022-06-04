@@ -58,6 +58,7 @@ namespace WindowsFormsApp1
             this.label16 = new System.Windows.Forms.Label();
             this.TransactionsDGV = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.Search_btn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.label15 = new System.Windows.Forms.Label();
             this.QtyTb = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -125,10 +126,10 @@ namespace WindowsFormsApp1
             this.Deletebtn.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.Deletebtn.IdleForecolor = System.Drawing.Color.Transparent;
             this.Deletebtn.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.Deletebtn.Location = new System.Drawing.Point(312, 133);
+            this.Deletebtn.Location = new System.Drawing.Point(391, 133);
             this.Deletebtn.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.Deletebtn.Name = "Deletebtn";
-            this.Deletebtn.Size = new System.Drawing.Size(244, 50);
+            this.Deletebtn.Size = new System.Drawing.Size(165, 50);
             this.Deletebtn.TabIndex = 34;
             this.Deletebtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Deletebtn.Click += new System.EventHandler(this.Deletebtn_Click);
@@ -151,10 +152,10 @@ namespace WindowsFormsApp1
             this.Savebtn.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.Savebtn.IdleForecolor = System.Drawing.Color.Transparent;
             this.Savebtn.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.Savebtn.Location = new System.Drawing.Point(45, 133);
+            this.Savebtn.Location = new System.Drawing.Point(23, 133);
             this.Savebtn.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.Savebtn.Name = "Savebtn";
-            this.Savebtn.Size = new System.Drawing.Size(253, 50);
+            this.Savebtn.Size = new System.Drawing.Size(165, 50);
             this.Savebtn.TabIndex = 32;
             this.Savebtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Savebtn.Click += new System.EventHandler(this.Savebtn_Click);
@@ -203,7 +204,7 @@ namespace WindowsFormsApp1
             this.label1.Size = new System.Drawing.Size(84, 32);
             this.label1.TabIndex = 63;
             this.label1.Text = "Home";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.label1.Click += new System.EventHandler(this.Home_Click);
             // 
             // label6
             // 
@@ -216,7 +217,7 @@ namespace WindowsFormsApp1
             this.label6.Size = new System.Drawing.Size(102, 32);
             this.label6.TabIndex = 69;
             this.label6.Text = "LogOut";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
+            this.label6.Click += new System.EventHandler(this.LogOut_Click);
             // 
             // panel4
             // 
@@ -272,7 +273,7 @@ namespace WindowsFormsApp1
             // pictureBox6
             // 
             this.pictureBox6.Image = global::WindowsFormsApp1.Properties.Resources.logout;
-            this.pictureBox6.Location = new System.Drawing.Point(35, 632);
+            this.pictureBox6.Location = new System.Drawing.Point(35, 633);
             this.pictureBox6.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(68, 73);
@@ -296,14 +297,14 @@ namespace WindowsFormsApp1
             this.panel1.Location = new System.Drawing.Point(336, 37);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1178, 674);
+            this.panel1.Size = new System.Drawing.Size(1179, 674);
             this.panel1.TabIndex = 64;
             // 
             // TotalLbl
             // 
             this.TotalLbl.AutoSize = true;
             this.TotalLbl.Font = new System.Drawing.Font("Corbel", 15.75F);
-            this.TotalLbl.Location = new System.Drawing.Point(1040, 360);
+            this.TotalLbl.Location = new System.Drawing.Point(1040, 359);
             this.TotalLbl.Name = "TotalLbl";
             this.TotalLbl.Size = new System.Drawing.Size(29, 33);
             this.TotalLbl.TabIndex = 43;
@@ -313,7 +314,7 @@ namespace WindowsFormsApp1
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Cambria", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(258, 426);
+            this.label17.Location = new System.Drawing.Point(259, 426);
             this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(122, 32);
@@ -340,6 +341,7 @@ namespace WindowsFormsApp1
             this.BillDGV.MultiSelect = false;
             this.BillDGV.Name = "BillDGV";
             this.BillDGV.ReadOnly = true;
+            this.BillDGV.RowHeadersVisible = false;
             this.BillDGV.RowHeadersWidth = 51;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             this.BillDGV.RowsDefaultCellStyle = dataGridViewCellStyle1;
@@ -433,6 +435,7 @@ namespace WindowsFormsApp1
             this.TransactionsDGV.MultiSelect = false;
             this.TransactionsDGV.Name = "TransactionsDGV";
             this.TransactionsDGV.ReadOnly = true;
+            this.TransactionsDGV.RowHeadersVisible = false;
             this.TransactionsDGV.RowHeadersWidth = 51;
             this.TransactionsDGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.TransactionsDGV.Size = new System.Drawing.Size(516, 214);
@@ -441,6 +444,7 @@ namespace WindowsFormsApp1
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.Search_btn);
             this.panel2.Controls.Add(this.label15);
             this.panel2.Controls.Add(this.QtyTb);
             this.panel2.Controls.Add(this.label5);
@@ -453,8 +457,34 @@ namespace WindowsFormsApp1
             this.panel2.Location = new System.Drawing.Point(20, 210);
             this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(594, 203);
+            this.panel2.Size = new System.Drawing.Size(595, 203);
             this.panel2.TabIndex = 37;
+            // 
+            // Search_btn
+            // 
+            this.Search_btn.ActiveBorderThickness = 1;
+            this.Search_btn.ActiveCornerRadius = 20;
+            this.Search_btn.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.Search_btn.ActiveForecolor = System.Drawing.Color.White;
+            this.Search_btn.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.Search_btn.BackColor = System.Drawing.Color.White;
+            this.Search_btn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Search_btn.BackgroundImage")));
+            this.Search_btn.ButtonText = "Search";
+            this.Search_btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Search_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Search_btn.ForeColor = System.Drawing.Color.SeaGreen;
+            this.Search_btn.IdleBorderThickness = 1;
+            this.Search_btn.IdleCornerRadius = 20;
+            this.Search_btn.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Search_btn.IdleForecolor = System.Drawing.Color.Transparent;
+            this.Search_btn.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Search_btn.Location = new System.Drawing.Point(209, 133);
+            this.Search_btn.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.Search_btn.Name = "Search_btn";
+            this.Search_btn.Size = new System.Drawing.Size(165, 50);
+            this.Search_btn.TabIndex = 35;
+            this.Search_btn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Search_btn.Click += new System.EventHandler(this.Search_btn_Click);
             // 
             // label15
             // 
@@ -538,12 +568,14 @@ namespace WindowsFormsApp1
             this.ProductsDGV.AllowUserToResizeRows = false;
             this.ProductsDGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.ProductsDGV.BackgroundColor = System.Drawing.Color.White;
+            this.ProductsDGV.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableWithoutHeaderText;
             this.ProductsDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.ProductsDGV.Location = new System.Drawing.Point(20, 462);
             this.ProductsDGV.Margin = new System.Windows.Forms.Padding(4);
             this.ProductsDGV.MultiSelect = false;
             this.ProductsDGV.Name = "ProductsDGV";
             this.ProductsDGV.ReadOnly = true;
+            this.ProductsDGV.RowHeadersVisible = false;
             this.ProductsDGV.RowHeadersWidth = 51;
             this.ProductsDGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.ProductsDGV.Size = new System.Drawing.Size(612, 180);
@@ -554,7 +586,7 @@ namespace WindowsFormsApp1
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Cambria", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(843, 19);
+            this.label11.Location = new System.Drawing.Point(843, 18);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(169, 32);
@@ -604,7 +636,7 @@ namespace WindowsFormsApp1
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Corbel", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(238, 48);
+            this.label9.Location = new System.Drawing.Point(237, 48);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(82, 33);
@@ -614,7 +646,7 @@ namespace WindowsFormsApp1
             // custNameTb
             // 
             this.custNameTb.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.custNameTb.Location = new System.Drawing.Point(244, 93);
+            this.custNameTb.Location = new System.Drawing.Point(244, 94);
             this.custNameTb.Margin = new System.Windows.Forms.Padding(4);
             this.custNameTb.Name = "custNameTb";
             this.custNameTb.Size = new System.Drawing.Size(185, 38);
@@ -663,11 +695,11 @@ namespace WindowsFormsApp1
             this.label13.Size = new System.Drawing.Size(122, 32);
             this.label13.TabIndex = 50;
             this.label13.Text = "Products";
-            this.label13.Click += new System.EventHandler(this.label13_Click);
+            this.label13.Click += new System.EventHandler(this.Products_Click);
             // 
             // printDocument1
             // 
-            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
+            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.PrintDocument_PrintPage);
             // 
             // printPreviewDialog1
             // 
@@ -700,7 +732,7 @@ namespace WindowsFormsApp1
             this.label12.Size = new System.Drawing.Size(142, 32);
             this.label12.TabIndex = 61;
             this.label12.Text = "Employees";
-            this.label12.Click += new System.EventHandler(this.label12_Click);
+            this.label12.Click += new System.EventHandler(this.Employees_Click);
             // 
             // pictureBox3
             // 
@@ -735,7 +767,7 @@ namespace WindowsFormsApp1
             this.label4.Size = new System.Drawing.Size(142, 32);
             this.label4.TabIndex = 59;
             this.label4.Text = "Customers";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+            this.label4.Click += new System.EventHandler(this.Customers_Click);
             // 
             // petShopDbDataSet
             // 
@@ -772,11 +804,13 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Billings";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Billings";
-            
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Top_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Top_MouseMove);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
@@ -860,5 +894,6 @@ namespace WindowsFormsApp1
         private PetShopDbDataSet petShopDbDataSet;
         private System.Windows.Forms.BindingSource productTblBindingSource;
         private PetShopDbDataSetTableAdapters.ProductTblTableAdapter productTblTableAdapter;
+        private Bunifu.Framework.UI.BunifuThinButton2 Search_btn;
     }
 }
